@@ -2,7 +2,7 @@
 title: "SSCAD 2024" # Website's name
 description: XXV Simpósio em Sistemas Computacionais de Alto Desempenho (SSCAD 2024) da SBC
 url: "https://ce-acpad.github.io" # Website's base hostname and protocol (e.g.: http://example.com)
-baseurl: "/sscad2024" # Website's subpath (e.g.: /blog)
+baseurl: "/" # Website's subpath (e.g.: /blog)
 final_url: https://ce-acpad.github.io/sscad2024
 source_url: https://github.dev/ce-acpad/sscad2024/blob/main/
 encoding: UTF-8

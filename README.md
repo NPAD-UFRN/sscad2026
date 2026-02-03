@@ -1,9 +1,7 @@
-# [Simpósio em Sistemas Computacionais de Alto Desempenho (SSCAD) 2024](https://ce-acpad.github.io/sscad2024)
+# Simpósio em Sistemas Computacionais de Alto Desempenho (SSCAD) 2026
 
-Mais informações [no site](https://ce-acpad.github.io/sscad2024)
+Rodar usando Podman:
 
-## Testar alterações localmente antes de publicar
-
-Instalar e rodar o [`jekyll`](https://jekyllrb.com/)
-
-    bundle exec jekyll serve
+```bash
+podman create --name sscad -v .:/srv/jekyll -e JEKYLL_ROOTLESS=1 docker.io/jekyll/jekyll
+```
