@@ -9,3 +9,5 @@ gem 'jekyll-watch'
 
 # Improves the website's SEO
 gem 'jekyll-seo-tag'
+
+gem "webrick", "~> 1.9"
