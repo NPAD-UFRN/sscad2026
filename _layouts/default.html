@@ -5,76 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{{ page.title }} - {{ site.title }}</title>
-        <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}"> {% seo %}
-        <link rel="icon" type="image/x-icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+        <link rel="stylesheet" 
+        href="{{ '/assets/css/geral.css' | relative_url }}">
+        <link rel="stylesheet" 
+        href="{{ '/assets/css/styles.css' | relative_url }}"> {% seo %}
+        <link rel="icon" type="image/x-icon" 
+        href="{{ '/assets/img/favicon.ico' | relative_url }}">
     </head>
     <body>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="{{ '/' | relative_url }}">
-                    <img
-                        src="{{ '/assets/img/sscad_logo.png' | relative_url }}"
-                        class="img-fluid"
-                        alt="SSCAD 2024 Logo"
-                        id="sscad_logo"
-                    />
-                </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav text-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ '/registration/' | relative_url }}">Inscrições</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Chamadas
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{ '/cfp/' | relative_url }}">Trilha Principal</a></li>
-                                <li><a class="dropdown-item" href="{{ '/cfp_wic/' | relative_url }}">SSCAD-WIC</a></li>
-                                <li><a class="dropdown-item" href="{{ '/cfp_ctd/' | relative_url }}">SSCAD-CTD</a></li>
-                                <li><a class="dropdown-item" href="{{ '/cfp_weac/' | relative_url }}">WEAC</a></li>
-                                <li><a class="dropdown-item" href="{{ '/cfp_minicursos/' | relative_url }}">Minicursos</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Programa
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{ '/program/' | relative_url }}">Programação Geral</a></li>
-                                <li><a class="dropdown-item" href="{{ '/program/sessions/' | relative_url }}">Sessões Técnicas</a></li>
-                                <li><a class="dropdown-item" href="{{ '/program/keynotes/' | relative_url }}">Palestras</a></li>
-                                <li><a class="dropdown-item" href="{{ '/program/panel/' | relative_url }}">Painel</a></li>
-                                <li><a class="dropdown-item" href="{{ '/program/tutorials/' | relative_url }}">Minicursos</a></li>
-                                <li><a class="dropdown-item" href="https://lspd.mackenzie.br/marathon/">Maratona</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ '/committee/' | relative_url }}">Comitês</a>
-                        </li>
+        
+    {% include nav.html %} 
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ '/travel_info/' | relative_url }}">Local</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="https://www2.sbc.org.br/ce-acpad/sscad/">Edições passadas</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
         <header class="text-center">
             <div class="container-fluid">
                 <div id="sbc_logo">
@@ -86,117 +27,17 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text-center">
-                        <h1>SSCAD 2024</h1>
+                        <h1>{{site.title}}</h1>
                         <h2>
-                            XXV Simpósio em Sistemas Computacionais de Alto Desempenho
+                            {{site.description}}
                         </h2>
-                        <h3><span>23 a 25 de outubro, 2024 — São Carlos, SP, Brasil</span></h3>
+                        <h3><span>? a ? de ?, 2026 — Natal, RN, Brasil</span></h3>
                     </div>
                 </div>
             </div>
         </header>
         {{ content }}
         <footer style="text-align: center;">
-		<style>
-				p {
-					font-size: 20px;
-				}
-
-				.img_diamante {
-					width: auto;
-					height: 70px;
-				}
-
-				.img_ouro {
-					width: auto;
-					height: 60px;
-				}
-
-				.img_prata {
-					width: auto;
-					height: 50px;
-				}
-				
-				.img_prataa {
-					width: auto;
-					height: 45px;
-				}
-
-				.img_prataaa {
-					width: auto;
-					height: 60px;
-				}
-
-
-				@media (min-width: 768px) {
-					p {
-						font-size: 25px; 
-					}
-					 
-					.img_diamante {						
-						width: auto;
-						height: 110px;
-					}
-
-					.img_ouro {						
-						width: auto;
-						height: 90px;
-					}
-					
-					.img_prata {						
-						width: auto;
-						height: 70px;
-					}
-					
-					.img_prataa {						
-						width: auto;
-						height: 60px;
-					}
-					
-					.img_prataaa {						
-						width: auto;
-						height: 80px;
-					}
-				 }
-				
-				.grid-container {
-				  display: grid;
-/* 				  background-color: rgba(200, 200, 200, 0.8); */
-				  grid-template-columns: 25% 25% 25% 25%;
-/* 				  gap: 2px; */
-				}
-
-				.grid-container > div {
-/* 				  border: 1px solid rgba(0, 0, 0, 0.8); */
-				  text-align: center;
-				  padding: 20px 0;
-				}
-				
-				.sbc {
-					grid-column-start: 1;
-					grid-column-end: 2;
-				}			
-				.org {
-					grid-column-start: 2;
-					grid-column-end: 4;
-				}
-				.fomento {
-					grid-column-start: 4;
-					grid-column-end: 5;					
-				}
-				.diamante {
-					grid-column-start: 1;
-					grid-column-end: 5;
-				}
-				.ouro {
-					grid-column-start: 1;
-					grid-column-end: 5;
-				}
-				.prata {
-					grid-column-start: 1;
-					grid-column-end: 5;
-				}
-			</style>
             <div class="grid-container">
 				<div class="sbc">
 					<b><p>Realização</p></b>
@@ -251,7 +92,7 @@
                 <i class="bi bi-facebook"></i>
             </a> 
             <br /><br /> -->
-            <h1>SSCAD 2024</h1>
+            <h1>{{site.title}}</h1>
             <h2>All Rights Reserved (<a href="{{site.source_url}}{{page.name}}">edit</a>)</h2>
         </footer>
         <script

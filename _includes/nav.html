@@ -1,0 +1,47 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+            <img
+                src="{{ '/assets/img/sscad_logo.png' | relative_url }}"
+                class="img-fluid"
+                alt="SSCAD 2024 Logo"
+                id="sscad_logo"
+            />
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" 
+            id="navbarSupportedContent">
+            <ul class="navbar-nav text-center">
+                {% for item in site.data.navigation %}
+                    {% if item.submenu %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="{{ item.url }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ item.title }}
+                            </a>
+                            <ul class="dropdown-menu">
+                                {% for subitem in item.submenu %}
+                                    <li><a class="dropdown-item" href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div> 
+</nav>
+
