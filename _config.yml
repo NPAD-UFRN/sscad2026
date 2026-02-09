@@ -33,3 +33,4 @@ exclude:
   - .vscode
   - .dockerignore
   - vendor
+  - scripts
