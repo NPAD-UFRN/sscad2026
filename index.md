@@ -3,8 +3,7 @@ layout: textpage
 title: Sobre o SSCAD
 ---
 
-O **Simpósio em Sistemas Computacionais de Alto Desempenho (que a partir desta
-edição utilizará a nova sigla SSCAD, em substituição a WSCAD)** é um evento
+O **Simpósio em Sistemas Computacionais de Alto Desempenho (SSCAD)** é um evento
 anual realizado pela [Comissão Especial de Arquitetura de Computadores e
 Processamento de Alto Desempenho
 (CE-ACPAD)](https://www.sbc.org.br/403-comissoes-especiais?layout=edit&id=2301)
