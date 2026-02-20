@@ -22,9 +22,9 @@ Nordeste.
 
 ### Datas importantes:
 
-Submissão de artigos: 7 de agosto de 2026
-Notificação aos autores: 28 de setembro de 2026
-Submissão da versão final: 19 de outubro de 2026
+- Submissão de artigos: 7 de agosto de 2026
+- Notificação aos autores: 28 de setembro de 2026
+- Submissão da versão final: 19 de outubro de 2026
 
 ### Tópicos de interesse:
 
@@ -71,25 +71,11 @@ em outras conferências ou periódicos.
 A submissão de artigos será realizada no [sistema
 JEMS3](https://jems3.sbc.org.br/).
 
-Além das sessões técnicas da Trilha Principal e dos Minicursos, o SSCAD 2026
-realizará os seguintes eventos associados:
-
-- Concurso de Teses e Dissertações em Arquitetura de Computadores e Computação
-  de Alto Desempenho (SSCAD-CTD);
-- Workshop de Iniciação Científica em Arquitetura de Computadores e Computação
-  de Alto Desempenho (SSCAD-WIC);
-- Workshop sobre Educação em Arquitetura de Computadores (WEAC);
-- Maratona de Programação Paralela (MPP).
-
 Os autores dos melhores trabalhos aceitos na Trilha Principal do SSCAD 2026
 serão convidados a submeter uma versão estendida de seus artigos, com 50% de
 conteúdo original, para uma edição especial do periódico **Concurrency and
 Computation: Practice and Experience (CCPE)** — a ser confirmada.
 
-### Coordenação Geral:
-- Cristina Boeres (UFF)
-- Samuel Xavier de Souza (UFRN)
-
 ### Coordenação do Comitê de Programa do SSCAD:
-- Aletéia Araújo (UnB)
-- Daniel Cordeiro (USP)
+- Aletéia Araújo (UnB) - <mailto:aleteia@unb.br>
+- Daniel Cordeiro (USP) - <mailto:daniel.cordeiro@usp.br> 
