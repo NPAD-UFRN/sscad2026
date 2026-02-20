@@ -3,65 +3,50 @@ committees:
     subcommittees:
       - name: "Coordenação Geral"
         people:
-          - name: Cristina Boeres
-            institution: UFF
-          - name: Samuel Xavier de Souza
-            institution: UFRN
+          - name: "Hermes Senger"
+            institution: "UFSCar"
+          - name: "Sarita Bruschi"
+            institution: "USP"
       - name: "Coordenação Local"
         people:
-          - name: Kayo Gonçalves e Silva
-            institution: UFRN
-          - name: Ítalo Assis
-            institution: UFERSA
-      - name: Coordenação do Programa Técnico
+          - name: "Helio Crestana Guardia"
+            institution: "UFSCar"
+          - name: "Ricardo Menotti"
+            institution: "UFSCar"
+      - name: "Coordenação do Comitê de Programa"
         people:
-          - name: Aletéia Araújo
-            institution: UnB
-          - name: Daniel Cordeiro
-            institution: USP
+          - name: "Adenauer Yamin"
+            institution: "UFPEL"
+          - name: "Samuel Xavier de Souza"
+            institution: "UFRN"
       - name: "Coordenação do Workshop de Iniciação Científica (SSCAD-WIC)"
         people:
-          - name: Hervé Yviquel
-            institution: UNICAMP
+          - name: "Anderson Faustino da Silva"
+            institution: "UEM"
+          - name: "Henrique Cota de Freitas"
+            institution: "PUC Minas"
       - name: "Coordenação do Concurso de Teses e Dissertações (SSCAD-CTD)"
         people:
-          - name: Evaldo Costa
-            institution: Cesar
+          - name: "Cristiana Bentes"
+            institution: "UERJ"
+          - name: "Ricardo Ferreira"
+            institution: "UFV"
       - name: "Coordenação do Workshop sobre Educação em Arquitetura de Computadores (WEAC)"
+        people:
+          - name: "Guilherme Galante"
+            institution: "Unioeste"
+          - name: "Rodolfo Azevedo"
+            institution: "Unicamp"
+      - name: "Coordenação dos Minicursos"
         people:
           - name: "Arthur Lorenzon"
             institution: "UFRGS"
-      - name: "Coordenação de Chamada de Workshops"
-        people:
-          - name: "Hervé Yviquel"
-            institution: "UNICAMP"
-          - name: "Evaldo Costa"
-            institution: Cesar
-      - name: "Coordenação dos Minicursos"
-        people:
-          - name: "Márcio Kreutz"
-            institution: "UFRN"
-          - name: Cesar Zeferino
-            institution: UNIVALI
+          - name: "Álvaro Fazenda"
+            institution: "ICT-Unifesp"
       - name: "Coordenação da Maratona de Programação Paralela"
         people:
           - name: "Calebe de Paula Bianchini"
             institution: "Mackenzie"
-          - name: Ítalo Assis
-            institution: UFERSA
-      - name: Organização Local
-        people:
-          - name: Maria Camila Freitas
-            institution: NPAD/UFRN
-          - name: Amanda Menezes
-            institution: NPAD/UFRN
-          - name: Mariana Melo
-            institution: NPAD/UFRN
-          - name: Luana Araújo
-            institution: NPAD/UFRN
-      - name: Equipe técnica
-        people:
-          - name: Haroldo Watson Teodósio da Silva
-            institution: NPAD/UFRN
-          - name: Danilo Ichihara
-            institution: NPAD/UFRN
+          - name: "Hélio Crestana Guardia"
+            institution: "UFSCar"
+      
