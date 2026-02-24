@@ -9,10 +9,10 @@ committees:
             institution: UFRN
       - name: "Coordenação Local"
         people:
-          - name: Kayo Gonçalves e Silva
-            institution: UFRN
           - name: Ítalo Assis
             institution: UFERSA
+          - name: Kayo Gonçalves e Silva
+            institution: UFRN
       - name: Coordenação do Programa Técnico
         people:
           - name: Aletéia Araújo
@@ -31,19 +31,21 @@ committees:
         people:
           - name: "Arthur Lorenzon"
             institution: "UFRGS"
-      - name: "Coordenação de Chamada de Workshops"
+      - name: "Coordenação Workshops"
         people:
           - name: "Hervé Yviquel"
             institution: "UNICAMP"
           - name: "Evaldo Costa"
             institution: Cesar
+          - name: "Arthur Lorenzon"
+            institution: "UFRGS"
       - name: "Coordenação dos Minicursos"
         people:
           - name: "Márcio Kreutz"
             institution: "UFRN"
           - name: Cesar Zeferino
             institution: UNIVALI
-      - name: "Coordenação da Maratona de Programação Paralela"
+      - name: "Coordenação da MARATONA"
         people:
           - name: "Calebe de Paula Bianchini"
             institution: "Mackenzie"
