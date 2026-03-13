@@ -11,6 +11,8 @@
       url: "/cfp_weac/"
     - title: "Minicursos"
       url: "/cfp_minicursos/"
+    - title: "Workshops"
+      url: "/workshops/"
 - title: "Programa"
   url: "#"
   submenu:
