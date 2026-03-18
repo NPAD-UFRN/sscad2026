@@ -97,3 +97,39 @@ p {
     grid-column-end: 5;
 }
 
+.org-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;              
+    width: 100%;
+    margin-bottom: 25px;    
+}
+
+.org-row img {
+    height: 120px;          
+    width: auto;            
+    max-width: 250px;       
+    object-fit: contain;
+}
+
+@media (max-width: 767px) {
+    .org-row {
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .org-row img {
+        height: 70px;
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 600px) {
+    .org-row {
+        flex-wrap: wrap;
+    }
+    .org-row img {
+        max-width: 120px;
+    }
+}
