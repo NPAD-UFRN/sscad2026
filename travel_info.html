@@ -1,10 +1,43 @@
 ---
-layout: default
+layout: textpage
 title: "Local"
 permalink: /travel_info/
 ---
 
+<div class="accordion" id="accordionTravelInfo">
+  {% assign items = site.travel_info | sort: 'order' %}
+  {% for item in items %}
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading{{ forloop.index }}">
+        <button class="accordion-button {% unless forloop.first %}collapsed{% endunless %}" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapse{{ forloop.index }}" 
+                aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" 
+                aria-controls="collapse{{ forloop.index }}">
+          {{ item.title }}
+        </button>
+      </h2>
+      <div id="collapse{{ forloop.index }}" 
+           class="accordion-collapse collapse {% if forloop.first %}show{% endif %}" 
+           aria-labelledby="heading{{ forloop.index }}" 
+           data-bs-parent="#accordionTravelInfo">
+        <div class="accordion-body">
+          {% if item.type == 'markdown' %}
+            {{ item.content | markdownify }}
+          {% else %}
+            {{ item.content }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+<!-- código do evento anterior -->
 <!--
+
 
 <section id="light-card">
     <div class="p-2 container col-sm-12 col-lg-8 text-justify" id="venue">

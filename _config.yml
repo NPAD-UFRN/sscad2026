@@ -13,6 +13,8 @@ collections:
   news:
   keynote_speakers:
     sort_by: order
+  travel_info:
+    output: true
 
 # Website SASS settings
 sass:
