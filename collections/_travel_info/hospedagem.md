@@ -3,9 +3,6 @@ title: "Hospedagem"
 order: 1
 type: markdown
 ---
-
-# HOSPEDAGEM
-
 Embora possam ser encontradas em outros bairros, como Candelária, as principais
 hospedagens se concentram no bairro de Ponta Negra. Seguem sugestões:
 
