@@ -1,6 +1,6 @@
 ---
 title: "Hospedagem"
-order: 1
+order: 2
 type: markdown
 ---
 Embora possam ser encontradas em outros bairros, como Candelária, as principais

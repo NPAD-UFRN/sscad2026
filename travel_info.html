@@ -1,6 +1,6 @@
 ---
 layout: textpage
-title: "Local"
+title: "Local do evento"
 permalink: /travel_info/
 ---
 
@@ -15,7 +15,7 @@ permalink: /travel_info/
                 data-bs-target="#collapse{{ forloop.index }}" 
                 aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" 
                 aria-controls="collapse{{ forloop.index }}">
-          {{ item.title }}
+            <h2>{{ item.title }}</h2>
         </button>
       </h2>
       <div id="collapse{{ forloop.index }}" 
