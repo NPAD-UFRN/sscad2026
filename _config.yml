@@ -24,6 +24,9 @@ sass:
 # Jekyll plugins
 plugins:
   - jekyll-seo-tag
+  - jekyll-multiple-languages-plugin
+
+languages: ["pt", "en"]
 
 exclude:
   - README.md

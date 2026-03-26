@@ -11,3 +11,6 @@ gem 'jekyll-watch'
 gem 'jekyll-seo-tag'
 
 gem "webrick", "~> 1.9"
+
+gem 'jekyll-multiple-languages-plugin'
+
