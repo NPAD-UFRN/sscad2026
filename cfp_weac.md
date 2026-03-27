@@ -81,5 +81,7 @@ aspectos relacionados à educação.
 - Notificação aos autores: 20/09
 - Submissão da versão final: 20/10
 
-**Mais informações:** Arthur Francisco Lorenzon -
+**Mais informações:** 
+
+Arthur Francisco Lorenzon -
 [aflorenzon@inf.ufrgs.br](mailto: aflorenzon@inf.ufrgs.br) 
