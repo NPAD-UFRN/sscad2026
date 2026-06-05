@@ -49,21 +49,42 @@ A chamada de trabalhos está aberta para os seguintes tópicos de interesse (mas
 
 ## Instruções aos Autores
 
-A submissão será exclusivamente eletrônica, por meio do sistema JEMS: [https://jems3.sbc.org.br/](https://jems3.sbc.org.br/)
+A submissão será exclusivamente eletrônica, por meio do [sistema JEMS](https://jems3.sbc.org.br/sscad-ctd2026).
 
 Cada submissão deverá conter três arquivos:
 
-- Resumo estendido de até oito páginas do trabalho. Os artigos devem ser submetidos no formato PDF, com até 8 páginas de texto (as referências bibliográficas não constam desse total; ou seja, o artigo pode ter mais do que 8 páginas), e seguir o modelo de publicação de artigos sugerido pela SBC [modelo SBC](https://www.sbc.org.br/wp-content/uploads/2024/07/modelosparapublicaodeartigos.zip), também disponível no [Overleaf](https://www.overleaf.com/latex/templates/sbc-conferences-template/blbxwjwzdngr);
+- Resumo estendido de até oito páginas do trabalho. Os artigos devem ser
+  submetidos no formato PDF, com até 8 páginas de texto (as referências
+  bibliográficas não constam desse total; ou seja, o artigo pode ter mais do que
+  8 páginas), e seguir o modelo de publicação de artigos sugerido pela SBC
+  [modelo
+  SBC](https://www.sbc.org.br/wp-content/uploads/2024/07/modelosparapublicaodeartigos.zip),
+  também disponível no
+  [Overleaf](https://www.overleaf.com/latex/templates/sbc-conferences-template/blbxwjwzdngr);
 - Ata da defesa do trabalho;
 - Texto completo da tese ou dissertação.
 
-O resumo estendido deve descrever claramente as contribuições científicas e a originalidade do trabalho de mestrado ou doutorado. O texto deve incluir, obrigatoriamente: o título do trabalho; nomes do autor, orientador e coorientador(es) com as respectivas afiliações; resumo e abstract; caracterização do problema e motivação; objetivos e contribuições; comparação com o estado da arte; resultados obtidos; e subprodutos do trabalho, tais como artigos científicos, patentes, programas registrados e quaisquer outros elementos que permitam qualificar o trabalho.
+O resumo estendido deve descrever claramente as contribuições científicas e a
+originalidade do trabalho de mestrado ou doutorado. O texto deve incluir,
+obrigatoriamente: o título do trabalho; nomes do autor, orientador e
+coorientador(es) com as respectivas afiliações; resumo e abstract;
+caracterização do problema e motivação; objetivos e contribuições; comparação
+com o estado da arte; resultados obtidos; e subprodutos do trabalho, tais como
+artigos científicos, patentes, programas registrados e quaisquer outros
+elementos que permitam qualificar o trabalho.
 
-A ata da defesa deve conter o local e a data da defesa, o nome do orientador, membros da banca e um parecer que indique explicitamente que o candidato defendeu e teve o trabalho aprovado.
+A ata da defesa deve conter o local e a data da defesa, o nome do orientador,
+membros da banca e um parecer que indique explicitamente que o candidato
+defendeu e teve o trabalho aprovado.
 
 ## Processo de Seleção
 
-Na primeira fase, os trabalhos serão avaliados por um comitê específico do SSCAD-CTD responsável por selecionar as teses e dissertações finalistas. Estes finalistas serão conhecidos antes do evento e serão convidados a apresentar seus trabalhos no SSCAD 2026. Na segunda fase, uma banca formada por professores participantes do evento irá avaliar as apresentações. Ambas avaliações definirão os trabalhos vencedores e destaques para cada nível (mestrado e doutorado).
+Na primeira fase, os trabalhos serão avaliados por um comitê específico do
+SSCAD-CTD responsável por selecionar as teses e dissertações finalistas. Estes
+finalistas serão conhecidos antes do evento e serão convidados a apresentar seus
+trabalhos no SSCAD 2026. Na segunda fase, uma banca formada por professores
+participantes do evento irá avaliar as apresentações. Ambas avaliações definirão
+os trabalhos vencedores e destaques para cada nível (mestrado e doutorado).
 
 ## Coordenação do Comitê de Programa
 

@@ -3,6 +3,7 @@ layout: textpage
 title: "Minicursos"
 permalink: "/cfp_minicursos/"
 data_evento: "03 a 05 de novembro de 2026"
+linkjems: "https://jems3.sbc.org.br/sscad2026-minicursos"
 ---
 
 ##  Chamada para Propostas de Minicursos
@@ -91,7 +92,7 @@ diversidade e atualização do programa técnico-científico.
 
 ## Datas Importantes
 
-- *Submissão das propostas de minicurso:*  10/06/26
+- *Submissão das propostas de minicurso:* 03/08/26
 - *Divulgação das propostas aprovadas:* 15/08/26
 - *Envio da versão final do capítulo e slides:* 20/10/26
 - *Site do evento:* {{site.url}}

@@ -66,7 +66,7 @@ disponivel no
 Os anais serão publicados na SBC OpenLib (SOL).
 
 A submissão de artigos será realizada no [sistema
-JEMS3](https://jems3.sbc.org.br/).
+JEMS3](https://jems3.sbc.org.br/sscad-wic2026).
 
 ## Coordenação do SSCAD-WIC
 

@@ -4,6 +4,11 @@ title: Propostas de Workshops
 permalink: /workshops/
 ---
 
+## Atualização - Workshops aceitos:
+
+- **W-MAD** – Workshop de Mulheres em Alto Desempenho
+- **WPADS** - I Workshop de Processamento de Alto Desempenho Sustentável
+
 O XXVII **Simpósio em Sistemas Computacionais de Alto Desempenho (SSCAD 2026)**
 convida a comunidade acadêmica e industrial a submeter **propostas de workshops
 de meio dia ou dia inteiro** sobre temas novos, emergentes ou consolidados em
@@ -39,6 +44,7 @@ As propostas devem ser submetidas em **formato PDF** e conter:
 - Histórico de edições anteriores (se aplicável).
 
 [Link da submissão](https://forms.gle/HGRdU2Dwv7QzShHb9).
+
 
 ## Chairs dos Workshops
 
