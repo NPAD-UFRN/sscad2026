@@ -2,12 +2,21 @@
 
 ## Como rodar
 
+Tendo docker ou podman instalado, execute o seguinte comando para criar o
+container:
+
 ```bash
-docker compose up
+docker run -d \
+  --name sscad \
+  -p 4000:4000 \
+  -v $(pwd):/srv/jekyll:Z \
+  -v sscad_gems:/usr/local/bundle \
+  -e JEKYLL_ROOTLESS=1 \
+  docker.io/jekyll/jekyll \
+  jekyll serve
 ```
 
 O servidor do jekyll estará disponível em `http://localhost:4000`.
-
 
 ## Deploy
 
