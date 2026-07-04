@@ -2,19 +2,15 @@
 
 ## Como rodar
 
-Tendo docker ou podman instalado, execute o seguinte comando para criar o
+Tendo docker ou podman instalado, com docker-compose ou podman-compose, 
+execute o seguinte para iniciar o container
 container:
 
 ```bash
-docker run -d \
-  --name sscad \
-  -p 4000:4000 \
-  -v $(pwd):/srv/jekyll:Z \
-  -v sscad_gems:/usr/local/bundle \
-  -e JEKYLL_ROOTLESS=1 \
-  docker.io/jekyll/jekyll \
-  jekyll serve
+docker compose up -d
 ```
+
+Substitua docker por podman se for o caso.
 
 O servidor do jekyll estará disponível em `http://localhost:4000`.
 
