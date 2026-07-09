@@ -3,6 +3,8 @@
   submenu:
     - title: "Trilha Principal"
       url: "/cfp/"
+    - title: "W-MAD"
+      url: "/cfp_wmad/"
     - title: "SSCAD-WIC"
       url: "/cfp_wic/"
     - title: "SSCAD-CTD"
