@@ -2,8 +2,8 @@
 layout: textpage
 title: "Inscrições"
 permalink: /registration/
-data-limite-inscricao: "a data a ser definida" 
-data-limite-termo-publicacao: "a data a ser definida"
+data-limite-inscricao: "30/09/2026" 
+data-limite-termo-publicacao: "30/09/2026"
 ---
 
 ## Informações gerais
