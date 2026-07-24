@@ -6,9 +6,16 @@ data-limite-inscricao: "30/09/2026"
 data-limite-termo-publicacao: "30/09/2026"
 ---
 
+<div class="d-flex justify-content-center align-items-center" style="min-height: 20vh;">
+  <a href="https://centraldesistemas.sbc.org.br/ecos/sscad2026" class="btn btn-primary btn-lg" role="button">
+    <i class="bi bi-link-45deg"></i> Inscreva-se no SSCAD 2026
+  </a>
+</div>
+
 ## Informações gerais
 
 As inscrições para o SSCAD 2026 são gerenciadas pela [Sociedade Brasileira de Computação (SBC)](http://sbc.org.br/) e são feitas através do [sistema ECOS da SBC](https://centraldesistemas.sbc.org.br/ecos/sscad2026). Os valores das inscrições incluem participação em todas as palestras, sessões técnicas, minicursos e coffee-breaks nos 3 dias do evento.
+
 
 ## Informações importantes aos autores
 
