@@ -92,7 +92,7 @@ diversidade e atualização do programa técnico-científico.
 
 ## Datas Importantes
 
-- *Submissão das propostas de minicurso:* 03/08/26
+- *Submissão das propostas de minicurso:* 10/08/26
 - *Divulgação das propostas aprovadas:* 15/08/26
 - *Envio da versão final do capítulo e slides:* 20/10/26
 - *Site do evento:* {{site.url}}
