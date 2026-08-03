@@ -77,7 +77,7 @@ aspectos relacionados à educação.
 
 ## Datas importantes
 
-- Submissão de artigos: 02/08 
+- Submissão de artigos: 15/08 **(prorrogado)** 
 - Notificação aos autores: 20/09
 - Submissão da versão final: 20/10
 
