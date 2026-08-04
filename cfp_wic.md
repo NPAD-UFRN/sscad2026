@@ -22,7 +22,7 @@ o evento.
 
 ## Datas importantes
 
-- Submissão de artigos: 7 de agosto de 2026
+- Submissão de artigos: 15 de agosto de 2026 (**prorrogado**)
 - Notificação aos autores: 28 de setembro de 2026
 - Submissão da versão final: 19 de outubro de 2026
 
