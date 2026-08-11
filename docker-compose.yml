@@ -10,7 +10,7 @@ services:
       - sscad_gems:/usr/local/bundle
     environment:
       - JEKYLL_ROOTLESS=1
-    command: jekyll serve
+    command: jekyll serve --host 0.0.0.0 --force_polling
 
 volumes:
   sscad_gems:

@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <ul class="social-links">
+    {% for item in site.social %}
+      {% assign icon_path = "icons/" | append: item.icon %}
+      <li>
+        <a href="{{ item.url }}" target="_blank" rel="noopener"
+           aria-label="{{ item.name }}">
+          {% include {{ icon_path }} %}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</footer>

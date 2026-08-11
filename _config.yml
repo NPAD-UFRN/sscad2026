@@ -36,3 +36,12 @@ exclude:
   - .dockerignore
   - vendor
   - scripts
+
+
+social:
+  - name: Instagram
+    url: https://instagram.com/npad_ufrn
+    icon: instagram.svg
+  - name: LinkedIn
+    url: https://www.linkedin.com/company/n%C3%BAcleo-de-processamento-de-alto-desempenho-npad/
+    icon: linkedin.svg
