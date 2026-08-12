@@ -1,13 +1,23 @@
 <footer class="site-footer">
   <ul class="social-links">
-    {% for item in site.social %}
-      {% assign icon_path = "icons/" | append: item.icon %}
-      <li>
-        <a href="{{ item.url }}" target="_blank" rel="noopener"
-           aria-label="{{ item.name }}">
-          {% include {{ icon_path }} %}
-        </a>
-      </li>
-    {% endfor %}
+
+    {% if site.social.instagram.url %}
+    <li>
+      <a href="{{ site.social.instagram.url }}" target="_blank" rel="noopener"
+        aria-label="{{ site.social.instagram.name }}">
+        {% include icons/{{ site.social.instagram.icon }} %}
+      </a>
+    </li>
+    {% endif %}
+
+    {% if site.social.linkedin.url %}
+    <li>
+      <a href="{{ site.social.linkedin.url }}" target="_blank" rel="noopener"
+        aria-label="{{ site.social.linkedin.name }}">
+        {% include icons/{{ site.social.linkedin.icon }} %}
+      </a>
+    </li>
+    {% endif %}
+
   </ul>
 </footer>

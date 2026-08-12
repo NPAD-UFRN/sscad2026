@@ -37,11 +37,12 @@ exclude:
   - vendor
   - scripts
 
-
 social:
-  - name: Instagram
-    url: https://instagram.com/npad_ufrn
-    icon: instagram.svg
-  - name: LinkedIn
-    url: https://www.linkedin.com/company/n%C3%BAcleo-de-processamento-de-alto-desempenho-npad/
-    icon: linkedin.svg
+  instagram:
+    url: "https://instagram.com/npad_ufrn"
+    name: "Instagram"
+    icon: "instagram.svg"
+  linkedin:
+    url: "https://www.linkedin.com/company/n%C3%BAcleo-de-processamento-de-alto-desempenho-npad"
+    name: "LinkedIn"
+    icon: "linkedin.svg"
