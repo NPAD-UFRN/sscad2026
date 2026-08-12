@@ -1,120 +1,122 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{{ page.title }} - {{ site.title }}</title>
-        <link rel="stylesheet" 
-        href="{{ '/assets/css/geral.css' | relative_url }}">
-        <link rel="stylesheet" 
-        href="{{ '/assets/css/styles.css' | relative_url }}"> {% seo %}
-        <link rel="icon" type="image/x-icon" 
-        href="{{ '/assets/img/favicon.ico' | relative_url }}">
-    </head>
-    <body>
-        
-    {% include nav.html %} 
 
-        <header class="text-center">
-            <div class="container-fluid">
-                <div id="sbc_logo">
-                    <a href="https://www.sbc.org.br/" target="_blank">
-                        <span>Realização:</span>
-                        <br>
-                        <img src="{{ '/assets/img/sbc_white.png' | relative_url }}">
-                    </a>
-                </div>
-                <div class="row">
-                    <div class="col-md-8 offset-md-2 text-center">
-                        <h1>{{site.title}}</h1>
-                        <h2>
-                            {{site.description}}
-                        </h2>
-                        <h3><span>3 a 5 de Novembro, 2026 — Natal, RN,
-                                Brasil</span></h3>
-                    </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/geral.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}"> {% seo %}
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+</head>
+
+<body>
+
+    {% include nav.html %}
+
+    <header class="text-center">
+        <div class="container-fluid">
+            <div id="sbc_logo">
+                <a href="https://www.sbc.org.br/" target="_blank">
+                    <span>Realização:</span>
+                    <br>
+                    <img src="{{ '/assets/img/sbc_white.png' | relative_url }}">
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h1>{{site.title}}</h1>
+                    <h2>
+                        {{site.description}}
+                    </h2>
+                    <h3><span>3 a 5 de Novembro, 2026 — Natal, RN,
+                            Brasil</span></h3>
                 </div>
             </div>
-        </header>
-        {{ content }}
-        <footer style="text-align: center;">
-            <div class="grid-container">
-				<div class="sbc">
-					<b><p>Realização</p></b>
-					<figure class="sbc">
-						<a href="https://www.sbc.org.br" target="_blank"><img src="{{ '/assets/img/sbc_logo.png' | relative_url }}" class="img_prata"></a>
-						<img src="{{ '/assets/img/spacer.png' | relative_url }}" style="width: 5%;height: 1%;">
-						<a href="https://www2.sbc.org.br/ce-acpad/"
-                            target="_blank"><img id="ceacpad" src="{{ '/assets/img/ceacpad.png' | relative_url }}" class="img_prata" ></a>
-					</figure>
-				</div>
-				<div class="org">
-					<b><p>Organização</p></b>
-					<figure class="org-logos">
-                        <div class="org-row">
-                            <a href="https://www.ufrn.br" target="_blank">
-                                <img src="{{ '/assets/img/logo/ufrn.png' | relative_url }}" class="img_diamante">
-                            </a>
-                            <a href="https://www.npad.ufrn.br" target="_blank">
-                                <img src="{{ '/assets/img/logo/npad.png' | relative_url }}" class="img_diamante">
-                            </a>
-                        </div>
-                        <div class="org-row">
-                                                        <a href="https://www.uff.br" target="_blank">
-                                <img src="{{ '/assets/img/logo/uff.png' | relative_url }}" class="img_diamante">
-                            </a>
-                        </div>
-					</figure>
-				</div>
-				<div class="fomento">
-					<b><p>Fomento</p></b>
-					<figure class="org">
-						<a href="https://gov.br/cnpq" target="_blank">
-                            <img src="{{ '/assets/img/logo/cnpq.png' }}" class="img_diamante">
+        </div>
+    </header>
+    {{ content }}
+    <footer style="text-align: center; padding-bottom: 0;">
+        <div class="grid-container">
+            <div class="sbc">
+                <b>
+                    <p>Realização</p>
+                </b>
+                <figure class="sbc">
+                    <a href="https://www.sbc.org.br" target="_blank"><img
+                            src="{{ '/assets/img/sbc_logo.png' | relative_url }}" class="img_prata"></a>
+                    <img src="{{ '/assets/img/spacer.png' | relative_url }}" style="width: 5%;height: 1%;">
+                    <a href="https://www2.sbc.org.br/ce-acpad/" target="_blank"><img id="ceacpad"
+                            src="{{ '/assets/img/ceacpad.png' | relative_url }}" class="img_prata"></a>
+                </figure>
+            </div>
+            <div class="org">
+                <b>
+                    <p>Organização</p>
+                </b>
+                <figure class="org-logos">
+                    <div class="org-row">
+                        <a href="https://www.ufrn.br" target="_blank">
+                            <img src="{{ '/assets/img/logo/ufrn.png' | relative_url }}" class="img_diamante">
                         </a>
- 						<!--<img src="{{ '/assets/img/spacer.png' | relative_url }}" style="width: 5%;height: 1%;">
+                        <a href="https://www.npad.ufrn.br" target="_blank">
+                            <img src="{{ '/assets/img/logo/npad.png' | relative_url }}" class="img_diamante">
+                        </a>
+                    </div>
+                    <div class="org-row">
+                        <a href="https://www.uff.br" target="_blank">
+                            <img src="{{ '/assets/img/logo/uff.png' | relative_url }}" class="img_diamante">
+                        </a>
+                    </div>
+                </figure>
+            </div>
+            <div class="fomento">
+                <b>
+                    <p>Fomento</p>
+                </b>
+                <figure class="org">
+                    <a href="https://gov.br/cnpq" target="_blank">
+                        <img src="{{ '/assets/img/logo/cnpq.png' }}" class="img_diamante">
+                    </a>
+                    <!--<img src="{{ '/assets/img/spacer.png' | relative_url }}" style="width: 5%;height: 1%;">
 						<a href="https://www.capes.gov.br" target="_blank"><img
                         src="{{ '/assets/img/capes.png' | relative_url }}"
                         class="img_diamante"></a>-->
-                    </figure>
-				</div>
-				<div class="prata">
-					<br>
-					<b><p>Patrocinadores</p></b>
-				</div>
+                </figure>
+            </div>
+            <div class="prata">
+                <br>
+                <b>
+                    <p>Patrocinadores</p>
+                </b>
+            </div>
 
-                <!--
-				<div class="ouro">
-					<p>Ouro</p>
-					<figure class="org">
-						<a href="https://www.nvidia.com" target="_blank"><img src="{{ '/assets/img/nvidia-dell.png' | relative_url }}" class="img_prata"></a>
-						<a href="https://www.hpe.com" target="_blank"><img src="{{ '/assets/img/Logo_AMR_HPE.png' | relative_url }}" class="img_prata"></a>
-					</figure>
-				</div>-->
-				<div class="prata">
-					<p>Prata</p>
-					<figure class="org">
-                        <a href="https://www.cesar.org.br/" target="_blank" rel="noopener noreferrer">
-                            <img src="{{ '/assets/img/logo/cesar.png' | relative_url }}" class="img_diamante">
-                        </a>
-                    </figure> 
-                </div>
-                <!-- row com icones de redes sociais -->
-                
-			</div>
-           <!-- <a class="btn btn-social" href="https://www.instagram.com/wscad2024/" target="_blank">
-                <i class="bi bi-instagram"></i>
-            </a>
-            <a class="btn btn-social" href="https://www.facebook.com/wscad2024/" target="_blank">
-                <i class="bi bi-facebook"></i>
-            </a> 
-            <br /><br /> -->
-                    </footer>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+            <div class="ouro">
+                <p>Ouro</p>
+                <figure class="org">
+                    <a href="https://kaiak.ai/pt/index" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ '/assets/img/kaiak.png' | relative_url }}" class="img_diamante">
+                    </a>
+                </figure>
+            </div>
+            <div class="prata">
+                <p>Prata</p>
+                <figure class="org">
+                    <a href="https://www.cesar.org.br/" target="_blank" rel="noopener noreferrer">
+                        <img src="{{ '/assets/img/logo/cesar.png' | relative_url }}" class="img_diamante">
+                    </a>
+                </figure>
+            </div>
+            <!-- row com icones de redes sociais -->
+
+        </div>
+        {% include footer.html %}
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

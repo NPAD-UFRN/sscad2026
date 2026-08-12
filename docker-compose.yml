@@ -1,16 +1,17 @@
-version: '3.8'
 services:
   sscad:
-    image: docker.io/jekyll/jekyll
+    image: docker.io/jekyll/jekyll:4
     container_name: sscad
     ports:
       - "4000:4000"
+      - "35729:35729"        # livereload
     volumes:
       - .:/srv/jekyll:Z
       - sscad_gems:/usr/local/bundle
     environment:
       - JEKYLL_ROOTLESS=1
-    command: jekyll serve
+      - BUNDLE_PATH=/usr/local/bundle
+    command: sh -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload"
 
 volumes:
   sscad_gems:
