@@ -6,7 +6,13 @@
     }
     #sscad_logo {
         margin-left: 0rem;
-        height: 100px;
+        height: 50px;
+        max-height: 50px;
+        width: auto;
+        @media (min-width: 992px) {
+            height: 75px;
+            max-height: 75px;
+        }
     }
     .navbar-brand {
         font-weight: 900;
@@ -19,38 +25,46 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-blend-mode: multiply;
     background-color: #777777;
 
-    padding-top: 14rem;
-    padding-bottom: 7rem;
+    @media (min-width: 992px) {
+        background-attachment: fixed;
+    }
+
+    padding-top: clamp(6rem, 12vw, 14rem);
+    padding-bottom: clamp(3rem, 6vw, 7rem);
     margin-bottom: 1em;
 
     color: white;
 
     // Conference logo
     img {
-        width: 30vw;
+        width: clamp(140px, 30vw, 320px);
     }
 
     // Conference name
     h1 {
         font-weight: 900;
-        font-size: 4rem;
+        font-size: clamp(2rem, 5vw, 4rem);
+        word-wrap: break-word;
     }
     h2 {
         font-weight: 300;
-        font-size: 2rem;
+        font-size: clamp(1.1rem, 2.5vw, 2rem);
     }
     h3 {
         span {
-            padding: 0.75rem;
+            padding: 0.65rem 1.25rem;
             background-color: white;
             color: black;
             font-weight: 300;
-            font-size: 1rem;
+            font-size: clamp(0.85rem, 2vw, 1rem);
             border-radius: 4rem;
+            display: inline-block;
+            max-width: 90%;
+            white-space: normal;
         }
     }
     #sbc_logo {
@@ -58,26 +72,28 @@ header {
             color: white;
             text-decoration: none;
 
-            position: absolute;
-            
             img {
                 width: auto;
             }
 
-            @media (max-width: 768px) {
-                top: 140px;
-                left: 10px;
+            @media (max-width: 991px) {
+                position: relative;
+                top: auto;
+                left: auto;
+                display: inline-block;
+                margin-bottom: 1rem;
 
                 span {
-                    font-size: 0.6rem
+                    font-size: 0.75rem;
                 }
 
                 img {
-                    max-height: 80px;
+                    max-height: 70px;
                 }
             }
 
-            @media (min-width: 769px) {
+            @media (min-width: 992px) {
+                position: absolute;
                 top: 130px;
                 left: 20px;
 
