@@ -17,14 +17,14 @@ p {
 
 .img_ouro {
     width: auto;
-    height: 140px;
+    height: 210px;
     max-width: 85%;
     object-fit: contain;
 }
 
 .img_prata {
     width: auto;
-    height: 80px;
+    height: 120px;
     max-width: 80%;
     object-fit: contain;
 }
@@ -57,13 +57,13 @@ p {
 
     .img_ouro {
         width: auto;
-        height: 180px;
-        max-width: 260px;
+        height: 250px;
+        max-width: 400px;
     }
 
     .img_prata {
         width: auto;
-        height: 85px;
+        height: 120px;
         max-width: 210px;
     }
 
