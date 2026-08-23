@@ -11,6 +11,8 @@
       url: "/cfp_ctd/"
     - title: "WEAC"
       url: "/cfp_weac/"
+    - title: "WPADS"
+      url: "/cfp_wpads/"
     - title: "Minicursos"
       url: "/cfp_minicursos/"
     - title: "Workshops"
