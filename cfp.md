@@ -23,7 +23,7 @@ Nordeste.
 ### Datas importantes:
 
 - Submissão de artigos: 17 de agosto de 2026 (**prorrogado**)
-- Notificação aos autores: 28 de setembro de 2026
+- Notificação aos autores: 5 de outubro de 2026 (**prorrogado**)
 - Submissão da versão final: 19 de outubro de 2026
 
 ### Tópicos de interesse:
