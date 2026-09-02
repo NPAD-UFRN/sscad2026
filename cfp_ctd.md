@@ -11,7 +11,7 @@ A Comissão Especial de Arquitetura de Computadores está promovendo mais uma ed
 ## Datas Importantes
 
 - Submissão de trabalhos: 30/08/2026
-- Notificação de selecionados para apresentação: 18/09/2026
+- Notificação de selecionados para apresentação: 05/10/2026 (**Prorrogado**)
 - Notificação do resultado final: na cerimônia de premiação do evento
 
 ## Tópicos de Interesse
