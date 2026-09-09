@@ -36,6 +36,7 @@ exclude:
   - .dockerignore
   - vendor
   - scripts
+  - old
 
 social:
   instagram:

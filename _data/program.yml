@@ -1,0 +1,962 @@
+- id: first-day
+  title: Terça-Feira
+  date: 03/11/2026
+  rooms:
+  - id: aud_ct
+    name: Aud. CT (216)
+    style: aud_ct
+  - id: aud_ctec
+    name: Aud. CTEC (85)
+    style: aud_ctec
+  - id: aud_laut
+    name: Aud. LAUT
+    style: aud_laut
+  - id: aud_npiti
+    name: Aud. nPITI
+    style: aud_npiti
+  - id: lab_dca
+    name: LabGrad DCA
+    style: lab_dca
+  - id: lab_dimap
+    name: Lab DIMAp
+    style: lab_dimap
+  - id: maratona
+    name: Maratona
+    style: maratona
+  blocks:
+  - start: "07:00"
+    end: "08:00"
+    hide_details: 'yes'
+    activities:
+    - id: credenciamento
+      type: blank
+      style: blank
+      title: Boas-vindas e cadastramento
+      room: Auditório do CT
+  - start: "08:00"
+    end: "08:50"
+    hide_details: 'yes'
+    activities:
+    - id: abertura
+      type: blank
+      style: blank
+      title: Sessão de abertura
+      room: Auditório do CT
+  - start: "08:50"
+    end: "09:50"
+    activities:
+    - id: plenaria1
+      type: keynote
+      style: aud_ct
+      url: '#plenaria1'
+      title: Palestra plenária 1
+      room: Auditório do CT (216)
+      description: Palestra plenária de abertura
+  - start: "09:50"
+    end: "10:20"
+    hide_details: 'yes'
+    activities:
+    - id: coffee
+      type: blank
+      style: blank
+      title: Pausa do café
+      room: Foyer Aut. CT
+  - start: "10:20"
+    end: "11:00"
+    activities:
+    - id: pe-exclusiva
+      type: keynote
+      style: aud_ct
+      url: '#pe-exclusiva'
+      title: Palestra empresarial exclusiva
+      room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: weac
+      type: workshop
+      style: aud_laut
+      url: '#weac'
+      title: WEAC
+      room: Auditório do LAUT
+      description: Workshop sobre Educação em Arquitetura de Computadores
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: mc1
+      type: tutorial
+      style: lab_dca
+      url: '#mc1'
+      title: Minicurso 1
+      subtitle: (180)
+      room: LabGrad DCA
+      description: Minicurso SSCAD 2026 - Submissão 180
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+  - start: "11:00"
+    end: "12:20"
+    activities:
+    - id: st1
+      type: session
+      style: aud_ct
+      url: '#st1'
+      title: Sessão técnica 1
+      room: Auditório do CT (216)
+    - id: st2
+      type: session
+      style: aud_ctec
+      url: '#st2'
+      title: Sessão técnica 2
+      room: Auditório do CTEC (85)
+    - id: weac
+      type: workshop
+      style: aud_laut
+      url: '#weac'
+      title: WEAC
+      room: Auditório do LAUT
+      hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: mc1
+      type: tutorial
+      style: lab_dca
+      url: '#mc1'
+      title: Minicurso 1
+      subtitle: (180)
+      room: LabGrad DCA
+      hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+  - start: "12:20"
+    end: "14:00"
+    hide_details: 'yes'
+    activities:
+    - id: almoco
+      type: blank
+      style: blank
+      title: Almoço
+  - start: "14:00"
+    end: "14:50"
+    activities:
+    - id: pe1
+      type: keynote
+      style: aud_ct
+      url: '#pe1'
+      title: Palestras empresariais 1
+      subtitle: (2 apresentações)
+      room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: wic1
+      type: workshop
+      style: aud_laut
+      url: '#wic1'
+      title: WIC
+      room: Auditório do LAUT
+      description: Workshop de Iniciação Científica (SSCAD-WIC)
+    - id: ctd
+      type: workshop
+      style: aud_npiti
+      url: '#ctd'
+      title: CTD
+      room: Auditório do nPITI
+      description: Concurso de Teses e Dissertações (SSCAD-CTD)
+    - id: mc2
+      type: tutorial
+      style: lab_dca
+      url: '#mc2'
+      title: Minicurso 2
+      subtitle: (791)
+      room: LabGrad DCA
+      description: Minicurso SSCAD 2026 - Submissão 791
+    - id: mc3
+      type: tutorial
+      style: lab_dimap
+      url: '#mc3'
+      title: Minicurso 3
+      subtitle: (424)
+      room: Lab DIMAp
+      description: Minicurso SSCAD 2026 - Submissão 424
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      room: Maratona de Programação Paralela
+  - start: "14:50"
+    end: "16:10"
+    activities:
+    - id: st3
+      type: session
+      style: aud_ct
+      url: '#st3'
+      title: Sessão técnica 3
+      room: Auditório do CT (216)
+    - id: st4
+      type: session
+      style: aud_ctec
+      url: '#st4'
+      title: Sessão técnica 4
+      room: Auditório do CTEC (85)
+    - id: wic1
+      type: workshop
+      style: aud_laut
+      url: '#wic1'
+      title: WIC
+      room: Auditório do LAUT
+      hide_details: 'yes'
+    - id: ctd
+      type: workshop
+      style: aud_npiti
+      url: '#ctd'
+      title: CTD
+      room: Auditório do nPITI
+      hide_details: 'yes'
+    - id: mc2
+      type: tutorial
+      style: lab_dca
+      url: '#mc2'
+      title: Minicurso 2
+      subtitle: (791)
+      room: LabGrad DCA
+      hide_details: 'yes'
+    - id: mc3
+      type: tutorial
+      style: lab_dimap
+      url: '#mc3'
+      title: Minicurso 3
+      subtitle: (424)
+      room: Lab DIMAp
+      hide_details: 'yes'
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "16:10"
+    end: "17:00"
+    activities:
+    - id: coffee
+      type: blank
+      style: blank
+      title: Pausa do café
+      room: Foyer Aut. CT
+      hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "17:00"
+    end: "18:00"
+    activities:
+    - id: plenaria2
+      type: keynote
+      style: aud_ct
+      url: '#plenaria2'
+      title: Palestra plenária 2
+      room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "18:00"
+    end: "22:00"
+    activities:
+    - id: quebra-gelo
+      type: blank
+      style: blank
+      url: '#quebra-gelo'
+      title: Quebra gelo
+      room: Rest/Bar
+      description: Confraternização inicial do evento no Restaurante / Bar
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+- id: second-day
+  title: Quarta-Feira
+  date: 04/11/2026
+  rooms:
+  - id: aud_ct
+    name: Aud. CT (216)
+    style: aud_ct
+  - id: aud_ctec
+    name: Aud. CTEC (85)
+    style: aud_ctec
+  - id: aud_laut
+    name: Aud. LAUT
+    style: aud_laut
+  - id: lab_dimap
+    name: Lab DIMAp
+    style: lab_dimap
+  - id: maratona
+    name: Maratona
+    style: maratona
+  blocks:
+  - start: "07:00"
+    end: "08:00"
+    activities:
+    - id: credenciamento
+      type: blank
+      style: blank
+      title: Boas-vindas e cadastramento
+      room: Auditório do CT
+      hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "08:00"
+    end: "09:20"
+    activities:
+    - id: st5
+      type: session
+      style: aud_ct
+      url: '#st5'
+      title: Sessão técnica 5
+      room: Auditório do CT (216)
+    - id: st6
+      type: session
+      style: aud_ctec
+      url: '#st6'
+      title: Sessão técnica 6
+      room: Auditório do CTEC (85)
+    - id: wmad
+      type: workshop
+      style: aud_laut
+      url: '#wmad'
+      title: W-MAD
+      room: Auditório do LAUT
+      description: Workshop de Modelagem, Análise e Desenvolvimento de Sistemas
+    - id: mc4
+      type: tutorial
+      style: lab_dimap
+      url: '#mc4'
+      title: Minicurso 4
+      subtitle: (182)
+      room: Lab DIMAp
+      description: Minicurso SSCAD 2026 - Submissão 182
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "09:20"
+    end: "09:50"
+    activities:
+    - id: mpe1
+      type: keynote
+      style: aud_ct
+      url: '#mpe1'
+      title: Minipalestras empresariais 1
+      subtitle: (2 apresentações)
+      room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: wmad
+      type: workshop
+      style: aud_laut
+      url: '#wmad'
+      title: W-MAD
+      room: Auditório do LAUT
+      hide_details: 'yes'
+    - id: mc4
+      type: tutorial
+      style: lab_dimap
+      url: '#mc4'
+      title: Minicurso 4
+      subtitle: (182)
+      room: Lab DIMAp
+      hide_details: 'yes'
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "09:50"
+    end: "10:20"
+    activities:
+    - id: coffee
+      type: blank
+      style: blank
+      title: Pausa do café
+      room: Foyer Aut. CT / Lab DIMAp
+      hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "10:20"
+    end: "11:20"
+    activities:
+    - id: st7
+      type: session
+      style: aud_ct
+      url: '#st7'
+      title: Sessão técnica 7
+      room: Auditório do CT (216)
+    - id: st8
+      type: session
+      style: aud_ctec
+      url: '#st8'
+      title: Sessão técnica 8
+      room: Auditório do CTEC (85)
+    - id: wmad
+      type: workshop
+      style: aud_laut
+      url: '#wmad'
+      title: W-MAD
+      room: Auditório do LAUT
+      hide_details: 'yes'
+    - id: mc4
+      type: tutorial
+      style: lab_dimap
+      url: '#mc4'
+      title: Minicurso 4
+      subtitle: (ext. opc.)
+      room: Lab DIMAp
+      hide_details: 'yes'
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "11:20"
+    end: "12:20"
+    activities:
+    - id: plenaria-lucia
+      type: keynote
+      style: aud_ct
+      url: '#plenaria-lucia'
+      title: Palestra plenária
+      subtitle: Profª. Lúcia Drummond
+      authors: Lúcia Drummond (UFF)
+      room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "12:20"
+    end: "14:00"
+    activities:
+    - id: almoco
+      type: blank
+      style: blank
+      title: Almoço
+      hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "14:00"
+    end: "15:20"
+    activities:
+    - id: st9
+      type: session
+      style: aud_ct
+      url: '#st9'
+      title: Sessão técnica 9
+      room: Auditório do CT (216)
+    - id: st10
+      type: session
+      style: aud_ctec
+      url: '#st10'
+      title: Sessão técnica 10
+      room: Auditório do CTEC (85)
+    - id: wmad
+      type: workshop
+      style: aud_laut
+      url: '#wmad'
+      title: W-MAD
+      room: Auditório do LAUT
+      hide_details: 'yes'
+    - id: mc5
+      type: tutorial
+      style: lab_dimap
+      url: '#mc5'
+      title: Minicurso 5
+      subtitle: (460)
+      room: Lab DIMAp
+      description: Minicurso SSCAD 2026 - Submissão 460
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "15:20"
+    end: "15:50"
+    activities:
+    - id: mpe2
+      type: keynote
+      style: aud_ct
+      url: '#mpe2'
+      title: Minipalestras empresariais 2
+      subtitle: (2 apresentações)
+      room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: wmad
+      type: workshop
+      style: aud_laut
+      url: '#wmad'
+      title: W-MAD
+      room: Auditório do LAUT
+      hide_details: 'yes'
+    - id: mc5
+      type: tutorial
+      style: lab_dimap
+      url: '#mc5'
+      title: Minicurso 5
+      subtitle: (460)
+      room: Lab DIMAp
+      hide_details: 'yes'
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "15:50"
+    end: "16:20"
+    activities:
+    - id: coffee
+      type: blank
+      style: blank
+      title: Pausa do café
+      room: Foyer Aut. CT / Lab DIMAp
+      hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "16:20"
+    end: "17:20"
+    activities:
+    - id: plenaria-edson
+      type: keynote
+      style: aud_ct
+      url: '#plenaria-edson'
+      title: Palestra plenária
+      subtitle: Prof. Edson Borin
+      authors: Edson Borin (Unicamp)
+      room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "17:20"
+    end: "18:20"
+    activities:
+    - id: ce-acpad
+      type: meeting
+      style: aud_ct
+      url: '#ce-acpad'
+      title: Reunião CE-ACPAD
+      room: Auditório do CT (216)
+      description: Reunião da Comissão Especial de Arquitetura de Computadores e Processamento
+        de Alto Desempenho
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: mc5
+      type: tutorial
+      style: lab_dimap
+      url: '#mc5'
+      title: Minicurso 5
+      subtitle: (ext. opc.)
+      room: Lab DIMAp
+      hide_details: 'yes'
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "19:00"
+    end: "22:00"
+    hide_details: 'yes'
+    activities:
+    - id: jantar
+      type: blank
+      style: blank
+      url: '#jantar'
+      title: Jantar de confraternização
+      room: Rest/Bar
+      description: Jantar oficial de confraternização dos participantes do SSCAD 2026
+- id: third-day
+  has_panel: 'yes'
+  title: Quinta-Feira
+  date: 05/11/2026
+  rooms:
+  - id: aud_ct
+    name: Aud. CT (216)
+    style: aud_ct
+  - id: aud_ctec
+    name: Aud. CTEC (85)
+    style: aud_ctec
+  - id: aud_laut
+    name: Aud. LAUT
+    style: aud_laut
+  - id: aud_npiti
+    name: Aud. nPITI
+    style: aud_npiti
+  - id: lab_dimap
+    name: Minicursos
+    style: lab_dimap
+  blocks:
+  - start: "07:00"
+    end: "08:00"
+    hide_details: 'yes'
+    activities:
+    - id: credenciamento
+      type: blank
+      style: blank
+      title: Boas-vindas e cadastramento
+      room: Auditório do CT
+  - start: "08:00"
+    end: "09:00"
+    activities:
+    - id: st11
+      type: session
+      style: aud_ct
+      url: '#st11'
+      title: Sessão técnica 11
+      room: Auditório do CT (216)
+    - id: st12
+      type: session
+      style: aud_ctec
+      url: '#st12'
+      title: Sessão técnica 12
+      room: Auditório do CTEC (85)
+    - id: wic2
+      type: workshop
+      style: aud_laut
+      url: '#wic2'
+      title: WIC
+      room: Auditório do LAUT
+      description: Workshop de Iniciação Científica (SSCAD-WIC)
+    - id: wpads
+      type: workshop
+      style: aud_npiti
+      url: '#wpads'
+      title: WPADS
+      room: Auditório do nPITI
+      description: Workshop de Processamento de Alto Desempenho em Sistemas Embarcados
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+  - start: "09:00"
+    end: "09:50"
+    activities:
+    - id: pe2
+      type: keynote
+      style: aud_ct
+      url: '#pe2'
+      title: Palestras empresariais 2
+      subtitle: (2 apresentações)
+      room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: wic2
+      type: workshop
+      style: aud_laut
+      url: '#wic2'
+      title: WIC
+      room: Auditório do LAUT
+      hide_details: 'yes'
+    - id: wpads
+      type: workshop
+      style: aud_npiti
+      url: '#wpads'
+      title: WPADS
+      room: Auditório do nPITI
+      hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+  - start: "09:50"
+    end: "10:20"
+    hide_details: 'yes'
+    activities:
+    - id: coffee
+      type: blank
+      style: blank
+      title: Pausa do café
+      room: Foyer Aut. CT
+  - start: "10:20"
+    end: "11:20"
+    activities:
+    - id: plenaria5
+      type: keynote
+      style: aud_ct
+      url: '#plenaria5'
+      title: Palestra plenária 5
+      room: Auditório do CT (216)
+  - start: "11:20"
+    end: "12:20"
+    activities:
+    - id: painel
+      type: panel
+      style: aud_ct
+      url: '#painel'
+      title: Painel temático
+      room: Auditório do CT (216)
+      description: Painel temático de debate com especialistas
+  - start: "12:20"
+    end: "14:00"
+    hide_details: 'yes'
+    activities:
+    - id: almoco
+      type: blank
+      style: blank
+      title: Almoço
+  - start: "14:00"
+    end: "15:20"
+    activities:
+    - id: st13
+      type: session
+      style: aud_ct
+      url: '#st13'
+      title: Sessão técnica 13
+      room: Auditório do CT (216)
+    - id: st14
+      type: session
+      style: aud_ctec
+      url: '#st14'
+      title: Sessão técnica 14
+      room: Auditório do CTEC (85)
+    - id: wic2
+      type: workshop
+      style: aud_laut
+      url: '#wic2'
+      title: WIC
+      room: Auditório do LAUT
+      hide_details: 'yes'
+    - id: wpads
+      type: workshop
+      style: aud_npiti
+      url: '#wpads'
+      title: WPADS
+      room: Auditório do nPITI
+      hide_details: 'yes'
+    - id: mc-praticas
+      type: tutorial
+      style: lab_dimap
+      url: '#mc-praticas'
+      title: Minicursos
+      room: Lab DIMAp / DCA
+      description: Atividades práticas de minicursos
+  - start: "15:20"
+    end: "15:50"
+    hide_details: 'yes'
+    activities:
+    - id: coffee
+      type: blank
+      style: blank
+      title: Pausa do café
+      room: Foyer Aut. CT
+  - start: "15:50"
+    end: "16:50"
+    activities:
+    - id: plenaria6
+      type: keynote
+      style: aud_ct
+      url: '#plenaria6'
+      title: Palestra plenária 6
+      room: Auditório do CT (216)
+  - start: "16:50"
+    end: "17:50"
+    hide_details: 'yes'
+    activities:
+    - id: encerramento
+      type: blank
+      style: blank
+      url: '#encerramento'
+      title: Cerimônia de Premiação e Encerramento
+      room: Auditório do CT (216)
