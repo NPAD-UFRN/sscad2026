@@ -1,0 +1,107 @@
+---
+layout: default
+title: "Programação Preliminar"
+permalink: /program/
+---
+
+<section id="program">
+    <br><br>
+    <h1 class="text-center">Programação Preliminar</h1>
+    <div class="row justify-content-center mt-3 mb-4">
+        <div class="col-md-8 col-lg-6 text-center">
+            <div class="alert alert-warning py-2 px-3 mb-0" role="alert">
+                <strong>Aviso:</strong> Esta programação é preliminar e o cronograma pode sofrer alterações até a data do evento.
+            </div>
+        </div>
+    </div>
+    <section id="program_overview">
+        <div class="container-fluid">
+            <div class="row px-5">
+                <ul class="nav nav-pills nav-fill justify-content-center black" id="program-tab" role="tablist">
+                    {% for day in site.data.program %}
+                        <li class="nav-item" role="presentation">
+                            {%- if forloop.index == 1 -%}
+                                <button class="nav-link active" id="tab-{{ day.id }}" data-bs-toggle="tab"
+                                    data-bs-target="#program-{{ day.id }}" type="button" role="tab"
+                                    aria-controls="program-{{ day.id }}" aria-selected="true">
+                            {%- else -%}
+                                <button class="nav-link" id="tab-{{ day.id }}" data-bs-toggle="tab"
+                                    data-bs-target="#program-{{ day.id }}" type="button" role="tab"
+                                    aria-controls="program-{{ day.id }}" aria-selected="false">
+                            {%- endif -%}
+                                {{ day.title }}
+                                <br>
+                                {{ day.date }}
+                                </button>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div> <!-- days -->
+
+            <div class="tab-content mt-4">
+                {% for day in site.data.program %}
+                    {%- if forloop.index == 1 -%}
+                        <div id="program-{{day.id}}" class="tab-pane show active" role="tabpanel">
+                    {%- else -%}
+                        <div id="program-{{day.id}}" class="tab-pane" role="tabpanel">
+                    {%- endif -%}
+                            <!-- Cabeçalho de Horários / Salas do Dia -->
+                            <div class="container">
+                                <div class="row program_header"> 
+                                    <div class="col-2 text-center block_time">
+                                        <b>Horário/Local:</b>
+                                    </div>
+                                    {% if day.rooms %}
+                                        {% for room in day.rooms %}
+                                            <div class="col text-center program_activity {{ room.style }}">
+                                                <b>{{ room.name }}</b>
+                                            </div>
+                                        {% endfor %}
+                                    {% else %}
+                                        <div class="col text-center program_activity auditorio1"><b>Auditório 1 (BCo)</b></div>
+                                        <div class="col text-center program_activity auditorio2"><b>Auditório 2 (BCo)</b></div>
+                                        <div class="col text-center program_activity auditorio3"><b>Auditório 3 (BCo)</b></div>
+                                        <div class="col text-center program_activity le6"><b>LE6 (DC)</b></div>
+                                        <div class="col text-center program_activity maker"><b>Espaço Maker (DC)</b></div>
+                                        <div class="col text-center program_activity"><b>Bento Prado</b></div>
+                                    {% endif %}
+                                </div>
+                            </div>
+
+                            <!-- Blocos de Horário do Dia -->
+                            {% for block in day.blocks %} 
+                                <hr> 
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-2 text-center block_time">
+                                            <p class="block_time_text">
+                                                {{ block.start }} - {{ block.end }}
+                                            </p>
+                                        </div>
+                                        {% for activity in block.activities %}
+                                            <div class="col text-center program_activity {{activity.style}}">
+                                                {% if activity.url and activity.url contains '://' %}
+                                                    <a href="{{activity.url}}" target="_blank" rel="noopener noreferrer" class="activity_title">
+                                                        <p class="activity_title">
+                                                            {{ activity.title }}
+                                                            {% if activity.subtitle %}<br><small class="text-muted">{{ activity.subtitle }}</small>{% endif %}
+                                                        </p>
+                                                    </a>
+                                                {% else %}
+                                                    <p class="activity_title">
+                                                        {{ activity.title }}
+                                                        {% if activity.subtitle %}<br><small class="text-muted">{{ activity.subtitle }}</small>{% endif %}
+                                                    </p>
+                                                {% endif %}
+                                            </div>
+                                        {% endfor %}
+                                    </div> <!-- block time start end -->
+                                </div>
+                            {% endfor %} <!-- block in day.block -->
+                        </div> <!-- tab-pane -->
+                {% endfor %} <!-- day in site.data.program -->
+            </div> <!-- tab-content -->
+        </div> <!-- container-fluid -->
+    </section> <!-- program overview -->
+    <br><br>
+</section> <!-- program -->

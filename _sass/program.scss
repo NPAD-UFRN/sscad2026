@@ -24,6 +24,28 @@ div {
     &.maker {
       background-color: #ffddbb;
     }
+    // Cores das Salas e Espaços SSCAD 2026 (Campus UFRN)
+    &.aud_ct {
+      background-color: #dbeafe;
+    }
+    &.aud_ctec {
+      background-color: #e0f2fe;
+    }
+    &.aud_laut {
+      background-color: #dcfce7;
+    }
+    &.aud_npiti {
+      background-color: #fef3c7;
+    }
+    &.lab_dca {
+      background-color: #ede9fe;
+    }
+    &.lab_dimap {
+      background-color: #fae8ff;
+    }
+    &.maratona {
+      background-color: #ffedd5;
+    }
     &.blank {
       background-color: #e9e9e9;
     }
@@ -83,4 +105,13 @@ div {
 .nav-link,
 .nav-pills > .nav-item > .nav-link:focus:not(.active) {
   color: #000000;
+}
+
+.activity_detail_card {
+  transition: all 0.3s ease;
+  &:target {
+    border-color: #0d6efd !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    background-color: #f0f7ff !important;
+  }
 }
