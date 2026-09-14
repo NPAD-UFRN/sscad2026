@@ -1,0 +1,40 @@
+- id: alba
+  name: Alba Cristina Magalhães Alves de Melo
+  affiliation: UnB
+  photo: wmad_speaker_alba.jpg
+  talk_label: "Palestra 1"
+  talk_title: "Pesquisa em Supercomputação e Bioinformática em Quatro Décadas: A Busca Incansável por Desempenho"
+  bio:
+    - "Alba Cristina Magalhães Alves de Melo obteve seu doutorado em Ciência da Computação pelo Institut National Polytechnique de Grenoble (INPG), na França, em 1996. Desde 1997, integra o Departamento de Ciência da Computação da Universidade de Brasília (UnB), onde atualmente é Professora Titular. Seus interesses de pesquisa abrangem computação de alto desempenho, bioinformática e computação em nuvem."
+    - "A Prof. Alba Melo é Membro Sênior do IEEE, vice-coordenadora da Comunidade Técnica do IEEE sobre Processamento Paralelo (TCPP) e membro do Comitê de Assessoramento em Ciência da Computação do CNPq (Brasil). Ela atua como Editora-Chefe Associada da seção de Aplicações do periódico Journal of Parallel and Distributed Systems (JPDC) e como editora associada de diversos periódicos de prestígio, tais como IEEE Transactions on Computers, IEEE Transactions on Parallel and Distributed Systems, ACM Computing Surveys e Future Generation Computer Systems. Foi General Co-Chair da conferência IEEE International Parallel and Distributed Processing Symposium (IPDPS) 2024 e atua em 2026 como track chair em conferências de renome na área de computação de alto desempenho, incluindo Supercomputing (SC) 2026 e SBAC-PAD 2026."
+  abstract: "Nesta palestra, discorrerei sobre os aspectos mais importantes da minha trajetória científica em quatro décadas, iniciando-se com pesquisas com o supercomputador Intel/Paragon (década de 1990) e terminando a narrativa com pesquisas utilizando o supercomputador Marenostrum (década de 2020). O foco será em como a escolha de temas e colaboradores tem papel fundamental para moldar uma carreira científica e em como a pesquisa nos apresenta grandes desafios e espera grandes soluções. Olhando para trás, reconheço que a pesquisa científica me proporcionou interações com pesquisadores extremamente inteligentes e criativos, em quatro continentes, incluindo pesquisadores brasileiros. E muito mais ainda está por vir! Espero que o relato da minha experiência inspire pesquisadoras e pesquisadores a atuarem na área de HPC pois a busca por desempenho é parte intrínseca da natureza humana e, por isso mesmo, não acaba nunca!"
+
+- id: giovana
+  name: Giovana Armani
+  affiliation: AWS
+  photo: wmad_speaker_giovana.jpg
+  talk_label: "Palestra 2"
+  talk_title: "Se funciona, tá bom? Como serverless pode revolucionar sua aplicação"
+  bio:
+    - "Giovana Armani, Gio, começou sua jornada técnica como desenvolvedora de software na Amazon. Depois de 4 anos na área, hoje Gio atua como Developer Advocate na AWS, criando conteúdo educacional sobre conceitos técnicos fundamentais e melhores práticas de desenvolvimento na nuvem."
+  abstract: "Essa é uma palestra interativa na qual introduzo conceitos de serverless no universo de cloud. Monto, com ajuda da plateia, duas arquiteturas de sistema e comparo os benefícios de cada uma delas."
+
+- id: rafaela
+  name: Rafaela Correia Brum
+  affiliation: UERJ
+  photo: wmad_speaker_rafaela.jpg
+  talk_label: "Palestra 3"
+  talk_title: "Carreiras e Oportunidades para Mulheres em HPC e Computação Científica"
+  bio:
+    - "Professora Adjunta do Departamento de Engenharia de Sistemas e Computação da Universidade do Estado do Rio de Janeiro (UERJ) desde 2024, com doutorado em Computação, com co-tutela entre a Sorbonne Université e a Universidade Federal Fluminense (2023). Atua como revisora nos periódicos Future Generation Computer Systems, Journal of Supercomputing e Journal of Parallel and Distributed Computing."
+  abstract: "Esta palestra será um bate-papo sobre caminhos e oportunidades para mulheres em HPC, tanto na área acadêmica quanto industrial. Além das oportunidades, será discutido também experiências vividas ao longo dos anos de estudos da palestrante, como iniciação científica, monitoria, voluntariado e intercâmbio acadêmico."
+
+- id: aline
+  name: Aline Galdino de Oliveira
+  affiliation: UFRJ
+  photo: wmad_speaker_aline.jpg
+  talk_label: "Palestra 4"
+  talk_title: "Desafios da Diversidade e Inclusão em Computação de Alto Desempenho"
+  bio:
+    - "Aline Galdino é mestranda em Engenharia de Sistemas e Computação pela Universidade Federal do Rio de Janeiro (UFRJ), onde pesquisa gerenciamento de recursos computacionais, resiliência, eficiência energética, computação sustentável e workflows de IA. Bacharel em Ciência da Computação pela Universidade do Estado do Rio de Janeiro (UERJ), combina sua trajetória acadêmica com o impacto social. Nascida e criada na Maré, um dos maiores complexos de favelas do Rio de Janeiro, atua na democratização do acesso à educação tecnológica por meio do projeto Conectando, iniciativa que já capacitou mais de 1.300 jovens nesse território."
+  abstract: "A Computação de Alto Desempenho é o motor de avanços científicos e tecnológicos essenciais, mas o desenvolvimento da área exige também a ampliação da diversidade em suas redes de pesquisa. Nesta apresentação, serão discutidos os principais desafios de inclusão no setor, abordando barreiras de acesso, permanência e representatividade em ambientes de alto desempenho. A palestra também apresenta experiências de participação em iniciativas internacionais de HPC, como a Supercomputing, refletindo sobre como programas educacionais, oportunidades de mentoria, redes de colaboração e ambientes mais inclusivos podem contribuir para uma comunidade de HPC mais diversa e inclusiva."

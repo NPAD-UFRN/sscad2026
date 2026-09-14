@@ -1,0 +1,63 @@
+date: "04/11/2026"
+blocks:
+  - start: "07h00"
+    end: "08h00"
+    activities:
+      - style: blank
+        title: Credenciamento e Boas-vindas
+  - start: "08h00"
+    end: "08h20"
+    activities:
+      - style: blank
+        title: Abertura Oficial do Workshop
+  - start: "08h20"
+    end: "09h00"
+    activities:
+      - style: wmad
+        title: "Painel 1: Panorama da participação feminina em HPC"
+        subtitle: "Moderadora: Aletéia Patrícia Favacho de Araújo"
+  - start: "09h00"
+    end: "09h50"
+    activities:
+      - style: wmad
+        title: "Palestra 1: Pesquisa em Supercomputação e Bioinformática em Quatro Décadas: A Busca Incansável por Desempenho"
+        subtitle: "Alba Cristina Magalhães Alves de Melo (UnB)"
+  - start: "09h50"
+    end: "10h20"
+    activities:
+      - style: blank
+        title: Intervalo / Networking
+  - start: "10h20"
+    end: "11h20"
+    activities:
+      - style: wmad
+        title: "Palestra 2: Se funciona, tá bom? Como serverless pode revolucionar sua aplicação"
+        subtitle: "Giovana Armani (AWS)"
+  - start: "11h20"
+    end: "14h00"
+    activities:
+      - style: blank
+        title: Intervalo para o almoço
+  - start: "14h00"
+    end: "14h40"
+    activities:
+      - style: wmad
+        title: "Palestra 3: Carreiras e Oportunidades para Mulheres em HPC e Computação Científica"
+        subtitle: "Rafaela Correia Brum (UERJ)"
+  - start: "14h40"
+    end: "15h00"
+    activities:
+      - style: wmad
+        title: "Palestra 4: Desafios da Diversidade e Inclusão em Computação de Alto Desempenho"
+        subtitle: "Aline Galdino de Oliveira (UFRJ)"
+  - start: "15h00"
+    end: "15h40"
+    activities:
+      - style: wmad
+        title: "Painel 2 — Mulheres que Lideram em HPC"
+        subtitle: "Debate com pesquisadoras e profissionais da academia, indústria e centros de supercomputação — Moderadora: Maria Clicia Castro"
+  - start: "15h40"
+    end: "15h50"
+    activities:
+      - style: blank
+        title: Encerramento
