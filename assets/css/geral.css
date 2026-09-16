@@ -113,19 +113,166 @@ p {
     grid-column-end: 5;
 }
 
-.diamante {
-    grid-column-start: 1;
-    grid-column-end: 5;
+/* ==========================================================================
+   Seção de Patrocinadores - Modern UI/UX
+   ========================================================================== */
+/* ==========================================================================
+   Seção de Patrocinadores - Design Fluido & Cardless
+   ========================================================================== */
+.cardless-showcase {
+    max-width: 1200px;
+    margin: 3.5rem auto 1.5rem;
+    padding: 3rem 1.5rem 1rem;
+    border-top: 1px solid #e2e8f0;
 }
 
-.ouro {
-    grid-column-start: 1;
-    grid-column-end: 5;
+.sponsors-header {
+    text-align: center;
+    margin-bottom: 2.75rem;
 }
 
-.prata {
-    grid-column-start: 1;
-    grid-column-end: 5;
+.sponsors-subtitle {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #0284c7;
+    margin-bottom: 0.4rem;
+}
+
+.sponsors-title {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.sponsors-divider {
+    width: 56px;
+    height: 4px;
+    background: linear-gradient(90deg, #0284c7, #38bdf8);
+    margin: 0.85rem auto 0;
+    border-radius: 9999px;
+}
+
+.sponsor-tier-group {
+    margin-bottom: 3.5rem;
+}
+
+.tier-heading-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 2.5rem;
+}
+
+.tier-heading-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #cbd5e1 50%, transparent);
+}
+
+.tier-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 9999px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    user-select: none;
+}
+
+.tier-pill:hover {
+    transform: scale(1.04);
+}
+
+.tier-pill-diamante {
+    padding: 0.5rem 1.6rem;
+    font-size: 0.88rem;
+    letter-spacing: 0.12em;
+    background: #ffffff;
+    color: #0284c7;
+    border: 1.5px solid #7dd3fc;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.12);
+}
+
+.tier-pill-prata {
+    padding: 0.45rem 1.4rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+    background: #ffffff;
+    color: #475569;
+    border: 1.5px solid #cbd5e1;
+    box-shadow: 0 4px 12px rgba(71, 85, 105, 0.08);
+}
+
+.sponsors-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3.5rem 5rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sponsor-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sponsor-brand-img {
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.sponsor-brand-diamante .sponsor-brand-img {
+    height: 230px;
+    max-width: 500px;
+}
+
+.sponsor-brand-prata .sponsor-brand-img {
+    height: 135px;
+    max-width: 330px;
+}
+
+@media (max-width: 768px) {
+    .cardless-showcase {
+        padding: 2rem 1rem 0.5rem;
+    }
+
+    .sponsors-title {
+        font-size: 1.65rem;
+    }
+
+    .sponsors-showcase {
+        gap: 2.5rem;
+    }
+
+    .sponsor-brand-diamante .sponsor-brand-img {
+        height: 160px;
+        max-width: 340px;
+    }
+
+    .sponsor-brand-prata .sponsor-brand-img {
+        height: 95px;
+        max-width: 240px;
+    }
+
+    .tier-heading-row {
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .org-row {
