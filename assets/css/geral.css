@@ -120,10 +120,13 @@ p {
    Seção de Patrocinadores - Design Fluido & Cardless
    ========================================================================== */
 .cardless-showcase {
+    width: 100%;
     max-width: 1200px;
     margin: 3.5rem auto 1.5rem;
     padding: 3rem 1.5rem 1rem;
     border-top: 1px solid #e2e8f0;
+    overflow-x: clip;
+    box-sizing: border-box;
 }
 
 .sponsors-header {
@@ -216,34 +219,47 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-end;
-    gap: 3.5rem 5rem;
+    align-items: center;
+    gap: 3rem 4.5rem;
     width: 100%;
     margin: 0 auto;
 }
 
 .sponsor-brand {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     cursor: pointer;
+    max-width: 100%;
+    min-width: 0;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sponsor-brand:hover {
+    transform: translateY(-3px) scale(1.02);
 }
 
 .sponsor-brand-img {
-    width: auto;
-    object-fit: contain;
     display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .sponsor-brand-diamante .sponsor-brand-img {
-    height: 230px;
-    max-width: 500px;
+    height: 200px;
+    max-height: 200px;
+    max-width: min(100%, 450px);
 }
 
 .sponsor-brand-prata .sponsor-brand-img {
-    height: 135px;
-    max-width: 330px;
+    height: 120px;
+    max-height: 120px;
+    max-width: min(100%, 280px);
 }
 
 @media (max-width: 768px) {
@@ -256,22 +272,24 @@ p {
     }
 
     .sponsors-showcase {
-        gap: 2.5rem;
+        gap: 2rem;
     }
 
     .sponsor-brand-diamante .sponsor-brand-img {
-        height: 160px;
-        max-width: 340px;
+        height: 140px;
+        max-height: 140px;
+        max-width: min(100%, 300px);
     }
 
     .sponsor-brand-prata .sponsor-brand-img {
-        height: 95px;
-        max-width: 240px;
+        height: 80px;
+        max-height: 80px;
+        max-width: min(100%, 200px);
     }
 
     .tier-heading-row {
         gap: 0.75rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.75rem;
     }
 }
 

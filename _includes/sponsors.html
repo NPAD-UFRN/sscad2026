@@ -1,0 +1,29 @@
+<!-- Seção de Patrocinadores - Fonte única da verdade (_data/sponsors.yml) -->
+<div class="sponsors-section cardless-showcase">
+    <div class="sponsors-header">
+        <span class="sponsors-subtitle">Apoio e Parceria</span>
+        <h2 class="sponsors-title">Patrocinadores</h2>
+        <div class="sponsors-divider"></div>
+    </div>
+
+    {% for category in site.data.sponsors %}
+    <div class="sponsor-tier-group">
+        <div class="tier-heading-row">
+            <span class="tier-heading-line"></span>
+            <div class="tier-pill {{ category.badge_class }}">
+                {{ category.icon }}
+                <span>{{ category.name }}</span>
+            </div>
+            <span class="tier-heading-line"></span>
+        </div>
+
+        <div class="sponsors-showcase {{ category.showcase_class }}">
+            {% for sponsor in category.items %}
+            <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" class="sponsor-brand {{ category.brand_class }}" title="{{ sponsor.title }}">
+                <img src="{{ sponsor.logo | relative_url }}" alt="Logo {{ sponsor.name }}" class="sponsor-brand-img">
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
