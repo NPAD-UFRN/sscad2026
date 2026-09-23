@@ -1,55 +1,636 @@
+// Página "Local do evento" (travel_info.html) e cards de _includes/travel_card.html
+
+$travel-accent: $primary;
+$travel-text: $gray-700;
+$travel-muted: $gray-600;
+$travel-heading: $gray-900;
+$travel-border: $gray-300;
+$travel-surface: $gray-100;
+$travel-radius: $border-radius-lg;
+$travel-shadow: 0 .125rem .5rem rgba($black, .05);
+$travel-shadow-hover: 0 .5rem 1.25rem rgba($black, .08);
+
 #travel_info {
-    h1, h2, h3, h4 {
-      margin-top: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+
+  // Neutraliza o p { font-size: 25px } global de assets/css/geral.css
+  p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: $travel-text;
+  }
+
+  // Abertura
+  .travel-hero {
+    text-align: center;
+    margin-bottom: 2.5rem;
+
+    .travel-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .35rem 1rem;
       margin-bottom: 1rem;
+      border-radius: $border-radius-pill;
+      background-color: $primary-bg-subtle;
+      color: $travel-accent;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
     }
 
-    .accordion {
-        margin-bottom: 1rem;
+    .travel-title {
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 800;
+      color: $travel-heading;
+      margin-bottom: .85rem;
     }
 
-    .table th {
-        height: 5rem;
-        text-align: center;
-        vertical-align: middle;
+    .travel-lead {
+      max-width: 780px;
+      margin: 0 auto 1.75rem;
+      font-size: 1.15rem;
+      color: $travel-muted;
     }
 
-    .table td {
-        height: 7rem;
-        vertical-align: middle;
-    }
+    .highlight-chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .75rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
 
-    .table td .td-color {
-        background-color: #f0f0f0;
-    }
+      li {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .45rem 1rem;
+        border: 1px solid $travel-border;
+        border-radius: $border-radius-pill;
+        background-color: $white;
+        font-size: .9rem;
+        font-weight: 600;
+        color: $travel-text;
 
-    .col-sm.gallery {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .row.gallery {
-        padding-left: calc(var(--bs-gutter-x) * 0.5);
-        padding-right: calc(var(--bs-gutter-x) * 0.5);
-    }
-
-    img {
-        margin-bottom: 1.5rem;
-    }
-
-    .accordion {
-        margin-bottom: 1rem;
-    }
-
-    @media (max-width: 768px) {
-        .mapa {
-            width: 100%;
+        i {
+          color: $travel-accent;
         }
+      }
+    }
+  }
+
+  // Acordeão
+  .travel-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .accordion-item {
+      border: 1px solid $travel-border;
+      border-radius: $travel-radius !important;
+      overflow: hidden;
+      box-shadow: $travel-shadow;
     }
 
-    @media (min-width: 769px) {
-        .mapa {
-            width: 75%;
+    .accordion-button {
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      background-color: $white;
+      box-shadow: none;
+      text-align: left;
+
+      &:not(.collapsed) {
+        background-color: $travel-surface;
+        border-bottom: 1px solid $travel-border;
+
+        .accordion-icon-wrap {
+          background-color: $travel-accent;
+          color: $white;
         }
+      }
+
+      &:focus-visible {
+        box-shadow: $btn-focus-box-shadow;
+      }
     }
+
+    .accordion-icon-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: $border-radius-lg;
+      background-color: $primary-bg-subtle;
+      color: $travel-accent;
+      font-size: 1.25rem;
+      transition: background-color .2s ease, color .2s ease;
+    }
+
+    .accordion-titles {
+      display: flex;
+      flex-direction: column;
+      gap: .2rem;
+      flex: 1;
+    }
+
+    .title-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .65rem;
+    }
+
+    .item-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: $travel-heading;
+    }
+
+    .item-badge {
+      padding: .2rem .6rem;
+      border-radius: $border-radius-pill;
+      background-color: $gray-200;
+      color: $travel-muted;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .item-subtitle {
+      font-size: .88rem;
+      color: $travel-muted;
+    }
+
+    .accordion-body {
+      padding: 1.75rem;
+    }
+  }
+
+  // Texto introdutório de cada seção
+  .travel-intro {
+    > p {
+      font-size: 1.1rem;
+      color: $travel-heading;
+    }
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  // Grupos de cards
+  .travel-group {
+    margin-top: 1.75rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .travel-group-title {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: $travel-heading;
+
+    i {
+      color: $travel-accent;
+    }
+  }
+
+  .travel-group-desc {
+    margin-top: -.5rem;
+    font-size: .92rem;
+    color: $travel-muted;
+  }
+
+  // Cards de informação (hospedagem, transporte, alimentação, pontos turísticos)
+  .feature-card,
+  .venue-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid $travel-border;
+    border-radius: $travel-radius;
+    background-color: $white;
+    transition: box-shadow .2s ease, border-color .2s ease;
+
+    &:hover {
+      border-color: $gray-400;
+      box-shadow: $travel-shadow-hover;
+    }
+
+    p {
+      font-size: .92rem;
+      line-height: 1.55;
+      color: $travel-muted;
+      margin-bottom: .75rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .feature-card {
+    padding: 1.25rem;
+
+    .feature-icon-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .5rem;
+      margin-bottom: .85rem;
+    }
+
+    .feature-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: $border-radius;
+      background-color: $travel-surface;
+      color: $travel-accent;
+      font-size: 1.2rem;
+    }
+
+    .feature-tag {
+      padding: .25rem .6rem;
+      border-radius: $border-radius-pill;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      white-space: normal;
+      text-align: right;
+    }
+
+    h6 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: $travel-heading;
+      margin-bottom: .4rem;
+    }
+
+    .feature-text {
+      flex: 1;
+      margin-bottom: .75rem;
+    }
+  }
+
+  // Faixa de preço (1 a 5), usada em Alimentação
+  .price-level {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .75rem;
+    font-size: .8rem;
+
+    .price-symbols {
+      font-weight: 700;
+      letter-spacing: .05em;
+      color: $gray-300;
+
+      .on {
+        color: $success;
+      }
+
+      .range {
+        color: rgba($success, .45);
+      }
+    }
+
+    .price-label {
+      color: $travel-muted;
+      font-weight: 600;
+    }
+  }
+
+  .feature-action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-top: auto;
+    padding-top: .75rem;
+    border-top: 1px solid $travel-surface;
+
+    .btn {
+      flex: 1 1 auto;
+    }
+
+    .bi-geo-alt-fill {
+      color: $danger;
+    }
+  }
+
+  // Cards com foto (espaços do evento)
+  .venue-card {
+    overflow: hidden;
+
+    .venue-thumb {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      background-color: $gray-900;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .venue-badge {
+      position: absolute;
+      top: .65rem;
+      right: .65rem;
+      padding: .3rem .65rem;
+      border-radius: $border-radius-pill;
+      font-size: .72rem;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+    }
+
+    .venue-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 1.25rem;
+
+      > div:first-child {
+        flex: 1;
+      }
+
+      h5 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: $travel-heading;
+        margin-bottom: .4rem;
+      }
+    }
+
+    .feature-action {
+      border-top: 0;
+    }
+  }
+
+  // Apresentação do campus e QR Code
+  .venue-intro-card,
+  .qr-scan-card {
+    height: 100%;
+    padding: 1.5rem;
+    border: 1px solid $travel-border;
+    border-radius: $travel-radius;
+  }
+
+  .venue-intro-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $travel-surface;
+
+    h4 {
+      display: flex;
+      align-items: flex-start;
+      gap: .5rem;
+      margin-bottom: .85rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: $travel-heading;
+
+      i {
+        color: $travel-accent;
+      }
+    }
+
+    .venue-address-box {
+      display: flex;
+      align-items: flex-start;
+      gap: .65rem;
+      margin: 1rem 0 0;
+      padding: .85rem 1rem;
+      border: 1px solid $travel-border;
+      border-radius: $border-radius;
+      background-color: $white;
+      font-size: .92rem;
+      color: $travel-text;
+
+      i {
+        color: $danger;
+        font-size: 1.15rem;
+      }
+    }
+  }
+
+  .qr-scan-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-style: dashed;
+    border-color: $travel-accent;
+
+    .qr-card-title {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      margin-bottom: .75rem;
+      font-weight: 700;
+      color: $travel-accent;
+    }
+
+    .qr-frame {
+      width: 140px;
+      height: 140px;
+      padding: 6px;
+      margin-bottom: .75rem;
+      border: 1px solid $travel-border;
+      border-radius: $border-radius-lg;
+      background-color: $white;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .qr-caption {
+      font-size: .85rem;
+      color: $travel-muted;
+      margin-bottom: 0;
+    }
+  }
+
+  // Agência oficial
+  .official-agency-card {
+    padding: 2rem 1.75rem;
+    border: 1.5px solid $travel-accent;
+    border-radius: $travel-radius;
+    background-color: $white;
+
+    .agency-logo-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 280px;
+      margin: 0 auto 1.25rem;
+      padding: 1.25rem;
+      border: 1px solid $travel-border;
+      border-radius: $travel-radius;
+
+      img {
+        max-width: 100%;
+        max-height: 90px;
+        object-fit: contain;
+      }
+    }
+
+    .agency-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .35rem .85rem;
+      border-radius: $border-radius-pill;
+      background-color: $travel-accent;
+      color: $white;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .agency-name {
+      font-weight: 700;
+      color: $travel-heading;
+      margin-bottom: .5rem;
+    }
+
+    .agency-services {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: .5rem;
+      padding: 0;
+      margin: 0 0 1rem;
+      list-style: none;
+
+      @include media-breakpoint-up(sm) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .5rem .75rem;
+        border: 1px solid $travel-border;
+        border-radius: $border-radius;
+        font-size: .9rem;
+        font-weight: 600;
+        color: $travel-heading;
+
+        i {
+          color: $travel-accent;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .agency-tip {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .5rem .85rem;
+      font-size: .92rem;
+
+      i {
+        font-size: 1.1rem;
+      }
+    }
+
+    .agency-contact-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        padding: .5rem 1rem;
+        border: 1px solid $travel-border;
+        border-radius: $border-radius;
+        font-size: .9rem;
+        font-weight: 600;
+        color: $travel-heading;
+        text-decoration: none;
+        transition: border-color .2s ease, background-color .2s ease;
+
+        i {
+          color: $travel-accent;
+        }
+
+        &:hover,
+        &:focus-visible {
+          border-color: $travel-accent;
+          background-color: $primary-bg-subtle;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 1rem .5rem 2.5rem;
+
+    .travel-accordion {
+      .accordion-button {
+        padding: 1rem;
+      }
+
+      .accordion-icon-wrap {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+      }
+
+      .item-title {
+        font-size: 1.05rem;
+      }
+
+      .item-subtitle {
+        font-size: .8rem;
+      }
+
+      .accordion-body {
+        padding: 1.25rem 1rem;
+      }
+    }
+
+    .venue-intro-card,
+    .qr-scan-card,
+    .official-agency-card {
+      padding: 1.25rem 1rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      transition: none !important;
+    }
+  }
 }

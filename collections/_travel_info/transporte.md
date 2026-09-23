@@ -2,39 +2,67 @@
 title: "Transporte"
 order: 3
 type: markdown
+icon: "bi-car-front-fill"
+subtitle: "Aeroporto, ônibus circular gratuito na UFRN, aplicativos e rodoviária"
+groups:
+  - cols: 2
+    cards:
+      - title: "Aeroporto Internacional de Natal (NAT)"
+        icon: "bi-airplane-fill"
+        tag: "35 km da UFRN"
+        text: |
+          O Aeroporto Internacional Governador Aluízio Alves fica a aproximadamente 35 km da UFRN (~40 minutos de translado). No saguão de desembarque há táxis 24 horas e guichês de vans e transfers turísticos com saídas para hotéis e bairros da cidade. Por aplicativo, a corrida até o campus pode chegar a cerca de R$ 100,00 em horários de pico.
+
+          Há também a opção de ônibus intermunicipal da empresa *Trampolim da Vitória* até o Shopping Midway Mall, onde é possível realizar locação de carros e integração com linhas urbanas.
+        links:
+          - label: "Site do Aeroporto de Natal"
+            url: "https://natal-airport.com/como-chegar"
+            icon: "bi-box-arrow-up-right"
+            style: "primary"
+      - title: "Ônibus Circular Gratuito da UFRN"
+        icon: "bi-bus-front-fill"
+        tag: "100% Gratuito"
+        tag_color: "success"
+        text: |
+          A UFRN conta com uma linha interna de ônibus “Circular” gratuita, que interliga, em horários regulares, os setores do Campus Central ao [Shopping Via Direta](https://maps.app.goo.gl/a5gNzhZFSeFV6Cos5).
+
+          A parada mais próxima do evento é na Escola de Ciências e Tecnologia — ECT:
+        links:
+          - label: "Parada ECT (Opção 1)"
+            url: "https://maps.app.goo.gl/syr3PCsjUiuhpKM39"
+            style: "success"
+          - label: "Parada ECT (Opção 2)"
+            url: "https://maps.app.goo.gl/ey1GrZeBqQ3Qwt6Q7"
+            style: "success"
+          - label: "App Circular UFRN (Android)"
+            url: "https://play.google.com/store/apps/details?id=com.circular.ufrn&hl=pt_BR"
+            icon: "bi-google-play"
+            style: "success"
+      - title: "Aplicativos de Transporte e Táxis"
+        icon: "bi-phone-fill"
+        tag: "Uber • 99"
+        tag_color: "info"
+        text: "Aplicativos como Uber e 99 funcionam em Natal. É uma das formas mais práticas de se deslocar diretamente dos hotéis de Ponta Negra (cerca de 15 a 25 minutos, conforme o trânsito) até a portaria dos auditórios no Campus Central da UFRN."
+        note: "Embarque e desembarque direto nos auditórios do evento"
+      - title: "Rodoviária de Natal e App Moovit"
+        icon: "bi-signpost-split-fill"
+        tag: "Rodoviária e Ônibus"
+        tag_color: "warning"
+        text: |
+          O Terminal Rodoviário fica no bairro Nossa Senhora de Nazaré, a cerca de 6 km da UFRN e 12 km de Ponta Negra, recebendo linhas diretas de diversos estados.
+
+          O aplicativo gratuito **MOOVIT** funciona muito bem em Natal para checar linhas e itinerários de ônibus urbanos, incluindo a linha Circular UFRN.
+        links:
+          - label: "Moovit (Android)"
+            url: "https://play.google.com/store/apps/details?id=com.tranzmate&hl=pt_BR"
+            icon: "bi-google-play"
+            style: "success"
+          - label: "Moovit (iPhone)"
+            url: "https://apps.apple.com/br/app/id498477945"
+            icon: "bi-apple"
+            style: "success"
 ---
 
-O transporte por aplicativo (como Uber ou semelhantes) é uma das opções mais utilizadas
-pelos visitantes, oferecendo viagens diretas para hotéis ou bairros da cidade. O Aeroporto
-Internacional Governador Aluízio Alves está localizado a aproximadamente 35 km do
-campus central da UFRN e o tempo de translado é de cerca de 40 minutos. O preço varia
-conforme demanda, chegando a R$100,00 em períodos de pico. O táxi é outra alternativa
-disponível 24 horas no saguão de desembarque do aeroporto.
-
-No Aeroporto também há serviços de transfer e vans compartilhadas, oferecidos por
-empresas de receptivo turístico logo na saída do terminal, frequentemente utilizados por
-turistas e participantes de eventos. Esse tipo de transporte pode deixar passageiros
-diretamente em hotéis ou em pontos estratégicos da cidade.
-
-A rodoviária de Natal recebe linhas diretas de ônibus de diversas cidades do Nordeste e
-Sudeste. Fica localizada no bairro Nossa Senhora de Nazaré, a cerca de 6 km da UFRN e
-12 km de Ponta Negra. É possível realizar deslocamentos a partir da rodoviária utilizando
-táxis, aplicativos de transporte ou linhas de ônibus coletivo.
-
-Por fim, existe a opção de ônibus intermunicipal, operado pela empresa Trampolim da
-Vitória, que conecta o aeroporto a Natal, passando por pontos importantes como o
-Shopping Midway Mall, onde é possível fazer integração com outras linhas de transporte
-urbano, bem como realizar locação de carros. O [Site do Aeroporto Internacional Governador
-Aluízio Alves](https://natal-airport.com/como-chegar) mantém informações úteis sobre o
-que lá é oferecido.
-
-A UFRN conta com uma linha de ônibus conhecida como “Circular”. Ela opera gratuitamente
-ligando diversos setores do Campus Central ao 
-[Shopping Via Direta](https://maps.app.goo.gl/a5gNzhZFSeFV6Cos5). 
-A parada mais próxima do evento é da
-Escola de Ciências e Tecnologia - ECT( [ver aqui](https://maps.app.goo.gl/syr3PCsjUiuhpKM39) ou
-[aqui](https://maps.app.goo.gl/ey1GrZeBqQ3Qwt6Q7) ).
-
-O app MOOVIT é uma boa sugestão de aplicativo gratuito de mobilidade urbana porque
-funciona bem em Natal. Entretanto, cabe destacar que ele não considera a rota oferecida
-pelo ônibus circular gratuito da UFRN.
+Natal oferece opções práticas de mobilidade para participantes do simpósio, desde o
+transporte por aplicativo até a linha de ônibus circular gratuita que opera dentro do
+Campus Central da UFRN:
