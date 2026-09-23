@@ -20,8 +20,8 @@
   - id: lab_dimap
     name: Lab DIMAp
     style: lab_dimap
-  - id: maratona
-    name: Maratona
+  - id: lab_203_npiti
+    name: Lab 203 nPITI
     style: maratona
   blocks:
   - start: "07:00"
@@ -695,13 +695,13 @@
   - start: "16:20"
     end: "17:20"
     activities:
-    - id: plenaria-edson
+    - id: plenaria-aberta
       type: keynote
       style: aud_ct
-      url: '#plenaria-edson'
+      url: '#plenaria-aberta'
       title: Palestra plenária
-      subtitle: Prof. Edson Borin
-      authors: Edson Borin (Unicamp)
+      subtitle:  
+      authors: 
       room: Auditório do CT (216)
     - id: gap
       type: gap
@@ -885,9 +885,9 @@
       type: panel
       style: aud_ct
       url: '#painel'
-      title: Painel temático
+      title: Tema a definir
       room: Auditório do CT (216)
-      description: Painel temático de debate com especialistas
+      description: Tema a definir
   - start: "12:20"
     end: "14:00"
     hide_details: 'yes'
