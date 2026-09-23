@@ -10,7 +10,7 @@ groups:
       - title: "Macarena Flat"
         icon: "bi-building"
         tag: "Ponta Negra"
-        text: "Apart-hotel confortável em Ponta Negra com vista para o mar e ótima estrutura para estadias no evento."
+        text: "Apart-hotel confortável em Ponta Negra, a cerca de 500 m da praia, com ótima estrutura para estadias no evento."
         links:
           - url: "https://maps.app.goo.gl/jxW2mG9SuXtwMHPd7"
       - title: "Residence Vespucci Flat Beira Mar"
@@ -39,16 +39,16 @@ groups:
           - url: "https://maps.app.goo.gl/9XBJ6rWoQRSWCo8eA"
       - title: "Ibis"
         icon: "bi-building"
-        tag: "Candelária / UFRN"
+        tag: "Lagoa Nova"
         tag_color: "success"
-        text: "Localizado na Av. Salgado Filho em Candelária, a poucos minutos do Campus Central da UFRN."
+        text: "Localizado na Av. Lima e Silva, em Lagoa Nova, próximo à Arena das Dunas e a poucos minutos do Campus Central da UFRN."
         links:
           - url: "https://maps.app.goo.gl/KPZ62PJizhkT6SaA9"
       - title: "Praiamar Arena Hotel"
         icon: "bi-building"
         tag: "Lagoa Nova"
         tag_color: "success"
-        text: "Hotel na Av. Prudente de Morais com fácil acesso tanto à Arena das Dunas quanto aos auditórios da UFRN."
+        text: "Hotel na Av. Senador Salgado Filho, ao lado da Arena das Dunas e a poucos minutos dos auditórios da UFRN."
         links:
           - url: "https://maps.app.goo.gl/BGkfKMLd6UxuRYfX7"
       - title: "Rede Andrade Comfort"
@@ -62,4 +62,4 @@ groups:
 Embora possam ser encontradas excelentes opções em outros bairros (como Candelária e
 Lagoa Nova, bem próximas ao campus), as principais hospedagens concentram-se no bairro
 de **Ponta Negra**, polo turístico da cidade com ampla oferta de hotéis, praias,
-restaurantes e vida noturna (cerca de 10 a 15 minutos até a UFRN). Seguem sugestões:
+restaurantes e vida noturna (cerca de 15 a 25 minutos até a UFRN, conforme o trânsito). Seguem sugestões:
