@@ -4,80 +4,77 @@ title: "Local do evento"
 permalink: /travel_info/
 ---
 
-<div class="travel-info-container">
-  <!-- Hero Section & Informações de Destaque -->
-  <section class="travel-hero">
+<section id="travel_info">
+  <div class="travel-hero">
     <span class="travel-pill">
-      <i class="bi bi-geo-alt-fill"></i> Guia do Participante & Localização
+      <i class="bi bi-geo-alt-fill"></i> Guia do Participante
     </span>
-    <h1 class="travel-title">Local do Evento & Guia de Natal</h1>
+    <h1 class="travel-title">Local do Evento e Guia de Natal</h1>
     <p class="travel-lead">
       O <strong>XXVII Simpósio em Sistemas Computacionais de Alto Desempenho (SSCAD 2026)</strong> será sediado no Campus Central da Universidade Federal do Rio Grande do Norte (UFRN), em Natal/RN. Reunimos abaixo todas as informações essenciais para planejar sua viagem, estadia e deslocamentos.
     </p>
+    <ul class="highlight-chips">
+      <li><i class="bi bi-mortarboard-fill"></i> Campus Central da UFRN</li>
+      <li><i class="bi bi-buildings-fill"></i> Auditório CT • CTEC • NPITI</li>
+      <li><i class="bi bi-calendar-event"></i> 3 a 5 de novembro de 2026</li>
+      <li><i class="bi bi-sun-fill"></i> Natal, Rio Grande do Norte</li>
+    </ul>
+  </div>
 
-    <div class="highlight-chips">
-      <div class="chip-item">
-        <i class="bi bi-mortarboard-fill"></i>
-        <span>Campus Central da UFRN</span>
-      </div>
-      <div class="chip-item">
-        <i class="bi bi-buildings-fill"></i>
-        <span>Auditório CT &bull; CTEC &bull; NPITI</span>
-      </div>
-      <div class="chip-item">
-        <i class="bi bi-calendar-event"></i>
-        <span>03 a 05 de Novembro de 2026</span>
-      </div>
-      <div class="chip-item">
-        <i class="bi bi-sun-fill"></i>
-        <span>Natal, Rio Grande do Norte</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Acordeão Informativo & Multimídia -->
   <div class="accordion travel-accordion" id="accordionTravelInfo">
     {% assign items = site.travel_info | sort: 'order' %}
     {% for item in items %}
       <div class="accordion-item">
         <h2 class="accordion-header" id="heading{{ forloop.index }}">
-          <button class="accordion-button {% unless forloop.first %}collapsed{% endunless %}" 
-                  type="button" 
-                  data-bs-toggle="collapse" 
-                  data-bs-target="#collapse{{ forloop.index }}" 
-                  aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" 
+          <button class="accordion-button {% unless forloop.first %}collapsed{% endunless %}"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse{{ forloop.index }}"
+                  aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
                   aria-controls="collapse{{ forloop.index }}">
-            <div class="accordion-header-content">
-              <div class="accordion-icon-wrap">
-                <i class="bi {{ item.icon | default: 'bi-info-circle-fill' }}"></i>
-              </div>
-              <div class="accordion-titles">
-                <div class="title-row">
-                  <span class="item-title">{{ item.title }}</span>
-                  {% if item.badge %}
-                    <span class="item-badge">{{ item.badge }}</span>
-                  {% endif %}
-                </div>
-                {% if item.subtitle %}
-                  <p class="item-subtitle">{{ item.subtitle }}</p>
-                {% endif %}
-              </div>
-            </div>
+            <span class="accordion-icon-wrap" aria-hidden="true">
+              <i class="bi {{ item.icon | default: 'bi-info-circle-fill' }}"></i>
+            </span>
+            <span class="accordion-titles">
+              <span class="title-row">
+                <span class="item-title">{{ item.title }}</span>
+                {% if item.badge %}<span class="item-badge">{{ item.badge }}</span>{% endif %}
+              </span>
+              {% if item.subtitle %}<span class="item-subtitle">{{ item.subtitle }}</span>{% endif %}
+            </span>
           </button>
         </h2>
-        <div id="collapse{{ forloop.index }}" 
-             class="accordion-collapse collapse {% if forloop.first %}show{% endif %}" 
-             aria-labelledby="heading{{ forloop.index }}" 
+        <div id="collapse{{ forloop.index }}"
+             class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
+             aria-labelledby="heading{{ forloop.index }}"
              data-bs-parent="#accordionTravelInfo">
           <div class="accordion-body">
-            {% if item.type == 'markdown' %}
-              {{ item.content | markdownify }}
-            {% else %}
-              {{ item.content }}
-            {% endif %}
+            <div class="travel-intro">
+              {% if item.type == 'markdown' %}
+                {{ item.content | markdownify }}
+              {% else %}
+                {{ item.content }}
+              {% endif %}
+            </div>
+
+            {% for group in item.groups %}
+              <div class="travel-group">
+                {% if group.title %}
+                  <h3 class="travel-group-title">
+                    {% if group.icon %}<i class="bi {{ group.icon }}"></i>{% endif %}{{ group.title }}
+                  </h3>
+                {% endif %}
+                {% if group.description %}<p class="travel-group-desc">{{ group.description }}</p>{% endif %}
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-{{ group.cols | default: 3 }} g-3">
+                  {% for card in group.cards %}
+                    <div class="col">{% include travel_card.html card=card %}</div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
           </div>
         </div>
       </div>
     {% endfor %}
   </div>
-</div>
+</section>

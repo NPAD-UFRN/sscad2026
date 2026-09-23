@@ -14,7 +14,7 @@ collections:
   keynote_speakers:
     sort_by: order
   travel_info:
-    output: true
+    output: false
 
 # Website SASS settings
 sass:

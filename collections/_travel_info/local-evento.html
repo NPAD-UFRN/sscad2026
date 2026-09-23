@@ -5,130 +5,73 @@ type: html
 icon: "bi-geo-alt-fill"
 subtitle: "Auditório do CT, CTEC e NPITI no Campus Central da UFRN"
 badge: "Campus Central UFRN"
+groups:
+  - title: "Espaços do Evento no Campus"
+    icon: "bi-building-check"
+    description: "Acesse os locais das atividades e trace rotas pelo Google Maps:"
+    cols: 3
+    cards:
+      - title: "Auditório do Centro de Tecnologia e Ciências"
+        image: "/assets/img/auditorio_ct.jpg"
+        tag: "Auditório Principal"
+        text: "Localizado no Centro de Tecnologia (CT) da UFRN, sede das sessões plenárias, palestras de abertura, painéis temáticos e cerimônias."
+        links:
+          - url: "https://maps.app.goo.gl/KGAE1uNtqC56Ssyh7"
+            style: "primary"
+      - title: "Complexo Tecnológico de Engenharia (CTEC)"
+        image: "/assets/img/ctec.jpg"
+        tag: "CTEC"
+        tag_color: "info"
+        text: "Estrutura de engenharia da UFRN que sediará apresentações de sessões técnicas, workshops satélites e encontros da comunidade."
+        links:
+          - url: "https://maps.app.goo.gl/R7qRLhDTAxiJPdBPA"
+            style: "primary"
+      - title: "Núcleo de Pesquisa e Inovação em Tecnologia da Informação (NPITI)"
+        image: "/assets/img/npiti.jpg"
+        tag: "NPITI"
+        tag_color: "success"
+        text: "Polo de inovação em TI equipado com laboratórios avançados para os minicursos práticos, tutoriais e a Maratona de Programação."
+        links:
+          - url: "https://maps.app.goo.gl/gfsmL44vgw53yBH56"
+            style: "primary"
 ---
 
-<div class="container-fluid px-0">
-  <!-- Apresentação Geral do Local & QR Code de Rota -->
-  <div class="row g-4 mb-4 align-items-stretch">
-    <div class="col-lg-8">
-      <div class="venue-intro-card">
-        <div>
-          <h4>
-            <i class="bi bi-mortarboard-fill"></i>
-            Universidade Federal do Rio Grande do Norte (UFRN) &mdash; Campus Central
-          </h4>
-          <p>
-            O <strong>Simpósio em Sistemas Computacionais de Alto Desempenho (SSCAD 2026)</strong> será realizado na Universidade Federal do Rio Grande do Norte (UFRN), Campus Central, localizada na Av. Senador Salgado Filho, 3000, Lagoa Nova, Natal/RN. As atividades do evento acontecerão em quatro setores do campus: o <strong>Auditório do Centro de Tecnologia (CT)</strong>, o <strong>Complexo Tecnológico de Engenharia (CTEC)</strong> e o <strong>Núcleo de Pesquisa e Inovação em Tecnologia da Informação (NPITI)</strong>.
-          </p>
-          <p class="mb-0">
-            O Campus conta com infraestrutura moderna, amplo estacionamento e áreas de convivência que proporcionarão uma experiência confortável aos participantes.
-          </p>
-        </div>
-
-        <div class="venue-address-box">
-          <i class="bi bi-geo-alt-fill"></i>
-          <div>
-            <strong>Endereço do Campus:</strong><br>
-            Av. Senador Salgado Filho, 3000 &mdash; Bairro Lagoa Nova, Natal/RN &mdash; CEP: 59078-970
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4">
-      <div class="qr-scan-card">
-        <span class="qr-card-title">
-          <i class="bi bi-qr-code-scan"></i> Localização do Auditório do CT
-        </span>
-        <div class="qr-frame">
-          <img src="{{ '/assets/img/qrcode_auditorio_ct.jpg' | relative_url }}" alt="QR Code para localização do Auditório do CT">
-        </div>
-        <p class="qr-caption">
-          Escaneie com a câmera do seu celular para abrir o trajeto direto até o Auditório do CT no Google Maps.
+<div class="row g-4 align-items-stretch">
+  <div class="col-lg-8">
+    <div class="venue-intro-card">
+      <div>
+        <h4>
+          <i class="bi bi-mortarboard-fill"></i>
+          Universidade Federal do Rio Grande do Norte (UFRN) &mdash; Campus Central
+        </h4>
+        <p>
+          O <strong>Simpósio em Sistemas Computacionais de Alto Desempenho (SSCAD 2026)</strong> será realizado na Universidade Federal do Rio Grande do Norte (UFRN), Campus Central, localizada na Av. Senador Salgado Filho, 3000, Lagoa Nova, Natal/RN. As atividades do evento acontecerão em quatro setores do campus: o <strong>Auditório do Centro de Tecnologia (CT)</strong>, o <strong>Complexo Tecnológico de Engenharia (CTEC)</strong> e o <strong>Núcleo de Pesquisa e Inovação em Tecnologia da Informação (NPITI)</strong>.
         </p>
-        <a href="https://maps.app.goo.gl/KGAE1uNtqC56Ssyh7" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary qr-btn">
-          <i class="bi bi-geo-alt me-1"></i> Abrir Localização no Maps
-        </a>
+        <p>
+          O Campus conta com infraestrutura moderna, amplo estacionamento e áreas de convivência que proporcionarão uma experiência confortável aos participantes.
+        </p>
       </div>
+      <address class="venue-address-box">
+        <i class="bi bi-geo-alt-fill"></i>
+        <span>
+          <strong>Endereço do Campus:</strong><br>
+          Av. Senador Salgado Filho, 3000 &mdash; Bairro Lagoa Nova, Natal/RN &mdash; CEP: 59078-970
+        </span>
+      </address>
     </div>
   </div>
 
-  <!-- Cards dos Espaços do Campus com Fotos e Ações -->
-  <div class="mt-4 pt-2">
-    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
-      <div>
-        <h5 class="fw-bold mb-1 text-dark">
-          <i class="bi bi-building-check text-primary me-2"></i>Espaços do Evento no Campus
-        </h5>
-        <p class="text-muted small mb-0">
-          Acesse os locais das atividades e trace rotas pelo Google Maps:
-        </p>
+  <div class="col-lg-4 d-none d-lg-block">
+    <div class="qr-scan-card">
+      <span class="qr-card-title">
+        <i class="bi bi-qr-code-scan"></i> Localização do Auditório do CT
+      </span>
+      <div class="qr-frame">
+        <img src="{{ '/assets/img/qrcode_auditorio_ct.jpg' | relative_url }}" alt="QR Code para localização do Auditório do CT">
       </div>
-    </div>
-
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-      <!-- Espaço 1: Auditório do CT -->
-      <div class="col">
-        <div class="venue-card">
-          <div class="venue-thumb">
-            <img src="{{ '/assets/img/auditorio_ct.jpg' | relative_url }}" alt="Auditório do Centro de Tecnologia e Ciências">
-            <span class="badge bg-primary venue-badge">Auditório Principal</span>
-          </div>
-          <div class="venue-body">
-            <div>
-              <h5>Auditório do Centro de Tecnologia e Ciências</h5>
-              <p class="venue-desc">
-                Localizado no Centro de Tecnologia (CT) da UFRN, sede das sessões plenárias, palestras de abertura, painéis temáticos e cerimônias.
-              </p>
-            </div>
-            <a href="https://maps.app.goo.gl/KGAE1uNtqC56Ssyh7" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary venue-btn">
-              <i class="bi bi-geo-alt-fill text-danger"></i> Ver no Google Maps
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Espaço 2: CTEC -->
-      <div class="col">
-        <div class="venue-card">
-          <div class="venue-thumb">
-            <img src="{{ '/assets/img/ctec.jpg' | relative_url }}" alt="Complexo Tecnológico de Engenharia (CTEC)">
-            <span class="badge bg-info text-dark venue-badge">CTEC</span>
-          </div>
-          <div class="venue-body">
-            <div>
-              <h5>Complexo Tecnológico de Engenharia (CTEC)</h5>
-              <p class="venue-desc">
-                Estrutura de engenharia da UFRN que sediará apresentações de sessões técnicas, workshops satélites e encontros da comunidade.
-              </p>
-            </div>
-            <a href="https://maps.app.goo.gl/R7qRLhDTAxiJPdBPA" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary venue-btn">
-              <i class="bi bi-geo-alt-fill text-danger"></i> Ver no Google Maps
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Espaço 3: NPITI -->
-      <div class="col">
-        <div class="venue-card">
-          <div class="venue-thumb">
-            <img src="{{ '/assets/img/npiti.jpg' | relative_url }}" alt="Núcleo de Pesquisa e Inovação em Tecnologia da Informação (NPITI)">
-            <span class="badge bg-success venue-badge">NPITI</span>
-          </div>
-          <div class="venue-body">
-            <div>
-              <h5>Núcleo de Pesquisa e Inovação em Tecnologia da Informação (NPITI)</h5>
-              <p class="venue-desc">
-                Polo de inovação em TI equipado com laboratórios avançados para os minicursos práticos, tutoriais e a Maratona de Programação.
-              </p>
-            </div>
-            <a href="https://maps.app.goo.gl/gfsmL44vgw53yBH56" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary venue-btn">
-              <i class="bi bi-geo-alt-fill text-danger"></i> Ver no Google Maps
-            </a>
-          </div>
-        </div>
-      </div>
+      <p class="qr-caption">
+        Escaneie com a câmera do seu celular para abrir o trajeto direto até o Auditório do CT no Google Maps.
+      </p>
     </div>
   </div>
 </div>

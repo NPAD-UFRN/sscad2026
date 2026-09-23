@@ -1,0 +1,47 @@
+{% comment %}
+  Card de informação da página "Local do evento".
+  Recebe `card` com: title, text (markdown), icon, tag, tag_color,
+  image, image_alt, note e links (label, url, icon, style).
+  Com `image`, é exibido no formato de card com foto (espaços do evento).
+{% endcomment %}
+{% assign card = include.card %}
+{% assign tag_color = card.tag_color | default: 'primary' %}
+{% if card.image %}
+<div class="venue-card">
+  <div class="venue-thumb">
+    <img src="{{ card.image | relative_url }}" alt="{{ card.image_alt | default: card.title }}">
+    {% if card.tag %}<span class="badge text-bg-{{ tag_color }} venue-badge">{{ card.tag }}</span>{% endif %}
+  </div>
+  <div class="venue-body">
+    <div>
+      <h5>{{ card.title }}</h5>
+      <div class="venue-desc">{{ card.text | markdownify }}</div>
+    </div>
+{% else %}
+<div class="feature-card">
+  <div class="feature-icon-bar">
+    <div class="feature-icon"><i class="bi {{ card.icon | default: 'bi-info-circle' }}"></i></div>
+    {% if card.tag %}<span class="badge bg-{{ tag_color }}-subtle text-{{ tag_color }}-emphasis feature-tag">{{ card.tag }}</span>{% endif %}
+  </div>
+  <h6>{{ card.title }}</h6>
+  <div class="feature-text">{{ card.text | markdownify }}</div>
+{% endif %}
+  {% if card.links or card.note %}
+  <div class="feature-action">
+    {% if card.note %}
+    <span class="small text-muted"><i class="bi bi-check2-circle text-success me-1"></i>{{ card.note }}</span>
+    {% endif %}
+    {% for link in card.links %}
+    {% assign is_web = link.url | slice: 0, 4 %}
+    <a href="{{ link.url }}"{% if is_web == 'http' %} target="_blank" rel="noopener noreferrer"{% endif %} class="btn btn-sm btn-outline-{{ link.style | default: 'secondary' }}">
+      <i class="bi {{ link.icon | default: 'bi-geo-alt-fill' }}"></i> {{ link.label | default: 'Ver no Maps' }}
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+{% if card.image %}
+  </div>
+</div>
+{% else %}
+</div>
+{% endif %}

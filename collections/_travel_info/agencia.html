@@ -1,0 +1,69 @@
+---
+title: "Agência de Turismo"
+order: 6
+type: html
+icon: "bi-compass-fill"
+subtitle: "Marazul Receptivo: agência oficial com desconto para participantes do SSCAD 2026"
+badge: "Agência Oficial"
+services:
+  - icon: "bi-airplane"
+    text: "Transfers Aeroporto • Hotéis • Campus"
+  - icon: "bi-percent"
+    text: "Desconto exclusivo SSCAD 2026"
+  - icon: "bi-camera"
+    text: "Passeios de buggy, praias e lagoas"
+  - icon: "bi-headset"
+    text: "Atendimento personalizado"
+contacts:
+  - icon: "bi-telephone-fill"
+    text: "+55 84 98168 6266"
+    url: "tel:+5584981686266"
+  - icon: "bi-envelope-fill"
+    text: "reservas@marazulreceptivo.com.br"
+    url: "mailto:reservas@marazulreceptivo.com.br"
+  - icon: "bi-globe"
+    text: "www.marazulreceptivo.com.br"
+    url: "https://www.marazulreceptivo.com.br"
+---
+
+<div class="official-agency-card">
+  <div class="row align-items-center g-4">
+    <div class="col-lg-4 text-center">
+      <a class="agency-logo-box" href="https://www.marazulreceptivo.com.br" target="_blank" rel="noopener noreferrer">
+        <img src="{{ '/assets/img/logo/marazul.png' | relative_url }}" alt="Logo da Marazul Receptivo">
+      </a>
+      <span class="agency-badge">
+        <i class="bi bi-patch-check-fill"></i> Agência Oficial SSCAD 2026
+      </span>
+    </div>
+
+    <div class="col-lg-8">
+      <h5 class="agency-name">Marazul Receptivo</h5>
+      <p>
+        A <strong>MARAZUL RECEPTIVO</strong> é a agência oficial parceira do SSCAD 2026. Especializada no turismo potiguar e sediada no bairro de Ponta Negra, a Marazul oferece suporte completo aos congressistas e participantes do evento:
+      </p>
+
+      <ul class="agency-services">
+        {% for service in page.services %}
+        <li><i class="bi {{ service.icon }}"></i> {{ service.text }}</li>
+        {% endfor %}
+      </ul>
+
+      <div class="alert alert-info agency-tip" role="note">
+        <i class="bi bi-info-circle-fill"></i>
+        <span><strong>Dica:</strong> Ao entrar em contato, informe que participará do <strong>SSCAD 2026</strong> para obter os descontos e condições especiais do evento.</span>
+      </div>
+
+      <ul class="agency-contact-list">
+        {% for contact in page.contacts %}
+        {% assign is_web = contact.url | slice: 0, 4 %}
+        <li>
+          <a href="{{ contact.url }}"{% if is_web == 'http' %} target="_blank" rel="noopener noreferrer"{% endif %}>
+            <i class="bi {{ contact.icon }}"></i> {{ contact.text }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
