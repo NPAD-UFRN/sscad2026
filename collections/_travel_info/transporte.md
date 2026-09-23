@@ -34,6 +34,10 @@ groups:
           - label: "Parada ECT (Opção 2)"
             url: "https://maps.app.goo.gl/ey1GrZeBqQ3Qwt6Q7"
             style: "success"
+          - label: "App Circular UFRN (Android)"
+            url: "https://play.google.com/store/apps/details?id=com.circular.ufrn&hl=pt_BR"
+            icon: "bi-google-play"
+            style: "success"
       - title: "Aplicativos de Transporte e Táxis"
         icon: "bi-phone-fill"
         tag: "Uber • 99"
@@ -49,9 +53,14 @@ groups:
 
           O aplicativo gratuito **MOOVIT** funciona muito bem em Natal para checar linhas e itinerários de ônibus urbanos, incluindo a linha Circular UFRN.
         links:
-          - label: "Conhecer o App Moovit"
-            url: "https://moovitapp.com/"
-            icon: "bi-box-arrow-up-right"
+          - label: "Moovit (Android)"
+            url: "https://play.google.com/store/apps/details?id=com.tranzmate&hl=pt_BR"
+            icon: "bi-google-play"
+            style: "success"
+          - label: "Moovit (iPhone)"
+            url: "https://apps.apple.com/br/app/id498477945"
+            icon: "bi-apple"
+            style: "success"
 ---
 
 Natal oferece opções práticas de mobilidade para participantes do simpósio, desde o

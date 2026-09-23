@@ -25,6 +25,19 @@
   </div>
   <h6>{{ card.title }}</h6>
   <div class="feature-text">{{ card.text | markdownify }}</div>
+  {% if card.price_min %}
+  {% assign price_labels = "Econômico,Acessível,Moderado,Alto,Sofisticado" | split: "," %}
+  {% assign price_max = card.price_max | default: card.price_min %}
+  {% assign index_min = card.price_min | minus: 1 %}
+  {% assign index_max = price_max | minus: 1 %}
+  {% assign label_min = price_labels[index_min] %}
+  {% assign label_max = price_labels[index_max] %}
+  {% if price_max > card.price_min %}{% capture price_label %}{{ label_min }} a {{ label_max | downcase }}{% endcapture %}{% else %}{% assign price_label = label_min %}{% endif %}
+  <div class="price-level" title="Faixa de preço: {{ price_label }}">
+    <span class="price-symbols" aria-hidden="true">{% for i in (1..5) %}<span class="{% if i <= card.price_min %}on{% elsif i <= price_max %}range{% endif %}">$</span>{% endfor %}</span>
+    <span class="price-label"><span class="visually-hidden">Faixa de preço: </span>{{ price_label }}</span>
+  </div>
+  {% endif %}
 {% endif %}
   {% if card.links or card.note %}
   <div class="feature-action">

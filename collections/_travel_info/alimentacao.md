@@ -10,6 +10,7 @@ groups:
     cols: 2
     cards:
       - title: "Restaurante Nordestino"
+        price_min: 2
         icon: "bi-cup-hot-fill"
         tag: "No Campus"
         tag_color: "success"
@@ -17,6 +18,7 @@ groups:
         links:
           - url: "https://maps.app.goo.gl/T8nsms7WEKoVw6id6"
       - title: "Restaurante da APURN"
+        price_min: 3
         icon: "bi-shop-window"
         tag: "No Campus"
         tag_color: "success"
@@ -28,6 +30,8 @@ groups:
     cols: 3
     cards:
       - title: "Shopping Via Direta"
+        price_min: 2
+        price_max: 3
         icon: "bi-bag-heart"
         tag: "Em frente à UFRN"
         tag_color: "secondary"
@@ -35,12 +39,16 @@ groups:
         links:
           - url: "https://www.google.com/maps/search/?api=1&query=Via+Direta+Shopping+Natal"
       - title: "Natal Shopping"
+        price_min: 2
+        price_max: 5
         icon: "bi-building"
         tag: "Praça Gourmet"
         text: "Primeiro shopping de Natal, a poucos minutos do campus. Duas praças de alimentação, cafés, restaurantes e cinema."
         links:
           - url: "https://maps.app.goo.gl/vaoPGtc1WwWLUGqU9"
       - title: "Sal e Brasa Grill Express"
+        price_min: 2
+        price_max: 3
         icon: "bi-fire"
         tag: "Grelhados"
         tag_color: "warning"
@@ -48,6 +56,7 @@ groups:
         links:
           - url: "https://maps.app.goo.gl/wycN68NNz3rRNJXL7"
       - title: "Restaurante Matulão"
+        price_min: 4
         icon: "bi-sun-fill"
         tag: "Regional"
         tag_color: "warning"
@@ -55,6 +64,7 @@ groups:
         links:
           - url: "https://maps.app.goo.gl/1Vq98PHrb4tLoCHW7"
       - title: "Menéz Restaurante"
+        price_min: 3
         icon: "bi-palette"
         tag: "Self-service"
         tag_color: "info"
@@ -62,6 +72,7 @@ groups:
         links:
           - url: "https://maps.app.goo.gl/USoVzjexDzpuNEbJ6"
       - title: "Kalaz Cozinha"
+        price_min: 3
         icon: "bi-egg-fried"
         tag: "Self-service"
         tag_color: "success"
@@ -73,6 +84,7 @@ groups:
     cols: 2
     cards:
       - title: "Mangai Lagoa Nova"
+        price_min: 5
         icon: "bi-award-fill"
         tag: "Imperdível • Regional"
         tag_color: "warning"
@@ -80,6 +92,7 @@ groups:
         links:
           - url: "https://maps.app.goo.gl/x4LZYGgNMTngdZLJ6"
       - title: "Nau Frutos do Mar"
+        price_min: 5
         icon: "bi-water"
         tag: "Frutos do Mar"
         tag_color: "info"
