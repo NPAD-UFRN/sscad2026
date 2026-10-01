@@ -27,6 +27,11 @@ A submissão de artigos será realizada no [sistema JEMS3](https://jems3.sbc.org
 Todos os artigos devem seguir o padrão da SBC e serão publicados nos **Anais Estendidos
 do SSCAD 2026** na plataforma [**SBC OpenLib (SOL)**](https://sol.sbc.org.br).
 
+## MODALIDADES DE APRESENTAÇÃO
+
+Os artigos aceitos para o WPADS 2026 poderão ser apresentados no formato 
+**presencial** ou **remoto** (para quem não puder ir presencialmente ao evento).
+
 ## TÓPICOS DE INTERESSE
 
 O WPADS incentiva submissões de trabalhos originais e inovadores nas seguintes áreas
@@ -53,12 +58,11 @@ O WPADS incentiva submissões de trabalhos originais e inovadores nas seguintes 
 
 ## DATAS IMPORTANTES
 
-Data-limite para submissão de artigos: 05/10/2026.
+Data-limite para submissão de artigos: ~05/10/2026~ **12/10/2026**.
 
-Notificação de aceitação: 19/10/2026.
+Notificação de aceitação: **19/10/2026**.
 
-Envio da versão final (Camera-Ready): 23/10/2026.
+Envio da versão final (Camera-Ready): **23/10/2026**.
 
-Data do workshop: a definir, em 1 dia entre 3 e 5 de novembro.
-
+Data do workshop: **05/11/2026**.
 
