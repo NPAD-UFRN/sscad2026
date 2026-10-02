@@ -731,10 +731,11 @@
       type: gap
       style: gap
       title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
+    - id: wic
+      type: meeting
+      style: aud_laut
+      url: '#wid'
+      title: WIC
     - id: mc5
       type: tutorial
       style: lab_dimap
