@@ -92,7 +92,6 @@
       title: Minicurso 1
       subtitle: (180)
       room: LabGrad DCA
-      description: Minicurso SSCAD 2026 - Submissão 180
     - id: gap
       type: gap
       style: gap
@@ -186,7 +185,6 @@
       title: Minicurso 2
       subtitle: (791)
       room: LabGrad DCA
-      description: Minicurso SSCAD 2026 - Submissão 791
     - id: mc3
       type: tutorial
       style: lab_dimap
@@ -194,7 +192,6 @@
       title: Minicurso 3
       subtitle: (424)
       room: Lab DIMAp
-      description: Minicurso SSCAD 2026 - Submissão 424
     - id: maratona
       type: marathon
       style: maratona
@@ -434,7 +431,6 @@
       title: Minicurso 4
       subtitle: (182)
       room: Lab DIMAp
-      description: Minicurso SSCAD 2026 - Submissão 182
     - id: maratona
       type: marathon
       style: maratona
@@ -623,7 +619,6 @@
       title: Minicurso 5
       subtitle: (460)
       room: Lab DIMAp
-      description: Minicurso SSCAD 2026 - Submissão 460
     - id: maratona
       type: marathon
       style: maratona
