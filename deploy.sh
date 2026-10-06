@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run --rm -v .:/srv/jekyll -v sscad_gems:/usr/local/bundle\
+docker run --rm -v .:/srv/jekyll:Z -v sscad_gems:/usr/local/bundle\
     -e JEKYLL_ENV=production \
     -e JEKYLL_ROOTLESS=1 \
     docker.io/jekyll/jekyll jekyll build

@@ -36,7 +36,7 @@ minicursos:
     titulo: "Explorando Tenstorrent e RISC-V como uma nova arquitetura para HPC"
     autores:
       - nome: Calebe de Paula Bianchini
-        instituicao: Universidade Presbiteriana Mackenzie
+        instituicao: CESAR/Mackenzie
       - nome: Evaldo Costa
         instituicao: CESAR
       - nome: Felipe Portella
@@ -53,6 +53,11 @@ minicursos:
         instituicao: CESAR
       - nome: Vinícius Ventura
         instituicao: CESAR
+      - nome: Marcondes Gorgonho
+        instituicao: CESAR
+      - nome: Laura Marinho
+        instituicao: CESAR
+
     resumo: >
       Este minicurso aborda o uso de novas arquiteturas computacionais em
       aplicações de processamento de alto desempenho, tomando como estudo de caso
