@@ -8,6 +8,30 @@ permalink: /cfp_ctd/
 
 A Comissão Especial de Arquitetura de Computadores está promovendo mais uma edição do Concurso de Teses e Dissertações. As monografias de mestrado e doutorado defendidas e homologadas a partir de julho de 2025 até a data de submissão do SSCAD-CTD em 2026 nas áreas de Arquitetura de Computadores e Computação de Alto Desempenho estão convidadas a participar do concurso.
 
+## Selecionados para a Apresentação Final
+
+Listas em ordem alfabética.
+
+### Tese de Doutorado
+
+- **Action and State Representations For Agent-Directed Test Generation Targeting Multicore Designs**  
+  Bruno Miranda, Márcio Castro, Luiz Santos
+- **Exploring Hardware Acceleration of a Transformer-Based Architecture for Hyperspectral Image Classification**  
+  Felipe Viel, Cesar Albenes Zeferino, Eduardo Augusto Bezerra
+- **Orama++: Um Framework Orientado a Redes Neurais Artificiais para Predição de Tempo de Execução e Custos em Plataformas FaaS Multi-Nuvem**  
+  Leonardo Rebouças de Carvalho, Aleteia de Araujo
+- **Scheduling Algorithms for the Optimization of Distributed Machine Learning Models on Heterogeneous Resources**  
+  Alan Lira Nunes, Lucia M. A. Drummond, Cristina Boeres, Laércio Lima Pilla
+
+### Dissertação de Mestrado
+
+- **Checkpointing Optimization in Adjoint-Mode Applications: A Prefetching and Compression-Based Approach**  
+  Thiago Maltempi, Guido Araujo, Sandro Rigo
+- **OpenMP Beyond the Node: Scalable Remote Offloading and Communication for GPU Clusters**  
+  Jhonatan Cléto, Hervé Yviquel
+- **Resilient Dataflow Abstraction for Parallel Programming in C++**  
+  Eduardo Martins, Dalvan Griebler
+
 ## Datas Importantes
 
 - Submissão de trabalhos: 30/08/2026

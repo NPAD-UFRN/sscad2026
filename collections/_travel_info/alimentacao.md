@@ -29,15 +29,6 @@ groups:
     icon: "bi-bag-check"
     cols: 3
     cards:
-      - title: "Shopping Via Direta"
-        price_min: 2
-        price_max: 3
-        icon: "bi-bag-heart"
-        tag: "Em frente à UFRN"
-        tag_color: "secondary"
-        text: "Acessível diretamente pelo ônibus circular gratuito da UFRN. Conta com praça de alimentação completa, lanchonetes e serviços."
-        links:
-          - url: "https://www.google.com/maps/search/?api=1&query=Via+Direta+Shopping+Natal"
       - title: "Natal Shopping"
         price_min: 2
         price_max: 5
