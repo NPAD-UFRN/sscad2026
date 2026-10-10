@@ -62,13 +62,14 @@
       title: Pausa do café
       room: Foyer Aut. CT
   - start: "10:20"
-    end: "11:00"
+    end: "11:10"
     activities:
-    - id: pe-exclusiva
+    - id: pe1
       type: keynote
       style: aud_ct
-      url: '#pe-exclusiva'
-      title: Palestra empresarial exclusiva
+      url: '#pe1'
+      title: Palestras empresariais 1
+      subtitle: (2 apresentações)
       room: Auditório do CT (216)
     - id: gap
       type: gap
@@ -100,8 +101,8 @@
       type: gap
       style: gap
       title: ''
-  - start: "11:00"
-    end: "12:20"
+  - start: "11:10"
+    end: "12:30"
     activities:
     - id: st1
       type: session
@@ -142,7 +143,7 @@
       type: gap
       style: gap
       title: ''
-  - start: "12:20"
+  - start: "12:30"
     end: "14:00"
     hide_details: 'yes'
     activities:
@@ -150,56 +151,8 @@
       type: blank
       style: blank
       title: Almoço
-  - start: "14:00"
-    end: "14:50"
-    activities:
-    - id: pe1
-      type: keynote
-      style: aud_ct
-      url: '#pe1'
-      title: Palestras empresariais 1
-      subtitle: (2 apresentações)
-      room: Auditório do CT (216)
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: wic1
-      type: workshop
-      style: aud_laut
-      url: '#wic1'
-      title: WIC
-      room: Auditório do LAUT
-      description: Workshop de Iniciação Científica (SSCAD-WIC)
-    - id: ctd
-      type: workshop
-      style: aud_npiti
-      url: '#ctd'
-      title: CTD
-      room: Auditório do nPITI
-      description: Concurso de Teses e Dissertações (SSCAD-CTD)
-    - id: mc2
-      type: tutorial
-      style: lab_dca
-      url: '#mc2'
-      title: Minicurso 2
-      subtitle: (791)
-      room: LabGrad DCA
-    - id: mc3
-      type: tutorial
-      style: lab_dimap
-      url: '#mc3'
-      title: Minicurso 3
-      subtitle: (424)
-      room: Lab DIMAp
-    - id: maratona
-      type: marathon
-      style: maratona
-      url: http://lspd.mackenzie.br/marathon/26/
-      title: Maratona
-      room: Maratona de Programação Paralela
-  - start: "14:50"
-    end: "16:10"
+  - start: "14:10"
+    end: "15:30"
     activities:
     - id: st3
       type: session
@@ -249,8 +202,55 @@
       url: http://lspd.mackenzie.br/marathon/26/
       title: Maratona
       hide_details: 'yes'
+  - start: "15:30"
+    end: "16:10"
+    activities:
+    - id: pe-exclusiva
+      type: keynote
+      style: aud_ct
+      url: '#pe-exclusiva'
+      title: "Palestra empresarial exclusiva: AWS"
+      room: Auditório do CT (215)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: wic1
+      type: workshop
+      style: aud_laut
+      url: '#wic1'
+      title: WIC
+      room: Auditório do LAUT
+      description: Workshop de Iniciação Científica (SSCAD-WIC)
+    - id: ctd
+      type: workshop
+      style: aud_npiti
+      url: '#ctd'
+      title: CTD
+      room: Auditório do nPITI
+      description: Concurso de Teses e Dissertações (SSCAD-CTD)
+    - id: mc2
+      type: tutorial
+      style: lab_dca
+      url: '#mc2'
+      title: Minicurso 2
+      subtitle: (791)
+      room: LabGrad DCA
+    - id: mc3
+      type: tutorial
+      style: lab_dimap
+      url: '#mc3'
+      title: Minicurso 3
+      subtitle: (424)
+      room: Lab DIMAp
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      room: Maratona de Programação Paralela
   - start: "16:10"
-    end: "17:00"
+    end: "16:40"
     activities:
     - id: coffee
       type: blank
@@ -284,8 +284,8 @@
       url: http://lspd.mackenzie.br/marathon/26/
       title: Maratona
       hide_details: 'yes'
-  - start: "17:00"
-    end: "18:00"
+  - start: "16:40"
+    end: "17:40"
     activities:
     - id: plenaria2
       type: keynote
