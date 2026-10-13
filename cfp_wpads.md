@@ -58,7 +58,7 @@ O WPADS incentiva submissões de trabalhos originais e inovadores nas seguintes 
 
 ## DATAS IMPORTANTES
 
-Data-limite para submissão de artigos: ~05/10/2026~ ~12/10/2026~ **14/10/2026**.
+Data-limite para submissão de artigos: **14/10/2026**.
 
 Notificação de aceitação: **19/10/2026**.
 

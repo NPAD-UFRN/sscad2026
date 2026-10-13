@@ -1,6 +1,6 @@
 ---
 title: "Hospedagem"
-order: 2
+order: 3
 type: markdown
 icon: "bi-building"
 subtitle: "Hotéis e flats recomendados em Ponta Negra e nas imediações da UFRN"

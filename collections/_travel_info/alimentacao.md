@@ -1,6 +1,6 @@
 ---
 title: "Alimentação"
-order: 4
+order: 5
 type: markdown
 icon: "bi-egg-fried"
 subtitle: "Restaurantes no campus da UFRN, shoppings vizinhos e gastronomia regional potiguar"

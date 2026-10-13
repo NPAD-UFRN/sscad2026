@@ -1,6 +1,6 @@
 ---
 title: "Natal"
-order: 5
+order: 6
 type: markdown
 icon: "bi-sun-fill"
 subtitle: "Praias, dunas, monumentos históricos e dicas para os momentos de lazer"
