@@ -205,6 +205,16 @@ p {
     box-shadow: 0 4px 14px rgba(2, 132, 199, 0.12);
 }
 
+.tier-pill-platina {
+    padding: 0.55rem 1.8rem;
+    font-size: 0.92rem;
+    letter-spacing: 0.13em;
+    background: #ffffff;
+    color: #334155;
+    border: 1.5px solid #94a3b8;
+    box-shadow: 0 4px 13px rgba(51, 65, 85, 0.1);
+}
+
 .tier-pill-prata {
     padding: 0.45rem 1.4rem;
     font-size: 0.82rem;
@@ -256,6 +266,12 @@ p {
     max-width: min(100%, 450px);
 }
 
+.sponsor-brand-platina .sponsor-brand-img {
+    height: 110px;
+    max-height: 110px;
+    max-width: min(100%, 200px);
+}
+
 .sponsor-brand-prata .sponsor-brand-img {
     height: 120px;
     max-height: 120px;
@@ -279,6 +295,12 @@ p {
         height: 140px;
         max-height: 140px;
         max-width: min(100%, 300px);
+    }
+
+    .sponsor-brand-platina .sponsor-brand-img {
+        height: 80px;
+        max-height: 80px;
+        max-width: min(100%, 150px);
     }
 
     .sponsor-brand-prata .sponsor-brand-img {

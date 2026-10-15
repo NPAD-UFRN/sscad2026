@@ -1,3 +1,18 @@
+- tier: platina
+  name: "Platina"
+  badge_class: "tier-pill-platina"
+  showcase_class: "sponsors-showcase-platina"
+  brand_class: "sponsor-brand-platina"
+  icon: |
+    <svg class="tier-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+      <path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.7 7.3L12 17.6 5.7 21.5l1.7-7.3L2 9.5l7.1-.6L12 2z"/>
+    </svg>
+  items:
+    - name: "AWS"
+      title: "AWS - Patrocinador Platina"
+      url: "https://aws.amazon.com/pt/?nc2=h_home&refid=4f374c9d-ac11-490d-8b23-82df6d4e054b"
+      logo: "/assets/img/logo/aws.png"
+
 - tier: diamante
   name: "Diamante"
   badge_class: "tier-pill-diamante"
