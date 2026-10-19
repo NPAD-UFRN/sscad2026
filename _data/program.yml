@@ -372,7 +372,7 @@
     name: Lab DIMAp
     style: lab_dimap
   - id: maratona
-    name: Maratona
+    name: Lab 203 nPITI
     style: maratona
   blocks:
   - start: "07:00"
