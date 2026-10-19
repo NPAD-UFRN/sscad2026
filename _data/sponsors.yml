@@ -27,10 +27,10 @@
       title: "KAIAK - Patrocinador Diamante"
       url: "https://kaiak.ai/pt/index"
       logo: "/assets/img/kaiak.png"
-    - name: "Perfil Global"
-      title: "Perfil Global"
-      url: "https://www.perfil.global/"
-      logo: "/assets/img/logo/perfil-dell-nvidia.png"
+    - name: "ARIT"
+      title: "ARIT - Patrocinador Diamante"
+      url: "https://arit.com.br/"
+      logo: "/assets/img/logo/arit-dell-nvidia.png"
 
 - tier: prata
   name: "Prata"
