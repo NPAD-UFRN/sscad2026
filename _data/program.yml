@@ -876,10 +876,6 @@
       title: WPADS
       room: Auditório do nPITI
       description: Workshop de Processamento de Alto Desempenho em Sistemas Embarcados
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
   - start: "09:00"
     end: "09:50"
     activities:
@@ -908,10 +904,6 @@
       title: WPADS
       room: Auditório do nPITI
       hide_details: 'yes'
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
   - start: "09:50"
     end: "10:20"
     hide_details: 'yes'
