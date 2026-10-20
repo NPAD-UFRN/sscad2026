@@ -281,21 +281,21 @@ p {
 }
 
 .sponsor-brand-diamante .sponsor-brand-img {
-    height: clamp(110px, 11vw, 150px);
-    max-height: 150px;
-    max-width: min(100%, 200px);
+    height: clamp(132px, 13.2vw, 180px);
+    max-height: 180px;
+    max-width: min(100%, 240px);
 }
 
 .sponsor-brand-platina .sponsor-brand-img {
-    height: 170px;
-    max-height: 170px;
-    max-width: min(100%, 300px);
+    height: 150px;
+    max-height: 150px;
+    max-width: min(100%, 260px);
 }
 
 .sponsor-brand-prata .sponsor-brand-img {
-    height: 80px;
-    max-height: 80px;
-    max-width: min(100%, 180px);
+    height: 96px;
+    max-height: 96px;
+    max-width: min(100%, 216px);
 }
 
 @media (max-width: 768px) {
@@ -312,21 +312,21 @@ p {
     }
 
     .sponsor-brand-diamante .sponsor-brand-img {
-        height: 110px;
-        max-height: 110px;
-        max-width: min(100%, 150px);
+        height: 132px;
+        max-height: 132px;
+        max-width: min(100%, 180px);
     }
 
     .sponsor-brand-platina .sponsor-brand-img {
-        height: 120px;
-        max-height: 120px;
-        max-width: min(100%, 200px);
+        height: 105px;
+        max-height: 105px;
+        max-width: min(100%, 175px);
     }
 
     .sponsor-brand-prata .sponsor-brand-img {
-        height: 60px;
-        max-height: 60px;
-        max-width: min(100%, 130px);
+        height: 72px;
+        max-height: 72px;
+        max-width: min(100%, 156px);
     }
 
     .tier-heading-row {
