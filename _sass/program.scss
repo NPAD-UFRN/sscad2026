@@ -387,3 +387,12 @@ div {
     font-size: 1.2rem;
   }
 }
+
+// Células da grade que levam aos detalhes da palestra
+.keynote_link:hover .activity_title {
+  text-decoration: underline;
+}
+
+.program_activity:has(> .keynote_link):hover {
+  box-shadow: 0 0 0 2px #c0392b;
+}
