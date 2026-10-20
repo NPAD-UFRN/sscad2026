@@ -3,10 +3,10 @@
   date: 03/11/2026
   rooms:
   - id: aud_ct
-    name: Aud. CT (216)
+    name: Aud. CT
     style: aud_ct
   - id: aud_ctec
-    name: Aud. CTEC (85)
+    name: Aud. CTEC
     style: aud_ctec
   - id: aud_laut
     name: Aud. LAUT
@@ -350,10 +350,10 @@
   date: 04/11/2026
   rooms:
   - id: aud_ct
-    name: Aud. CT (216)
+    name: Aud. CT
     style: aud_ct
   - id: aud_ctec
-    name: Aud. CTEC (85)
+    name: Aud. CTEC
     style: aud_ctec
   - id: aud_npiti
     name: Aud. nPITI
@@ -768,10 +768,10 @@
   date: 05/11/2026
   rooms:
   - id: aud_ct
-    name: Aud. CT (216)
+    name: Aud. CT
     style: aud_ct
   - id: aud_ctec
-    name: Aud. CTEC (85)
+    name: Aud. CTEC
     style: aud_ctec
   - id: aud_laut
     name: Aud. LAUT
