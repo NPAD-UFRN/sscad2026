@@ -389,10 +389,37 @@ div {
 }
 
 // Células da grade que levam aos detalhes da palestra
-.keynote_link:hover .activity_title {
-  text-decoration: underline;
+.keynote_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+
+  &:hover .activity_title {
+    text-decoration: underline;
+  }
 }
 
-.program_activity:has(> .keynote_link):hover {
-  box-shadow: 0 0 0 2px #c0392b;
+.keynote_link_hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #ffffff;
+  background-color: #c0392b;
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+  white-space: nowrap;
+}
+
+div .program_activity:has(> .keynote_link) {
+  border-color: #c0392b;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 0 2px #c0392b;
+  }
 }
