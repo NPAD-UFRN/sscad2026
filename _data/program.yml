@@ -52,6 +52,30 @@
       title: Palestra plenária 1
       room: Auditório do CT (216)
       description: Palestra plenária de abertura
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "09:50"
     end: "10:20"
     hide_details: 'yes'
@@ -875,6 +899,18 @@
         Edson Borin é professor do Instituto de Computação da Universidade Estadual de Campinas (Unicamp). Antes de ingressar na Unicamp, foi pesquisador no Intel Labs, na Califórnia, onde trabalhou com técnicas avançadas de compilação e implantou em microprocessadores da Intel as técnicas de compressão de microcódigo que desenvolveu em seu doutorado. Desde 2010, na Unicamp, realiza pesquisa, desenvolvimento e ensino em diferentes níveis da pilha de software de sistemas computacionais. Sua experiência abrange desde a geração de código de baixo nível para sistemas operacionais e drivers, o escalonamento de código para arquiteturas paralelas e a adaptação de aplicações de HPC para a Nuvem Computacional, até o desenvolvimento de bibliotecas e ferramentas para treinamento de modelos de aprendizado profundo em larga escala.
 
         Atualmente, é coordenador do programa de pós-graduação do Instituto de Computação da Unicamp e do Laboratório Discovery, onde lidera projetos financiados por agências de fomento, empresas internacionais de tecnologia e grandes empresas brasileiras, e coordena a linha de representação de conhecimento do Hub de Inteligência Artificial e Arquiteturas Cognitivas, o H.IAAC. É autor de nove patentes, de dois livros (um sobre programação em linguagem de montagem e outro sobre computação de alto desempenho na nuvem) e de mais de 100 artigos científicos em conferências e periódicos internacionais. Já orientou mais de 40 pesquisadores de pós-doutorado, doutorado e mestrado, muitos dos quais premiados por suas teses e artigos.
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "11:20"
     end: "12:20"
     activities:
@@ -940,6 +976,18 @@
       url: '#plenaria6'
       title: Palestra plenária 6
       room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "16:50"
     end: "17:50"
     hide_details: 'yes'
