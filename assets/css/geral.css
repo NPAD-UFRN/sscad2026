@@ -276,10 +276,14 @@ p {
     -webkit-user-drag: none;
 }
 
+.sponsors-showcase-diamante {
+    gap: 3rem;
+}
+
 .sponsor-brand-diamante .sponsor-brand-img {
-    height: 200px;
+    height: clamp(120px, 16vw, 200px);
     max-height: 200px;
-    max-width: min(100%, 450px);
+    max-width: min(100%, 260px);
 }
 
 .sponsor-brand-platina .sponsor-brand-img {
