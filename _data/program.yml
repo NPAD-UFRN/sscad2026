@@ -786,9 +786,6 @@
   - id: aud_npiti
     name: Aud. nPITI
     style: aud_npiti
-  - id: lab_dimap
-    name: Minicursos
-    style: lab_dimap
   blocks:
   - start: "07:00"
     end: "08:00"
@@ -940,13 +937,6 @@
       title: WPADS
       room: Auditório do nPITI
       hide_details: 'yes'
-    - id: mc-praticas
-      type: tutorial
-      style: lab_dimap
-      url: '#mc-praticas'
-      title: Minicursos
-      room: Lab DIMAp / DCA
-      description: Atividades práticas de minicursos
   - start: "15:20"
     end: "15:50"
     hide_details: 'yes'
