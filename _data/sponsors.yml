@@ -42,6 +42,17 @@
           title: "NVIDIA - Patrocinador Diamante"
           url: "https://www.nvidia.com/pt-br/"
           height: "41.4%"
+    - name: "Sodalita e Vertiv"
+      logo: "/assets/img/logo/sodalita-vertiv.png"
+      links:
+        - name: "Sodalita"
+          title: "Sodalita - Patrocinador Diamante"
+          url: "https://sodalita.com.br/"
+          height: "58.6%"
+        - name: "Vertiv"
+          title: "Vertiv - Patrocinador Diamante"
+          url: "https://www.vertiv.com/pt-latam/"
+          height: "41.4%"
 
 - tier: prata
   name: "Prata"
