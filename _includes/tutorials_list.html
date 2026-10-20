@@ -18,7 +18,7 @@
                     {% for activity in block.activities %}
                         {% if activity.id != mc.id %}{% continue %}{% endif %}
                         {% assign sala = activity.room %}
-                        {% if activity.subtitle contains "ext" %}
+                        {% if activity.subtitle contains "cont" %}
                             {% unless ext_inicio %}{% assign ext_inicio = block.start %}{% endunless %}
                             {% assign ext_fim = block.end %}
                         {% else %}
@@ -29,7 +29,7 @@
                 {% endfor %}
                 {% if inicio %}
                     <p class="activity_room"><b>Sala:</b> {{ sala }}</p>
-                    <p><b>Horário:</b> {{ day.title }} ({{ day.date }}), {{ inicio }} - {{ fim }}{% if ext_inicio %} (extensão opcional até {{ ext_fim }}){% endif %}</p>
+                    <p><b>Horário:</b> {{ day.title }} ({{ day.date }}), {{ inicio }} - {{ fim }}{% if ext_inicio %} (continuação até {{ ext_fim }}){% endif %}</p>
                 {% endif %}
             {% endfor %}
             <p><b>Resumo</b>: {{ mc.resumo }}</p>

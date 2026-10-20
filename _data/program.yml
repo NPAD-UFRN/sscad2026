@@ -520,7 +520,7 @@
       style: lab_dimap
       url: '#mc4'
       title: Minicurso 4
-      subtitle: (ext. opc.)
+      subtitle: (cont.)
       room: Lab DIMAp
       hide_details: 'yes'
     - id: maratona
@@ -749,7 +749,7 @@
       style: lab_dimap
       url: '#mc5'
       title: Minicurso 5
-      subtitle: (ext. opc.)
+      subtitle: (cont.)
       room: Lab DIMAp
       hide_details: 'yes'
     - id: maratona
