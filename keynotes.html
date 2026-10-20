@@ -41,7 +41,7 @@ permalink: /program/keynotes/
                                     <div class="keynote_meta">
                                         <span class="keynote_label">{{ activity.title | default: "Palestra" }}</span>
                                         <span><i class="bi bi-clock"></i> {{ block.start }} – {{ block.end }}</span>
-                                        {% if activity.room %}<span><i class="bi bi-geo-alt"></i> {{ activity.room }}</span>{% endif %}
+                                        {% if activity.room %}<span><i class="bi bi-geo-alt"></i> {{ activity.room | split: " (" | first }}</span>{% endif %}
                                     </div>
                                     {% if activity.keynote_title %}
                                         <h3 class="keynote_title">{{ activity.keynote_title }}</h3>
