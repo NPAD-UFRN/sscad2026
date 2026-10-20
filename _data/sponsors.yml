@@ -31,10 +31,17 @@
       title: "ARIT - Patrocinador Diamante"
       url: "https://arit.com.br/"
       logo: "/assets/img/logo/arit-dell-nvidia.png"
-    - name: "Versatus HPC"
-      title: "Versatus HPC - Patrocinador Diamante"
-      url: "https://versatushpc.com.br/"
+    - name: "Versatus HPC e NVIDIA"
       logo: "/assets/img/logo/versatus-nvidia.png"
+      links:
+        - name: "Versatus HPC"
+          title: "Versatus HPC - Patrocinador Diamante"
+          url: "https://versatushpc.com.br/"
+          height: "58.6%"
+        - name: "NVIDIA"
+          title: "NVIDIA - Patrocinador Diamante"
+          url: "https://www.nvidia.com/pt-br/"
+          height: "41.4%"
 
 - tier: prata
   name: "Prata"
