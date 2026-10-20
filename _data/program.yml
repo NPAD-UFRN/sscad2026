@@ -91,7 +91,6 @@
       style: lab_dca
       url: '#mc1'
       title: Minicurso 1
-      subtitle: (180)
       room: LabGrad DCA
     - id: gap
       type: gap
@@ -132,7 +131,6 @@
       style: lab_dca
       url: '#mc1'
       title: Minicurso 1
-      subtitle: (180)
       room: LabGrad DCA
       hide_details: 'yes'
     - id: gap
@@ -185,7 +183,6 @@
       style: lab_dca
       url: '#mc2'
       title: Minicurso 2
-      subtitle: (791)
       room: LabGrad DCA
       hide_details: 'yes'
     - id: mc3
@@ -193,7 +190,6 @@
       style: lab_dimap
       url: '#mc3'
       title: Minicurso 3
-      subtitle: (424)
       room: Lab DIMAp
       hide_details: 'yes'
     - id: maratona
@@ -234,14 +230,12 @@
       style: lab_dca
       url: '#mc2'
       title: Minicurso 2
-      subtitle: (791)
       room: LabGrad DCA
     - id: mc3
       type: tutorial
       style: lab_dimap
       url: '#mc3'
       title: Minicurso 3
-      subtitle: (424)
       room: Lab DIMAp
     - id: maratona
       type: marathon
@@ -431,7 +425,6 @@
       style: lab_dimap
       url: '#mc4'
       title: Minicurso 4
-      subtitle: (182)
       room: Lab DIMAp
     - id: maratona
       type: marathon
@@ -465,7 +458,6 @@
       style: lab_dimap
       url: '#mc4'
       title: Minicurso 4
-      subtitle: (182)
       room: Lab DIMAp
       hide_details: 'yes'
     - id: maratona
@@ -629,7 +621,6 @@
       style: lab_dimap
       url: '#mc5'
       title: Minicurso 5
-      subtitle: (460)
       room: Lab DIMAp
     - id: maratona
       type: marathon
@@ -663,7 +654,6 @@
       style: lab_dimap
       url: '#mc5'
       title: Minicurso 5
-      subtitle: (460)
       room: Lab DIMAp
       hide_details: 'yes'
     - id: maratona
