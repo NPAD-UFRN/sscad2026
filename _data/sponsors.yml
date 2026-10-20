@@ -68,3 +68,7 @@
       title: "CESAR - Patrocinador Prata"
       url: "https://www.cesar.org.br/"
       logo: "/assets/img/logo/cesar.png"
+    - name: "DCA"
+      title: "DCA - Patrocinador Prata"
+      url: "https://www.dca.ufrn.br/"
+      logo: "/assets/img/logo/dca.png"
