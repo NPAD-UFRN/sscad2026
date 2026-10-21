@@ -20,11 +20,11 @@
         <div class="sponsors-showcase {{ category.showcase_class }}">
             {% for sponsor in category.items %}
             {% if sponsor.links %}
-            <div class="sponsor-brand sponsor-brand-split {{ category.brand_class }}">
+            <div class="sponsor-brand sponsor-brand-split{% if sponsor.split == 'row' %} sponsor-brand-split-row{% endif %} {{ category.brand_class }}">
                 <img src="{{ sponsor.logo | relative_url }}" alt="Logo {{ sponsor.name }}" class="sponsor-brand-img">
                 <div class="sponsor-brand-split-links">
                     {% for link in sponsor.links %}
-                    <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" style="height: {{ link.height }}" title="{{ link.title }}" aria-label="{{ link.title }}"></a>
+                    <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" style="{% if link.width %}width: {{ link.width }}{% else %}height: {{ link.height }}{% endif %}" title="{{ link.title }}" aria-label="{{ link.title }}"></a>
                     {% endfor %}
                 </div>
             </div>

@@ -266,6 +266,25 @@ p {
     width: 100%;
 }
 
+.sponsor-brand-split-row .sponsor-brand-split-links {
+    flex-direction: row;
+}
+
+.sponsor-brand-split-row .sponsor-brand-split-links a {
+    height: 100%;
+}
+
+.sponsor-brand.sponsor-brand-split-row {
+    width: min(100%, 380px);
+}
+
+.sponsor-brand.sponsor-brand-split-row .sponsor-brand-img {
+    width: 100%;
+    height: auto;
+    max-width: none;
+    max-height: none;
+}
+
 .sponsor-brand-img {
     display: block;
     width: auto;
