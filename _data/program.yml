@@ -307,6 +307,11 @@
       subtitle: Wedson Almeida
       authors: Wedson Almeida
       room: Auditório do CT (216)
+      keynote_title: "Rustics: uma alternativa ao kernel Linux"
+      abstract: |-
+        O Linux é um dos maiores feitos da engenharia de software, mas seu tamanho e sua longa história de desenvolvimento trazem desafios importantes para a segurança e resiliência, especialmente em relação às vulnerabilidades de memória e à viabilidade da verificação formal. Esta apresentação introduz o Rustics, um núcleo de sistema operacional escrito em Rust e compatível com Linux, que busca combinar segurança de memória, alto desempenho e resiliência.
+      short_bio: |-
+        Wedson é um veterano da indústria de software, com mais de 23 anos de experiência nas empresas Microsoft, Facebook e Google. Ao longo de sua carreira, contribuiu para projetos relevantes de sistemas operacionais, virtualização e segurança. Foi um dos engenheiros fundadores do gVisor, autor original do hipervisor Hafnium e co-mantenedor do projeto Rust for Linux, dedicado à integração da linguagem Rust ao kernel Linux.
     - id: gap
       type: gap
       style: gap
