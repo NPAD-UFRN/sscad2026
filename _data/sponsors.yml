@@ -44,15 +44,16 @@
           height: "41.4%"
     - name: "Sodalita e Vertiv"
       logo: "/assets/img/logo/sodalita-vertiv.png"
+      split: "row"
       links:
         - name: "Sodalita"
           title: "Sodalita - Patrocinador Diamante"
           url: "https://sodalita.com.br/"
-          height: "58.6%"
+          width: "49%"
         - name: "Vertiv"
           title: "Vertiv - Patrocinador Diamante"
           url: "https://www.vertiv.com/pt-latam/"
-          height: "41.4%"
+          width: "51%"
 
 - tier: prata
   name: "Prata"
