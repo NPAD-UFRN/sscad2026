@@ -9,6 +9,9 @@ div {
     align-items: center;
     border: 1px solid #000000;
     background-color: #ffbbbb;
+    // Mantém todas as colunas com a mesma largura do cabeçalho, mesmo com palavras longas
+    min-width: 0;
+    overflow-wrap: anywhere;
     &.auditorio1 {
       background-color: #bbbbff;
     }
@@ -61,6 +64,21 @@ div {
 
   .program_header {
     margin: 1rem 0;
+  }
+
+  // Fonte menor na grade para que as palavras caibam inteiras nas colunas
+  .program_activity .activity_title {
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 1199.98px) {
+    .program_activity {
+      margin: 0 .25rem;
+      padding: .5rem .25rem;
+      .activity_title {
+        font-size: .95rem;
+      }
+    }
   }
 
   .block_time {
