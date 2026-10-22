@@ -188,10 +188,13 @@
       url: '#st4'
       title: Sessão técnica 4
       room: Auditório do CTEC (85)
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
+    - id: wic2
+      type: workshop
+      style: aud_laut
+      url: '#wic2'
+      title: WIC
+      room: Auditório do LAUT
+      description: Workshop de Iniciação Científica (SSCAD-WIC)
     - id: ctd
       type: workshop
       style: aud_npiti
@@ -232,10 +235,13 @@
       type: gap
       style: gap
       title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
+    - id: wic2
+      type: workshop
+      style: aud_laut
+      url: '#wic2'
+      title: WIC
+      room: Auditório do LAUT
+      hide_details: 'yes'
     - id: ctd
       type: workshop
       style: aud_npiti
@@ -384,6 +390,9 @@
   - id: aud_ctec
     name: Aud. CTEC
     style: aud_ctec
+  - id: aud_laut
+    name: Aud. LAUT
+    style: aud_laut
   - id: aud_npiti
     name: Aud. nPITI
     style: aud_npiti
@@ -403,6 +412,10 @@
       title: Boas-vindas e cadastramento
       room: Auditório do CT
       hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
     - id: gap
       type: gap
       style: gap
@@ -436,6 +449,10 @@
       url: '#st6'
       title: Sessão técnica 6
       room: Auditório do CTEC (85)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
     - id: wmad
       type: workshop
       style: aud_npiti
@@ -465,6 +482,10 @@
       title: Minipalestras empresariais 1
       subtitle: (2 apresentações)
       room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
     - id: gap
       type: gap
       style: gap
@@ -510,6 +531,10 @@
       type: gap
       style: gap
       title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
     - id: maratona
       type: marathon
       style: maratona
@@ -531,6 +556,10 @@
       url: '#st8'
       title: Sessão técnica 8
       room: Auditório do CTEC (85)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
     - id: wmad
       type: workshop
       style: aud_npiti
@@ -585,6 +614,10 @@
       type: gap
       style: gap
       title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
     - id: maratona
       type: marathon
       style: maratona
@@ -599,6 +632,10 @@
       style: blank
       title: Almoço
       hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
     - id: gap
       type: gap
       style: gap
@@ -632,6 +669,10 @@
       url: '#st10'
       title: Sessão técnica 10
       room: Auditório do CTEC (85)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
     - id: wmad
       type: workshop
       style: aud_npiti
@@ -665,6 +706,10 @@
       type: gap
       style: gap
       title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
     - id: wmad
       type: workshop
       style: aud_npiti
@@ -694,6 +739,10 @@
       title: Pausa do café
       room: Foyer Aut. CT / Lab DIMAp
       hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
     - id: gap
       type: gap
       style: gap
@@ -741,6 +790,10 @@
       type: gap
       style: gap
       title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
     - id: maratona
       type: marathon
       style: maratona
@@ -762,6 +815,13 @@
       type: gap
       style: gap
       title: ''
+    - id: wic2
+      type: workshop
+      style: aud_laut
+      url: '#wic2'
+      title: WIC
+      room: Auditório do LAUT
+      description: Workshop de Iniciação Científica (SSCAD-WIC)
     - id: gap
       type: gap
       style: gap
