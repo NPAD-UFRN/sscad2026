@@ -1,0 +1,185 @@
+---
+layout: default
+title: "Workshops"
+permalink: /workshops/
+
+# ---------------------------------------------------------------------------
+# Workshops do SSCAD 2026
+#
+#   id       -> prefixo dos ids em _data/program.yml (ex.: "wic" pega wic1..wic6).
+#               Dias, horários e salas são lidos de lá automaticamente.
+#   aceito   -> true para os workshops aceitos na chamada de propostas
+# ---------------------------------------------------------------------------
+workshops:
+  - id: weac
+    sigla: WEAC
+    nome: Workshop sobre Educação em Arquitetura de Computadores
+    descricao: >
+      Fórum anual, em sua vigésima edição, para professores, pesquisadores e estudantes discutirem experiências,
+      ideias e resultados sobre educação em Arquitetura de Computadores, Computação Paralela, Computação de Alto
+      Desempenho e Sistemas de Computação.
+    pagina: /cfp_weac/
+  - id: wic
+    sigla: SSCAD-WIC
+    nome: Workshop de Iniciação Científica em Arquitetura de Computadores e Computação de Alto Desempenho
+    descricao: >
+      Evento anual realizado junto ao SSCAD desde 2007, em que estudantes de graduação apresentam e discutem seus
+      trabalhos nos temas de interesse do simpósio.
+    pagina: /cfp_wic/
+  - id: ctd
+    sigla: SSCAD-CTD
+    nome: Concurso de Teses e Dissertações
+    descricao: >
+      Concurso da Comissão Especial de Arquitetura de Computadores para teses de doutorado e dissertações de mestrado
+      em Arquitetura de Computadores e Computação de Alto Desempenho.
+    pagina: /cfp_ctd/
+  - id: wmad
+    sigla: W-MAD
+    nome: Workshop de Mulheres em Alto Desempenho
+    descricao: >
+      Espaço de encontro, colaboração e fortalecimento da participação feminina em Computação de Alto Desempenho,
+      reunindo pesquisadoras, profissionais da indústria e estudantes.
+    pagina: /cfp_wmad/
+    aceito: true
+  - id: wpads
+    sigla: WPADS
+    nome: I Workshop de Processamento de Alto Desempenho Sustentável
+    descricao: >
+      Espaço para discutir a convergência entre alto desempenho computacional, eficiência energética e
+      responsabilidade socioambiental.
+    pagina: /cfp_wpads/
+    aceito: true
+---
+
+<section class="content-page">
+  <!-- Abertura -->
+  <div class="page-hero">
+    <span class="page-pill"><i class="bi bi-people-fill"></i> SSCAD 2026</span>
+    <h1 class="page-title">Workshops</h1>
+    <p class="page-lead">
+      Os workshops do SSCAD 2026 acontecem em paralelo ao simpósio, de 3 a 5 de novembro de 2026, em Natal (RN),
+      com discussões focadas em temas novos, emergentes ou consolidados em Computação de Alto Desempenho (HPC) e áreas correlatas.
+    </p>
+    <ul class="page-chips">
+      <li><i class="bi bi-collection-fill"></i> {{ page.workshops.size }} eventos</li>
+      <li><i class="bi bi-calendar-event"></i> 3 a 5 de novembro de 2026</li>
+      <li><i class="bi bi-geo-alt-fill"></i> Campus Central da UFRN</li>
+    </ul>
+  </div>
+
+  <!-- Programação -->
+  <div class="section-head" id="programacao">
+    <h2>Na programação</h2>
+    <p>Dias, horários e salas de cada workshop. Os detalhes estão na página de cada um.</p>
+  </div>
+
+  <div class="card-grid">
+    {% for w in page.workshops %}
+      {% assign tam = w.id | size %}
+      <article class="content-card workshop-card" id="{{ w.id }}">
+        <div class="workshop-head">
+          <span class="keynote_label">{{ w.sigla }}</span>
+          {% if w.aceito %}<span class="workshop-badge"><i class="bi bi-patch-check-fill"></i> Aceito na chamada de workshops</span>{% endif %}
+        </div>
+        <h3>{{ w.nome }}</h3>
+        <p>{{ w.descricao }}</p>
+
+        {% comment %} Horários: blocos seguidos do mesmo workshop viram um intervalo só {% endcomment %}
+        <ul class="workshop-schedule">
+          {% for day in site.data.program %}
+            {% assign inicio = nil %}{% assign fim = nil %}{% assign sala = nil %}{% assign faixas = "" %}
+            {% for block in day.blocks %}
+              {% for activity in block.activities %}
+                {% assign prefixo = activity.id | slice: 0, tam %}
+                {% if activity.type != "workshop" or prefixo != w.id %}{% continue %}{% endif %}
+                {% assign sala = activity.room %}
+                {% if inicio and block.start == fim %}
+                  {% assign fim = block.end %}
+                {% else %}
+                  {% if inicio %}{% assign faixas = faixas | append: inicio | append: " – " | append: fim | append: ", " %}{% endif %}
+                  {% assign inicio = block.start %}{% assign fim = block.end %}
+                {% endif %}
+              {% endfor %}
+            {% endfor %}
+            {% if inicio %}
+              {% assign faixas = faixas | append: inicio | append: " – " | append: fim %}
+              <li>
+                <b>{{ day.title }} ({{ day.date | slice: 0, 5 }})</b>
+                <span><i class="bi bi-clock"></i> {{ faixas }}</span>
+                <span><i class="bi bi-geo-alt"></i> {{ sala }}</span>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+        <div class="button-row">
+          <a class="btn btn-accent" href="{{ w.pagina | relative_url }}">Página do {{ w.sigla }}</a>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="content-page content-page-end">
+  <div class="section-head" id="chamada">
+    <h2>Propostas de Workshops</h2>
+  </div>
+
+  <div class="content-card">
+    <p>
+      O XXVII <b>Simpósio em Sistemas Computacionais de Alto Desempenho (SSCAD 2026)</b> convida a comunidade acadêmica e
+      industrial a submeter <b>propostas de workshops de meio dia ou dia inteiro</b> sobre temas novos, emergentes ou
+      consolidados em <b>Computação de Alto Desempenho (HPC)</b> e áreas correlatas.
+    </p>
+    <p>
+      Os workshops devem promover discussões focadas, apresentação de pesquisas em andamento ou consolidadas e a interação
+      entre pesquisadores, estudantes e profissionais, podendo incluir <b>artigos revisados por pares, palestras convidadas,
+      painéis e sessões interativas</b>.
+    </p>
+    <p>
+      Artigos de workshops aceitos e revisados por pares <b>poderão ser incluídos nos anais do SSCAD 2026</b>, desde que
+      atendam aos critérios de avaliação, incluindo, <b>no mínimo, duas revisões independentes por artigo</b>.
+    </p>
+    <p>A conferência será realizada em Natal (RN), de 3 a 5 de novembro de 2026.</p>
+  </div>
+
+  <div class="card-grid">
+    <!-- Datas -->
+    <div class="content-card">
+      <h3><i class="bi bi-calendar-check-fill"></i> Datas importantes</h3>
+      <ol class="timeline">
+        <li><span class="timeline-date">até 22/03/25</span> Submissão de propostas</li>
+        <li><span class="timeline-date">até 5/04/25</span> Notificação de aceitação</li>
+      </ol>
+    </div>
+
+    <!-- Propostas -->
+    <div class="content-card">
+      <h3><i class="bi bi-file-earmark-pdf-fill"></i> Propostas</h3>
+      <p>As propostas devem ser submetidas em <b>formato PDF</b> e conter:</p>
+      <ul>
+        <li>Título, acrônimo e duração do workshop;</li>
+        <li>Descrição do workshop (0,5 a 1 página);</li>
+        <li>Lista de tópicos e relevância para o SSCAD;</li>
+        <li>Organizadores: nomes, afiliações e mini-biografias (5–10 linhas);</li>
+        <li>Comitê de programa preliminar (se disponível);</li>
+        <li>Programa previsto do workshop;</li>
+        <li>Infraestrutura necessária;</li>
+        <li>Histórico de edições anteriores (se aplicável).</li>
+      </ul>
+      <div class="button-row">
+        <a class="btn btn-accent" href="https://forms.gle/HGRdU2Dwv7QzShHb9" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-up-right"></i> Link da submissão</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chairs -->
+  <div class="content-card">
+    <h3><i class="bi bi-person-badge-fill"></i> Chairs dos Workshops</h3>
+    <ul class="workshop-chairs">
+      <li><b>Arthur Francisco Lorenzon</b> (UFRGS) · <a href="mailto:aflorenzon@inf.ufrgs.br">aflorenzon@inf.ufrgs.br</a></li>
+      <li><b>Hervé Yviquel</b> (UNICAMP) · <a href="mailto:hyviquel@unicamp.br">hyviquel@unicamp.br</a></li>
+      <li><b>Evaldo Costa</b> (CESAR) · <a href="mailto:ebc@cesar.org.br">ebc@cesar.org.br</a></li>
+    </ul>
+  </div>
+</section>

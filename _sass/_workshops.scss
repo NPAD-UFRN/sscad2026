@@ -1,0 +1,65 @@
+// Página de Workshops (workshops.html). Moldura, cards, linha do tempo e botões vêm de _components.scss
+
+.workshop-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: .75rem;
+}
+
+.workshop-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .8rem;
+  font-weight: 600;
+  color: $page-accent;
+}
+
+.workshop-card {
+  display: flex;
+  flex-direction: column;
+
+  > h3 {
+    display: block;
+    margin-bottom: .5rem;
+  }
+
+  .button-row {
+    margin-top: auto;
+    padding-top: 1rem;
+  }
+}
+
+// Dias, horários e salas
+.workshop-schedule,
+.workshop-chairs {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.workshop-schedule li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem 1rem;
+  padding: .6rem 0;
+  border-top: 1px solid $gray-200;
+  font-size: .95rem;
+  color: $page-text;
+
+  b {
+    flex-basis: 100%;
+    color: $page-heading;
+  }
+
+  span {
+    color: $page-muted;
+  }
+}
+
+.workshop-chairs li {
+  padding: .3rem 0;
+  color: $page-text;
+}
