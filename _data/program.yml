@@ -109,11 +109,11 @@
       type: gap
       style: gap
       title: ''
-    - id: mc1
+    - id: mc3
       type: tutorial
       style: lab_dca
-      url: '#mc1'
-      title: Minicurso 1
+      url: '#mc3'
+      title: Minicurso 3
       room: LabGrad DCA
     - id: gap
       type: gap
@@ -179,11 +179,11 @@
       type: gap
       style: gap
       title: ''
-    - id: mc1
+    - id: mc3
       type: tutorial
       style: lab_dca
-      url: '#mc1'
-      title: Minicurso 1
+      url: '#mc3'
+      title: Minicurso 3
       room: LabGrad DCA
       hide_details: 'yes'
     - id: gap
@@ -242,11 +242,11 @@
       url: '#mc2'
       title: Minicurso 2
       room: LabGrad DCA
-    - id: mc3
+    - id: mc1
       type: tutorial
       style: lab_dimap
-      url: '#mc3'
-      title: Minicurso 3
+      url: '#mc1'
+      title: Minicurso 1
       room: Lab DIMAp
     - id: maratona
       type: marathon
@@ -330,11 +330,11 @@
       title: Minicurso 2
       room: LabGrad DCA
       hide_details: 'yes'
-    - id: mc3
+    - id: mc1
       type: tutorial
       style: lab_dimap
-      url: '#mc3'
-      title: Minicurso 3
+      url: '#mc1'
+      title: Minicurso 1
       room: Lab DIMAp
       hide_details: 'yes'
     - id: maratona
