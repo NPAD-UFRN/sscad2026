@@ -1,6 +1,6 @@
 // Página "Local do evento" (travel_info.html) e cards de _includes/travel_card.html
 
-$travel-accent: $primary;
+$travel-accent: $sscad-red;
 $travel-text: $gray-700;
 $travel-muted: $gray-600;
 $travel-heading: $gray-900;
@@ -14,6 +14,43 @@ $travel-shadow-hover: 0 .5rem 1.25rem rgba($black, .08);
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.5rem 1rem 4rem;
+
+  // Tema vermelho: troca o azul do Bootstrap (primary/info) usado nos selos, botões e acordeão
+  --bs-link-color-rgb: #{to-rgb($travel-accent)};
+  --bs-link-hover-color-rgb: #{to-rgb(darken($travel-accent, 10%))};
+
+  .text-bg-primary,
+  .text-bg-info {
+    background-color: $travel-accent !important;
+    color: $white !important;
+  }
+
+  .bg-primary-subtle,
+  .bg-info-subtle {
+    background-color: $sscad-red-subtle !important;
+  }
+
+  .text-primary-emphasis,
+  .text-info-emphasis {
+    color: darken($travel-accent, 15%) !important;
+  }
+
+  .btn-outline-primary {
+    --bs-btn-color: #{$travel-accent};
+    --bs-btn-border-color: #{$travel-accent};
+    --bs-btn-hover-bg: #{$travel-accent};
+    --bs-btn-hover-border-color: #{$travel-accent};
+    --bs-btn-active-bg: #{darken($travel-accent, 8%)};
+    --bs-btn-active-border-color: #{darken($travel-accent, 8%)};
+    --bs-btn-focus-shadow-rgb: #{to-rgb($travel-accent)};
+  }
+
+  .accordion {
+    --bs-accordion-active-color: #{$travel-accent};
+    --bs-accordion-btn-focus-border-color: #{$travel-accent};
+    --bs-accordion-btn-active-icon: #{escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$travel-accent}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>"))};
+  }
+
 
   // Neutraliza o p { font-size: 25px } global de assets/css/geral.css
   p {
@@ -34,7 +71,7 @@ $travel-shadow-hover: 0 .5rem 1.25rem rgba($black, .08);
       padding: .35rem 1rem;
       margin-bottom: 1rem;
       border-radius: $border-radius-pill;
-      background-color: $primary-bg-subtle;
+      background-color: $sscad-red-subtle;
       color: $travel-accent;
       font-size: .8rem;
       font-weight: 700;
@@ -115,7 +152,7 @@ $travel-shadow-hover: 0 .5rem 1.25rem rgba($black, .08);
       }
 
       &:focus-visible {
-        box-shadow: $btn-focus-box-shadow;
+        box-shadow: 0 0 0 .25rem rgba($travel-accent, .25);
       }
     }
 
@@ -127,7 +164,7 @@ $travel-shadow-hover: 0 .5rem 1.25rem rgba($black, .08);
       width: 44px;
       height: 44px;
       border-radius: $border-radius-lg;
-      background-color: $primary-bg-subtle;
+      background-color: $sscad-red-subtle;
       color: $travel-accent;
       font-size: 1.25rem;
       transition: background-color .2s ease, color .2s ease;
@@ -588,7 +625,7 @@ $travel-shadow-hover: 0 .5rem 1.25rem rgba($black, .08);
         &:hover,
         &:focus-visible {
           border-color: $travel-accent;
-          background-color: $primary-bg-subtle;
+          background-color: $sscad-red-subtle;
         }
       }
     }
