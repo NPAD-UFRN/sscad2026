@@ -1,0 +1,13 @@
+{% comment %} Abas dos dias em `dias_programa` (definido por program_days.html); o primeiro dia começa ativo {% endcomment %}
+<ul class="nav nav-pills justify-content-center keynote_days" role="tablist">
+    {% for day in site.data.program %}
+        {% unless dias_programa contains day.id %}{% continue %}{% endunless %}
+        <li class="nav-item" role="presentation">
+            <button class="nav-link{% if day.id == dias_programa.first %} active{% endif %}" id="tab-{{ day.id }}" data-bs-toggle="pill"
+                data-bs-target="#dia-{{ day.id }}" data-date="{{ day.date }}" type="button" role="tab"
+                aria-controls="dia-{{ day.id }}" aria-selected="{% if day.id == dias_programa.first %}true{% else %}false{% endif %}">
+                {{ day.title }} <small>{{ day.date | slice: 0, 5 }}</small>
+            </button>
+        </li>
+    {% endfor %}
+</ul>

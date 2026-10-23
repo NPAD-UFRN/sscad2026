@@ -1,0 +1,6 @@
+{% comment %} Texto recolhido em poucas linhas com botão "Ler mais" (comportamento em program_cards_script.html). Parâmetro: text {% endcomment %}
+<div class="keynote_text">
+    {% assign paragrafos = include.text | newline_to_br | split: "<br />" %}
+    {% for p in paragrafos %}{% assign t = p | strip %}{% if t != "" %}<p>{{ t }}</p>{% endif %}{% endfor %}
+</div>
+<button class="btn btn-link keynote_more" type="button" aria-expanded="false">Ler mais</button>

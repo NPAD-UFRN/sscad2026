@@ -9,22 +9,13 @@ permalink: /program/keynotes/
     <h1 class="text-center">{{ page.title }}</h1>
     <br>
     <div class="container keynotes">
-        <!-- Abas dos dias -->
-        <ul class="nav nav-pills justify-content-center keynote_days" role="tablist">
-            {% for day in site.data.program %}
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link{% if forloop.first %} active{% endif %}" id="tab-{{ day.id }}" data-bs-toggle="pill"
-                        data-bs-target="#dia-{{ day.id }}" data-date="{{ day.date }}" type="button" role="tab"
-                        aria-controls="dia-{{ day.id }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
-                        {{ day.title }} <small>{{ day.date | slice: 0, 5 }}</small>
-                    </button>
-                </li>
-            {% endfor %}
-        </ul>
+        {% include program_days.html type="keynote" %}
+        {% include day_tabs.html %}
 
         <div class="tab-content">
             {% for day in site.data.program %}
-                <div class="tab-pane fade{% if forloop.first %} show active{% endif %}" id="dia-{{ day.id }}" role="tabpanel"
+                {% unless dias_programa contains day.id %}{% continue %}{% endunless %}
+                <div class="tab-pane fade{% if day.id == dias_programa.first %} show active{% endif %}" id="dia-{{ day.id }}" role="tabpanel"
                     aria-labelledby="tab-{{ day.id }}">
                     {% for block in day.blocks %}
                         {% if block.hide_details %}{% continue %}{% endif %}
@@ -34,24 +25,17 @@ permalink: /program/keynotes/
                             {% assign afiliacao = activity.authors | split: " (" | last | remove: ")" %}
                             {% if afiliacao == nome %}{% assign afiliacao = nil %}{% endif %}
                             {% assign partes = nome | split: " " %}
+                            {% assign rotulo = activity.title | default: "Palestra" %}
 
                             <article class="keynote_card" id="{{ activity.id }}">
                                 <!-- A palestra -->
                                 <div class="keynote_talk">
-                                    <div class="keynote_meta">
-                                        <span class="keynote_label">{{ activity.title | default: "Palestra" }}</span>
-                                        <span><i class="bi bi-clock"></i> {{ block.start }} – {{ block.end }}</span>
-                                        {% if activity.room %}<span><i class="bi bi-geo-alt"></i> {{ activity.room | split: " (" | first }}</span>{% endif %}
-                                    </div>
+                                    {% include card_meta.html label=rotulo start=block.start end=block.end room=activity.room %}
                                     {% if activity.keynote_title %}
                                         <h3 class="keynote_title">{{ activity.keynote_title }}</h3>
                                     {% endif %}
                                     {% if activity.abstract %}
-                                        <div class="keynote_text">
-                                            {% assign paragrafos = activity.abstract | newline_to_br | split: "<br />" %}
-                                            {% for p in paragrafos %}{% assign t = p | strip %}{% if t != "" %}<p>{{ t }}</p>{% endif %}{% endfor %}
-                                        </div>
-                                        <button class="btn btn-link keynote_more" type="button" aria-expanded="false">Ler mais</button>
+                                        {% include expandable_text.html text=activity.abstract %}
                                     {% endif %}
                                 </div>
 
@@ -68,11 +52,7 @@ permalink: /program/keynotes/
                                             <p class="keynote_speaker_name">{{ nome }}</p>
                                             {% if afiliacao %}<p class="keynote_speaker_affiliation">{{ afiliacao }}</p>{% endif %}
                                             {% if activity.short_bio %}
-                                                <div class="keynote_text">
-                                                    {% assign paragrafos = activity.short_bio | newline_to_br | split: "<br />" %}
-                                                    {% for p in paragrafos %}{% assign t = p | strip %}{% if t != "" %}<p>{{ t }}</p>{% endif %}{% endfor %}
-                                                </div>
-                                                <button class="btn btn-link keynote_more" type="button" aria-expanded="false">Ler mais</button>
+                                                {% include expandable_text.html text=activity.short_bio %}
                                             {% endif %}
                                         </div>
                                     </div>
@@ -87,46 +67,4 @@ permalink: /program/keynotes/
     <br><br>
 </section>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Esconde "Ler mais" quando o texto já cabe inteiro (abas ocultas são verificadas ao serem abertas)
-        function ajustarBotoes() {
-            document.querySelectorAll(".tab-pane.active .keynote_more").forEach(function (botao) {
-                var texto = botao.previousElementSibling;
-                if (!texto.classList.contains("is-open")) {
-                    botao.hidden = texto.scrollHeight <= texto.clientHeight + 1;
-                }
-            });
-        }
-        document.querySelectorAll(".keynote_days [data-bs-toggle]").forEach(function (aba) {
-            aba.addEventListener("shown.bs.tab", ajustarBotoes);
-        });
-        window.addEventListener("resize", ajustarBotoes);
-        ajustarBotoes();
-
-        // Expande/recolhe resumo e biografia
-        document.querySelectorAll(".keynote_more").forEach(function (botao) {
-            var texto = botao.previousElementSibling;
-            botao.addEventListener("click", function () {
-                var aberto = texto.classList.toggle("is-open");
-                botao.setAttribute("aria-expanded", aberto);
-                botao.textContent = aberto ? "Ler menos" : "Ler mais";
-            });
-        });
-
-        // Abre a aba do dia correto: âncora da palestra (ex.: #plenaria5) ou o dia de hoje durante o evento
-        var alvo = location.hash ? document.getElementById(location.hash.slice(1)) : null;
-        var botao = null;
-        if (alvo && alvo.closest(".tab-pane")) {
-            botao = document.querySelector('[data-bs-target="#' + alvo.closest(".tab-pane").id + '"]');
-        } else {
-            var hoje = new Date();
-            var data = ("0" + hoje.getDate()).slice(-2) + "/" + ("0" + (hoje.getMonth() + 1)).slice(-2) + "/" + hoje.getFullYear();
-            botao = document.querySelector('.keynote_days [data-date="' + data + '"]');
-        }
-        if (botao) {
-            bootstrap.Tab.getOrCreateInstance(botao).show();
-            if (alvo) { setTimeout(function () { alvo.scrollIntoView({ behavior: "smooth", block: "start" }); }, 200); }
-        }
-    });
-</script>
+{% include program_cards_script.html %}

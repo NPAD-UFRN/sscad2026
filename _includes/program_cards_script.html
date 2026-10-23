@@ -1,0 +1,44 @@
+{% comment %} Comportamento das páginas de cards por dia: "Ler mais" e abertura da aba do dia (âncora ou data de hoje) {% endcomment %}
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Esconde "Ler mais" quando o texto já cabe inteiro (abas ocultas são verificadas ao serem abertas)
+        function ajustarBotoes() {
+            document.querySelectorAll(".tab-pane.active .keynote_more").forEach(function (botao) {
+                var texto = botao.previousElementSibling;
+                if (!texto.classList.contains("is-open")) {
+                    botao.hidden = texto.scrollHeight <= texto.clientHeight + 1;
+                }
+            });
+        }
+        document.querySelectorAll(".keynote_days [data-bs-toggle]").forEach(function (aba) {
+            aba.addEventListener("shown.bs.tab", ajustarBotoes);
+        });
+        window.addEventListener("resize", ajustarBotoes);
+        ajustarBotoes();
+
+        // Expande/recolhe resumo e biografia
+        document.querySelectorAll(".keynote_more").forEach(function (botao) {
+            var texto = botao.previousElementSibling;
+            botao.addEventListener("click", function () {
+                var aberto = texto.classList.toggle("is-open");
+                botao.setAttribute("aria-expanded", aberto);
+                botao.textContent = aberto ? "Ler menos" : "Ler mais";
+            });
+        });
+
+        // Abre a aba do dia correto: âncora do card (ex.: #plenaria5) ou o dia de hoje durante o evento
+        var alvo = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+        var botao = null;
+        if (alvo && alvo.closest(".tab-pane")) {
+            botao = document.querySelector('[data-bs-target="#' + alvo.closest(".tab-pane").id + '"]');
+        } else {
+            var hoje = new Date();
+            var data = ("0" + hoje.getDate()).slice(-2) + "/" + ("0" + (hoje.getMonth() + 1)).slice(-2) + "/" + hoje.getFullYear();
+            botao = document.querySelector('.keynote_days [data-date="' + data + '"]');
+        }
+        if (botao) {
+            bootstrap.Tab.getOrCreateInstance(botao).show();
+            if (alvo) { setTimeout(function () { alvo.scrollIntoView({ behavior: "smooth", block: "start" }); }, 200); }
+        }
+    });
+</script>

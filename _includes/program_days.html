@@ -1,0 +1,16 @@
+{% comment %}
+  Define `dias_programa`: ids dos dias que têm atividades visíveis do tipo informado.
+  Parâmetros: type; papers=true para exigir artigos. Usado com day_tabs.html nas páginas de cards.
+{% endcomment %}
+{% assign dias_programa = "" %}
+{% for day in site.data.program %}
+    {% for block in day.blocks %}
+        {% if block.hide_details %}{% continue %}{% endif %}
+        {% for activity in block.activities %}
+            {% if activity.hide_details or activity.type != include.type %}{% continue %}{% endif %}
+            {% if include.papers and activity.papers == nil %}{% continue %}{% endif %}
+            {% assign dias_programa = dias_programa | append: day.id | append: " " %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+{% assign dias_programa = dias_programa | split: " " | uniq %}
