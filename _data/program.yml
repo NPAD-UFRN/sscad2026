@@ -566,7 +566,7 @@
       url: '#wmad'
       title: W-MAD
       room: Auditório do nPITI
-      description: Workshop de Modelagem, Análise e Desenvolvimento de Sistemas
+      description: Workshop de Mulheres em Alto Desempenho
     - id: mc4
       type: tutorial
       style: lab_dimap
@@ -1107,7 +1107,7 @@
       url: '#wpads'
       title: WPADS
       room: Auditório do nPITI
-      description: Workshop de Processamento de Alto Desempenho em Sistemas Embarcados
+      description: Workshop de Processamento de Alto Desempenho Sustentável
   - start: "09:00"
     end: "09:50"
     activities:
