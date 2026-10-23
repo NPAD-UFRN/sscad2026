@@ -1,0 +1,80 @@
+{% comment %} Cards por dia das atividades com artigos (sessões técnicas ou workshops). Parâmetro: type {% endcomment %}
+<div class="container keynotes">
+    <!-- Abas dos dias -->
+    <ul class="nav nav-pills justify-content-center keynote_days" role="tablist">
+        {% for day in site.data.program %}
+            <li class="nav-item" role="presentation">
+                <button class="nav-link{% if forloop.first %} active{% endif %}" id="tab-{{ day.id }}" data-bs-toggle="pill"
+                    data-bs-target="#dia-{{ day.id }}" data-date="{{ day.date }}" type="button" role="tab"
+                    aria-controls="dia-{{ day.id }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
+                    {{ day.title }} <small>{{ day.date | slice: 0, 5 }}</small>
+                </button>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <div class="tab-content">
+        {% for day in site.data.program %}
+            <div class="tab-pane fade{% if forloop.first %} show active{% endif %}" id="dia-{{ day.id }}" role="tabpanel"
+                aria-labelledby="tab-{{ day.id }}">
+                {% for block in day.blocks %}
+                    {% if block.hide_details %}{% continue %}{% endif %}
+                    {% for activity in block.activities %}
+                        {% if activity.hide_details or activity.type != include.type or activity.papers == nil %}{% continue %}{% endif %}
+
+                        <article class="keynote_card" id="{{ activity.id }}">
+                            <!-- A sessão -->
+                            <div class="keynote_talk">
+                                <div class="keynote_meta">
+                                    <span class="keynote_label">{{ activity.title }}</span>
+                                    <span><i class="bi bi-clock"></i> {{ block.start }} – {{ block.end }}</span>
+                                    {% if activity.room %}<span><i class="bi bi-geo-alt"></i> {{ activity.room | split: " (" | first }}</span>{% endif %}
+                                </div>
+                                {% if activity.description %}
+                                    <h3 class="keynote_title">{{ activity.description }}</h3>
+                                {% endif %}
+                                {% if activity.chair %}
+                                    <p class="session_chair"><b>Coordenação:</b> {{ activity.chair }}</p>
+                                {% endif %}
+                            </div>
+
+                            <!-- Os artigos -->
+                            {% if activity.papers %}
+                                <ol class="session_papers">
+                                    {% for paper in activity.papers %}
+                                        <li class="session_paper">
+                                            {% if paper.time %}<span class="session_paper_time"><i class="bi bi-clock"></i> {{ paper.time }}</span>{% endif %}
+                                            <div class="session_paper_info">
+                                                <p class="session_paper_title">{{ paper.title }}</p>
+                                                <p class="session_paper_authors">{{ paper.authors }}</p>
+                                            </div>
+                                        </li>
+                                    {% endfor %}
+                                </ol>
+                            {% endif %}
+                        </article>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Abre a aba do dia correto: âncora da sessão (ex.: #st5) ou o dia de hoje durante o evento
+        var alvo = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+        var botao = null;
+        if (alvo && alvo.closest(".tab-pane")) {
+            botao = document.querySelector('[data-bs-target="#' + alvo.closest(".tab-pane").id + '"]');
+        } else {
+            var hoje = new Date();
+            var data = ("0" + hoje.getDate()).slice(-2) + "/" + ("0" + (hoje.getMonth() + 1)).slice(-2) + "/" + hoje.getFullYear();
+            botao = document.querySelector('.keynote_days [data-date="' + data + '"]');
+        }
+        if (botao) {
+            bootstrap.Tab.getOrCreateInstance(botao).show();
+            if (alvo) { setTimeout(function () { alvo.scrollIntoView({ behavior: "smooth", block: "start" }); }, 200); }
+        }
+    });
+</script>
