@@ -1,0 +1,320 @@
+// Página do SSCAD-WIC (cfp_wic.html); o programa usa os cards de _includes/session_cards.html
+
+$wic-accent: $sscad-red;
+$wic-accent-subtle: $sscad-red-subtle;
+$wic-text: $gray-700;
+$wic-muted: $gray-600;
+$wic-heading: $gray-900;
+$wic-border: $gray-300;
+$wic-radius: $border-radius-lg;
+$wic-shadow: 0 .125rem .5rem rgba($black, .05);
+
+.wic_page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem 0;
+
+  // Neutraliza o p { font-size: 25px } global de assets/css/geral.css
+  p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: $wic-text;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: $wic-heading;
+  }
+
+  &.wic-call {
+    padding-bottom: 4rem;
+  }
+}
+
+// Abertura
+.wic-hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+
+  .wic-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .35rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: $border-radius-pill;
+    background-color: $wic-accent-subtle;
+    color: $wic-accent;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .wic-title {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 800;
+    color: $wic-heading;
+    margin-bottom: .35rem;
+  }
+
+  .wic-subtitle {
+    max-width: 760px;
+    margin: 0 auto 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $wic-text;
+  }
+
+  .wic-lead {
+    max-width: 760px;
+    margin: 0 auto 1.75rem;
+    color: $wic-muted;
+  }
+}
+
+.wic-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .45rem 1rem;
+    border: 1px solid $wic-border;
+    border-radius: $border-radius-pill;
+    background-color: $white;
+    font-size: .9rem;
+    font-weight: 600;
+    color: $wic-text;
+
+    i {
+      color: $wic-accent;
+    }
+  }
+}
+
+// Ícone quadrado reaproveitado nos destaques e na coordenação
+.wic-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: $wic-radius;
+  background-color: $wic-accent-subtle;
+  color: $wic-accent;
+  font-size: 1.25rem;
+}
+
+// Destaques
+.wic-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.wic-highlight {
+  padding: 1.5rem;
+  border: 1px solid $wic-border;
+  border-radius: $wic-radius;
+  background-color: $white;
+  box-shadow: $wic-shadow;
+
+  .wic-icon {
+    margin-bottom: .85rem;
+  }
+
+  h3 {
+    margin-bottom: .4rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: .95rem;
+  }
+}
+
+// Títulos de seção
+.wic-section-head {
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    color: $wic-heading;
+    margin-bottom: .35rem;
+  }
+
+  p {
+    margin: 0;
+    color: $wic-muted;
+  }
+}
+
+// Chamada de trabalhos
+.wic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.wic-card {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid $wic-border;
+  border-radius: $wic-radius;
+  background-color: $white;
+  box-shadow: $wic-shadow;
+
+  .wic-grid & {
+    margin-bottom: 0;
+  }
+
+  h3 {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+
+    i {
+      color: $wic-accent;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.wic-timeline {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    padding: 0 0 1.1rem 1.75rem;
+    color: $wic-text;
+
+    // Marcador e linha que liga as datas
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .35rem;
+      width: .85rem;
+      height: .85rem;
+      border-radius: 50%;
+      background-color: $wic-accent;
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      left: calc(.425rem - 1px);
+      top: 1.2rem;
+      bottom: 0;
+      width: 2px;
+      background-color: $wic-border;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .wic-date {
+    display: block;
+    font-size: .85rem;
+    font-weight: 700;
+    color: $wic-accent;
+  }
+
+  small {
+    color: $wic-muted;
+  }
+}
+
+.wic-btn {
+  --bs-btn-color: #{$white};
+  --bs-btn-bg: #{$wic-accent};
+  --bs-btn-border-color: #{$wic-accent};
+  --bs-btn-hover-color: #{$white};
+  --bs-btn-hover-bg: #{darken($wic-accent, 8%)};
+  --bs-btn-hover-border-color: #{darken($wic-accent, 8%)};
+  --bs-btn-active-color: #{$white};
+  --bs-btn-active-bg: #{darken($wic-accent, 12%)};
+  --bs-btn-active-border-color: #{darken($wic-accent, 12%)};
+}
+
+.wic-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: 1.25rem;
+}
+
+.wic-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    padding: .35rem .85rem;
+    border-radius: $border-radius-pill;
+    background-color: $gray-100;
+    border: 1px solid $gray-200;
+    font-size: .9rem;
+    color: $wic-text;
+  }
+}
+
+.wic-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  a {
+    color: $wic-accent;
+  }
+
+  h3 {
+    margin-bottom: .2rem;
+  }
+}
+
+// Celular: destaques com ícone ao lado do texto e etiquetas menores, para encurtar a página
+@include media-breakpoint-down(sm) {
+  .wic-highlight {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 1rem;
+    padding: 1.1rem;
+
+    .wic-icon {
+      grid-row: span 2;
+      margin-bottom: 0;
+    }
+  }
+
+  .wic-tags li {
+    padding: .25rem .7rem;
+    font-size: .8rem;
+  }
+}
