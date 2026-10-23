@@ -7,79 +7,85 @@ permalink: /program/sessions/
 <section id="program">
     <br><br>
     <h1 class="text-center">{{ page.title }}</h1>
-    <br><br>
-    <section id="program_overview">
-        <div class="container-fluid"> 
+    <br>
+    <div class="container keynotes">
+        <!-- Abas dos dias -->
+        <ul class="nav nav-pills justify-content-center keynote_days" role="tablist">
             {% for day in site.data.program %}
-                <h2 class="text-center">{{day.date}}</h2>
-                    <div class="container">
-                        {% for block in day.blocks %}
-                            {% if block.hide_details %}
-                                {% continue %}
-                            {% endif %}
-                            {% for activity in block.activities %}
-                                {% if activity.hide_details or activity.type != "session" %}
-                                    {% continue %}
-                                {% endif %}
-                                {% if activity.type == "tutorial" %}
-                                    <h3 id="{{activity.id}}">{{activity.title}}: {{activity.description}}</h3>
-                                    <p class="activity_authors"><b>Autores</b>: {{activity.authors}}</p>
-                                {% elsif activity.type == "keynote" %}
-                                    <h3 id="{{activity.id}}">{{activity.title}}</h3>
-                                    {% if activity.image %}
-                                        <img src="{{ site.final_url }}/assets/img/{{activity.image}}" class="activity_image">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link{% if forloop.first %} active{% endif %}" id="tab-{{ day.id }}" data-bs-toggle="pill"
+                        data-bs-target="#dia-{{ day.id }}" data-date="{{ day.date }}" type="button" role="tab"
+                        aria-controls="dia-{{ day.id }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
+                        {{ day.title }} <small>{{ day.date | slice: 0, 5 }}</small>
+                    </button>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <div class="tab-content">
+            {% for day in site.data.program %}
+                <div class="tab-pane fade{% if forloop.first %} show active{% endif %}" id="dia-{{ day.id }}" role="tabpanel"
+                    aria-labelledby="tab-{{ day.id }}">
+                    {% for block in day.blocks %}
+                        {% if block.hide_details %}{% continue %}{% endif %}
+                        {% for activity in block.activities %}
+                            {% if activity.hide_details or activity.type != "session" %}{% continue %}{% endif %}
+
+                            <article class="keynote_card" id="{{ activity.id }}">
+                                <!-- A sessão -->
+                                <div class="keynote_talk">
+                                    <div class="keynote_meta">
+                                        <span class="keynote_label">{{ activity.title }}</span>
+                                        <span><i class="bi bi-clock"></i> {{ block.start }} – {{ block.end }}</span>
+                                        {% if activity.room %}<span><i class="bi bi-geo-alt"></i> {{ activity.room | split: " (" | first }}</span>{% endif %}
+                                    </div>
+                                    {% if activity.description %}
+                                        <h3 class="keynote_title">{{ activity.description }}</h3>
                                     {% endif %}
-                                    {% if activity.authors %}
-                                        <p class="activity_authors"><b>Palestrante</b>: {{activity.authors}}</p>
+                                    {% if activity.chair %}
+                                        <p class="session_chair"><b>Coordenação:</b> {{ activity.chair }}</p>
                                     {% endif %}
-                                {% else %}
-                                    <h3 id="{{activity.id}}">{{activity.title}}{% if activity.description %}: {{activity.description}}{% endif %} </h3>
+                                </div>
+
+                                <!-- Os artigos -->
+                                {% if activity.papers %}
+                                    <ol class="session_papers">
+                                        {% for paper in activity.papers %}
+                                            <li class="session_paper">
+                                                <span class="session_paper_time"><i class="bi bi-clock"></i> {{ paper.time }}</span>
+                                                <div class="session_paper_info">
+                                                    <p class="session_paper_title">{{ paper.title }}</p>
+                                                    <p class="session_paper_authors">{{ paper.authors }}</p>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+                                    </ol>
                                 {% endif %}
-                                {% if activity.chair %}
-                                    <p class="activity_chair"><b>Chair:</b> {{activity.chair}}</p>
-                                {% endif %}
-                                {% if activity.type != "gap" and activity.type != "blank" %}
-                                    <p class="activity_room"><b>Sala:</b> {{activity.room}}</p>
-                                    {% if activity.start3 %}
-                                        <p><b>Horários: </b> {{block.start}} - {{block.end}}, {{activity.start2}} - {{activity.end2}} e {{activity.start3}} - {{activity.end3}}</p>
-                                    {% elsif activity.start2 %}
-                                        <p><b>Horário: </b> {{block.start}} - {{block.end}} e {{activity.start2}} - {{activity.end2}}</p>
-                                    {% else %}
-                                        <p><b>Horário: </b> {{block.start}} - {{block.end}}</p>
-                                    {% endif %}
-                                {% endif %}
-                                {% if activity.type == "session" %}                 <!-- session, details -->
-                                    {% for paper in activity.papers %}
-                                        <p class="paper_title"><b>{{paper.title}}</b></p>
-                                        <p>{{paper.authors}}</p>
-                                    {% endfor %} <!-- paper in activity.papers -->
-                                {% elsif activity.type == "panel" %}                <!-- panel, details -->
-                                    <p><b>Resumo</b>: {{activity.abstract}}</p>
-                                    {% for panelist in activity.panelists %}
-                                        {% if panelist.image %}
-                                            <img src="{{ site.final_url }}/assets/img/{{panelist.image}}" class="panelist_image">
-                                        {% endif %}
-                                        <p><b>Participante</b>: {{panelist.name}}</p>
-                                        {% if panelist.short_bio %}
-                                            <p><b>Biografia Resumida</b>: {{panelist.short_bio}}</p>
-                                        {% endif %}
-                                    {% endfor %} <!-- panelist in activity.panelists -->
-                                {% else %}                                   <!-- tutorial, keynote,  -->
-                                    {% if activity.short_bio %}
-                                        <p><b>Biografia Resumida</b>: {{activity.short_bio}}</p>
-                                    {% endif %}
-                                    {% if activity.abstract %}
-                                        <p><b>Resumo</b>: {{activity.abstract}}</p>
-                                    {% endif %}
-                                {% endif %} 
-                                {% if activity.type != "gap" %}
-                                    <hr>    
-                                {% endif %}
-                            {% endfor %} <!-- activity in block.activities -->
-                        {% endfor %}  <!-- block in day.block -->
-                </div> <!-- container -->
-            {% endfor %} <!-- day in site.data.program -->
-        </div> <!-- container-fluid -->
-    </section> <!-- program overview -->
+                            </article>
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
     <br><br>
-</section> <!-- program -->
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Abre a aba do dia correto: âncora da sessão (ex.: #st5) ou o dia de hoje durante o evento
+        var alvo = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+        var botao = null;
+        if (alvo && alvo.closest(".tab-pane")) {
+            botao = document.querySelector('[data-bs-target="#' + alvo.closest(".tab-pane").id + '"]');
+        } else {
+            var hoje = new Date();
+            var data = ("0" + hoje.getDate()).slice(-2) + "/" + ("0" + (hoje.getMonth() + 1)).slice(-2) + "/" + hoje.getFullYear();
+            botao = document.querySelector('.keynote_days [data-date="' + data + '"]');
+        }
+        if (botao) {
+            bootstrap.Tab.getOrCreateInstance(botao).show();
+            if (alvo) { setTimeout(function () { alvo.scrollIntoView({ behavior: "smooth", block: "start" }); }, 200); }
+        }
+    });
+</script>

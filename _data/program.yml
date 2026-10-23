@@ -86,14 +86,13 @@
       title: Pausa do café
       room: Foyer Aut. CT
   - start: "10:20"
-    end: "11:10"
+    end: "11:00"
     activities:
-    - id: pe1
+    - id: pe-exclusiva
       type: keynote
       style: aud_ct
-      url: '#pe1'
-      title: Palestras empresariais 1
-      subtitle: (2 apresentações)
+      url: '#pe-exclusiva'
+      title: "Palestra empresarial exclusiva: AWS"
       room: Auditório do CT (216)
     - id: gap
       type: gap
@@ -124,21 +123,51 @@
       type: gap
       style: gap
       title: ''
-  - start: "11:10"
-    end: "12:30"
+  - start: "11:00"
+    end: "12:20"
     activities:
     - id: st1
       type: session
       style: aud_ct
       url: '#st1'
       title: Sessão técnica 1
+      subtitle: "Computação sustentável I: energia e carbono em HPC"
       room: Auditório do CT (216)
+      description: "Computação sustentável I: energia e carbono em HPC"
+      papers:
+      - time: "11:00–11:20"
+        title: "Assessing Operational Carbon Footprint for Task-based Applications using Simulation"
+        authors: "Otho José Sirtoli Marcondes, Rayan Raddatz, Lucas Mello Schnorr"
+      - time: "11:20–11:40"
+        title: "Thread-Count Tuning for Carbon-Efficient Multicore HPC Applications"
+        authors: "Arthur Silveira, Matheus Costa, Carla Osthoff, Philippe Olivier Alexandre Navaux, Arthur Francisco Lorenzon"
+      - time: "11:40–12:00"
+        title: "Gerenciamento de Recursos para Execucão Energeticamente Eficiente de Workloads em Data Centers com CPUs Híbridas"
+        authors: "Marcelo Koji Moori, Felipe Nunes Laguna, Hiago Mayk Gomes de Araujo Rocha, Antonio Carlos Schneider Beck Filho"
+      - time: "12:00–12:20"
+        title: "Sensibilidade de políticas cientes de carbono para VMs: efeitos da especificação, do cenário e da comparabilidade da carga"
+        authors: "Guilherme Fernandes Moraes da Silva, Daniel Cordeiro"
     - id: st2
       type: session
       style: aud_ctec
       url: '#st2'
       title: Sessão técnica 2
+      subtitle: "Arquiteturas dedicadas e computação aproximada"
       room: Auditório do CTEC (85)
+      description: "Arquiteturas dedicadas e computação aproximada"
+      papers:
+      - time: "11:00–11:20"
+        title: "From Code to RTL: A Methodology for Analyzing the HLS Hardware Generation Process"
+        authors: "Henrique Gregory Gimenez, Edson Midorikawa, Felipe Valencia de Almeida, Liria Sato"
+      - time: "11:20–11:40"
+        title: "Arquitetura de FPGA para Inferência Bit-Exata de GBDTs com Árvores Simétricas"
+        authors: "Marcus Nunes, Marcelo A. C. Fernandes"
+      - time: "11:40–12:00"
+        title: "Machine Learning-Guided Design Space Exploration for Instruction-Level Approximate Computing"
+        authors: "Gregório Koslinski Neto, Marco Antônio de Rezende Zárate, Gislayne Garabini Damasceno, Bruno Nogueira, Daniela Catelan, Ricardo Santos, Liana Duenha"
+      - time: "12:00–12:20"
+        title: "How Much Quality Loss is Acceptable? Evaluating Semantic Acceptability and Energy Gains of Approximate Memory in a RISC-V Environment"
+        authors: "Guilherme Saides Serbai, Isaías Felzmann, João Fabrício Filho"
     - id: weac
       type: workshop
       style: aud_laut
@@ -165,7 +194,7 @@
       type: gap
       style: gap
       title: ''
-  - start: "12:30"
+  - start: "12:20"
     end: "14:00"
     hide_details: 'yes'
     activities:
@@ -173,64 +202,16 @@
       type: blank
       style: blank
       title: Almoço
-  - start: "14:10"
-    end: "15:30"
+  - start: "14:00"
+    end: "14:50"
     activities:
-    - id: st3
-      type: session
-      style: aud_ct
-      url: '#st3'
-      title: Sessão técnica 3
-      room: Auditório do CT (216)
-    - id: st4
-      type: session
-      style: aud_ctec
-      url: '#st4'
-      title: Sessão técnica 4
-      room: Auditório do CTEC (85)
-    - id: wic2
-      type: workshop
-      style: aud_laut
-      url: '#wic2'
-      title: WIC
-      room: Auditório do LAUT
-      description: Workshop de Iniciação Científica (SSCAD-WIC)
-    - id: ctd
-      type: workshop
-      style: aud_npiti
-      url: '#ctd'
-      title: CTD
-      room: Auditório do nPITI
-      hide_details: 'yes'
-    - id: mc2
-      type: tutorial
-      style: lab_dca
-      url: '#mc2'
-      title: Minicurso 2
-      room: LabGrad DCA
-      hide_details: 'yes'
-    - id: mc3
-      type: tutorial
-      style: lab_dimap
-      url: '#mc3'
-      title: Minicurso 3
-      room: Lab DIMAp
-      hide_details: 'yes'
-    - id: maratona
-      type: marathon
-      style: maratona
-      url: http://lspd.mackenzie.br/marathon/26/
-      title: Maratona
-      hide_details: 'yes'
-  - start: "15:30"
-    end: "16:10"
-    activities:
-    - id: pe-exclusiva
+    - id: pe1
       type: keynote
       style: aud_ct
-      url: '#pe-exclusiva'
-      title: "Palestra empresarial exclusiva: AWS"
-      room: Auditório do CT (215)
+      url: '#pe1'
+      title: Palestras empresariais 1
+      subtitle: (2 apresentações)
+      room: Auditório do CT (216)
     - id: gap
       type: gap
       style: gap
@@ -241,7 +222,7 @@
       url: '#wic2'
       title: WIC
       room: Auditório do LAUT
-      hide_details: 'yes'
+      description: Workshop de Iniciação Científica (SSCAD-WIC)
     - id: ctd
       type: workshop
       style: aud_npiti
@@ -267,8 +248,87 @@
       url: http://lspd.mackenzie.br/marathon/26/
       title: Maratona
       room: Maratona de Programação Paralela
+  - start: "14:50"
+    end: "16:10"
+    activities:
+    - id: st3
+      type: session
+      style: aud_ct
+      url: '#st3'
+      title: Sessão técnica 3
+      subtitle: "Ferramentas, benchmarks e caracterização de desempenho"
+      room: Auditório do CT (216)
+      description: "Ferramentas, benchmarks e caracterização de desempenho"
+      papers:
+      - time: "14:50–15:10"
+        title: "An MLIR Version of the PolyBench Benchmark Suite for High-Performance Computing"
+        authors: "Lucas Victor Costa, José Wesley de Souza Magalhães, Michael Canesche, Fernando Magno Quintao Pereira"
+      - time: "15:10–15:30"
+        title: "Defigium: A Modular Framework for Trace-Based Workload Generation"
+        authors: "Felipe Backes Kettl, Bernardo Fraga, Marcos André Vaz, Odorico M. Mendizabal"
+      - time: "15:30–15:50"
+        title: "Low-Intrusion Profiling and Scalability Analysis in Distributed-Memory Environments using PaScal Suite"
+        authors: "Felipe Hidequel Santos da Silva, Italo Assis, João Batista Fernandes, Igor Sérgio de França Correia, Samuel Xavier de Souza"
+      - time: "15:50–16:10"
+        title: "Performance and Memory Characterization of NIST Post-Quantum Cryptography Workloads"
+        authors: "Saulo de Moura Zandona Freitas, Henrique Cota de Freitas, Matheus Alcântara Souza"
+    - id: st4
+      type: session
+      style: aud_ctec
+      url: '#st4'
+      title: Sessão técnica 4
+      subtitle: "Modelos de programação paralela e comunicação"
+      room: Auditório do CTEC (85)
+      description: "Modelos de programação paralela e comunicação"
+      papers:
+      - time: "14:50–15:10"
+        title: "MaReCo: Configurable Map and Reduce Algorithmic Skeletons with Closure Support for GPUs in Elixir"
+        authors: "Frederico Peixoto Antunes, Andre Rauber Du Bois, Gerson Geraldo H. Cavalheiro"
+      - time: "15:10–15:30"
+        title: "Investigating the Scalability of Parallel DTW Distances Computation of Stock Price Time Series"
+        authors: "Daniela Rigoli, Cesar De Rose"
+      - time: "15:30–15:50"
+        title: "Sincronização Orientada por Dependências para Stencils: Modelagem Causal e Avaliação de Barreiras, Semáforos e MPI"
+        authors: "Frederico Cabral, Carla Osthoff, Diego N. Brandão, Sanderson L. Gonzaga de Oliveira"
+      - time: "15:50–16:10"
+        title: "Characterizing Compute-Communication Duality in Halo-Exchange Masking for Seismic Wave Simulation"
+        authors: "Francisco Etcheverria, Lucas Mello Schnorr"
+    - id: wic2
+      type: workshop
+      style: aud_laut
+      url: '#wic2'
+      title: WIC
+      room: Auditório do LAUT
+      hide_details: 'yes'
+    - id: ctd
+      type: workshop
+      style: aud_npiti
+      url: '#ctd'
+      title: CTD
+      room: Auditório do nPITI
+      hide_details: 'yes'
+    - id: mc2
+      type: tutorial
+      style: lab_dca
+      url: '#mc2'
+      title: Minicurso 2
+      room: LabGrad DCA
+      hide_details: 'yes'
+    - id: mc3
+      type: tutorial
+      style: lab_dimap
+      url: '#mc3'
+      title: Minicurso 3
+      room: Lab DIMAp
+      hide_details: 'yes'
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
   - start: "16:10"
-    end: "16:40"
+    end: "17:00"
     activities:
     - id: coffee
       type: blank
@@ -302,8 +362,8 @@
       url: http://lspd.mackenzie.br/marathon/26/
       title: Maratona
       hide_details: 'yes'
-  - start: "16:40"
-    end: "17:40"
+  - start: "17:00"
+    end: "18:00"
     activities:
     - id: plenaria2
       type: keynote
@@ -442,13 +502,43 @@
       style: aud_ct
       url: '#st5'
       title: Sessão técnica 5
+      subtitle: "Entrada/saída e armazenamento"
       room: Auditório do CT (216)
+      description: "Entrada/saída e armazenamento"
+      papers:
+      - time: "08:00–08:20"
+        title: "Cross-vendor GPU-Initiated I/O with native Linux io_uring"
+        authors: "Rodrigo Ceccato de Freitas, Jociclelio Junior, Joseph Huber, Jose M. Monsalve Diaz, Hervé Yviquel"
+      - time: "08:20–08:40"
+        title: "Scaling Embedded Key-Value Storage with a Local Partitioning Layer"
+        authors: "Douglas Pereira Luiz, Odorico M. Mendizabal"
+      - time: "08:40–09:00"
+        title: "Avaliação de Lustre e GekkoFS sob Cinco Estratégias de I/O em uma Aplicação CFD"
+        authors: "João Vitor Vargas Oliveira, Cristiano Alex Künas, Philippe Olivier Alexandre Navaux, Bruno Machado Morales"
+      - time: "09:00–09:20"
+        title: "Escalando a E/S do SDDP em Ambientes HPC: da Escrita Serializada às Escritas Paralelas com MPI-IO sobre Lustre*"
+        authors: "Marcelo Barros da Cruz, Claudio Luis Amorim, Diego Leonel Cadette Dutra"
     - id: st6
       type: session
       style: aud_ctec
       url: '#st6'
       title: Sessão técnica 6
+      subtitle: "IA e aprendizado de máquina em HPC"
       room: Auditório do CTEC (85)
+      description: "IA e aprendizado de máquina em HPC"
+      papers:
+      - time: "08:00–08:20"
+        title: "Explicabilidade para Kmeans com árvores de decisão em GPU"
+        authors: "Isabela de Castro Freitas, Pedro Henrique Coura Pereira, Olavo Barros, José Augusto Miranda Nacif, Ricardo dos Santos Ferreira"
+      - time: "08:20–08:40"
+        title: "Deep-Learning Inference Performance Across Heterogeneous HPC CPU Systems"
+        authors: "Calebe de Paula Bianchini, Evaldo Costa, Felipe Portella, Gabriel Freytag, Jeferson Rocha, Leon Barboza, Maicon Melo Alves, Rodrigo Machado, Vinícius Ventura"
+      - time: "08:40–09:00"
+        title: "Avaliando a Estratificação de Memória na Inferência de LLMs somente em CPU"
+        authors: "Luísa Leona Cattai, Alexandro Baldassin, Allberson Dantas"
+      - time: "09:00–09:20"
+        title: "Avaliação Experimental de LLMs Quantizados sob Carga Concorrente em um Dispositivo de Borda"
+        authors: "Renan Beserra, Bruno Nogueira, Rodrigo Paes, Ermeson Andrade"
     - id: gap
       type: gap
       style: gap
@@ -549,13 +639,37 @@
       style: aud_ct
       url: '#st7'
       title: Sessão técnica 7
+      subtitle: "Computação sustentável II: eficiência energética e carbono"
       room: Auditório do CT (216)
+      description: "Computação sustentável II: eficiência energética e carbono"
+      papers:
+      - time: "10:20–10:40"
+        title: "Maximizando Ciência por Joule com Precisão Numérica e DVFS em GPUs"
+        authors: "Àtila Uebel, Matheus Costa, Arthur Francisco Lorenzon"
+      - time: "10:40–11:00"
+        title: "Eficiência Energética de Arquiteturas In-Order e Out-of-Order para Aprendizado Federado de Borda na Detecção de Intrusão em CAN de Veículos Autônomos"
+        authors: "Luís Fillipe Pereira, Matheus Alcântara Souza, Henrique Cota de Freitas"
+      - time: "11:00–11:20"
+        title: "Avaliação do Tempo de Retorno de Carbono na Migração de Contêineres entre Data Centers Distribuídos"
+        authors: "Matheus Vinicius Resende Nascimento, Daniel Cordeiro"
     - id: st8
       type: session
       style: aud_ctec
       url: '#st8'
       title: Sessão técnica 8
+      subtitle: "Algoritmos paralelos para grafos e otimização combinatória"
       room: Auditório do CTEC (85)
+      description: "Algoritmos paralelos para grafos e otimização combinatória"
+      papers:
+      - time: "10:20–10:40"
+        title: "Evaluating Hash Tables for Complex Graph Algorithms: A Parallel Dynamic Community Detection Case Study"
+        authors: "Gabriel Giordani dos Santos, Cesar De Rose, Kaio Vieira, Vinicius Fernandes dos Santos"
+      - time: "10:40–11:00"
+        title: "Parallel Algorithms for Multinode Allocation in IoT Networks"
+        authors: "Paulo Zimpel, Luiz Felipe Xavier, Murilo Táparo, Samuel Ferraz, Bianca A. Dantas, Ricardo Santos"
+      - time: "11:00–11:20"
+        title: "A Hybrid GPU-CPU Framework for QCA Layout Synthesis via Parallel Simulated Annealing and Register-Level Bitboard Routing"
+        authors: "Leanderson Leles, Ian Otoni, Nicolas Silva, Luis Felipe Viana, Ricardo dos Santos Ferreira"
     - id: gap
       type: gap
       style: gap
@@ -662,13 +776,43 @@
       style: aud_ct
       url: '#st9'
       title: Sessão técnica 9
+      subtitle: "Elasticidade e gerência de recursos"
       room: Auditório do CT (216)
+      description: "Elasticidade e gerência de recursos"
+      papers:
+      - time: "14:00–14:20"
+        title: "Modeling and categorization of user trajectories in supercomputing systems using multi-aspect graphs"
+        authors: "Arthur Henrique Craveiro Costa, Juan Fabian, Antonio Tadeu Azevedo Gomes"
+      - time: "14:20–14:40"
+        title: "Checkpointing Parallel Applications for Azure Spot Virtual Machines: Tools, Runtimes, and Storage Trade-offs"
+        authors: "Lucas Serrano, Miguel Junior, Alan Lira Nunes, Artur Alves Pessoa, André Benevides, Lucia M. A. Drummond, Felipe Portella, Paulo José Braga Estrela, Renzo Quedevez Malini"
+      - time: "14:40–15:00"
+        title: "Análise Experimental da Escalabilidade e Elasticidade de Bibliotecas de Análise de Dados em Workflows com Alto Custo Computacional"
+        authors: "Gabriel Ranulfo Branquinho Cirillo, Guilherme Galante"
+      - time: "15:00–15:20"
+        title: "A Dynamic Vertical Scaling Strategy for Distributed Stream Processing Applications in Edge Computing"
+        authors: "Guilherme Santos, Carlos Kayser, Tiago Coelho Ferreto"
     - id: st10
       type: session
       style: aud_ctec
       url: '#st10'
       title: Sessão técnica 10
+      subtitle: "Programação e portabilidade em GPUs"
       room: Auditório do CTEC (85)
+      description: "Programação e portabilidade em GPUs"
+      papers:
+      - time: "14:00–14:20"
+        title: "Code portability applied the Wave-propagation kernel"
+        authors: "Rodrigo Machado, Cristiano Alex Künas, Bruno Machado Morales, Thiago Da Silva Araújo, Alexandre Sardinha, Arthur Francisco Lorenzon, Philippe Olivier Alexandre Navaux"
+      - time: "14:20–14:40"
+        title: "Ferrum: uma extensão embutida de Rust para programação em GPUs"
+        authors: "Lucas de Souza Barbosa, Andre Rauber Du Bois, Gerson Geraldo H. Cavalheiro"
+      - time: "14:40–15:00"
+        title: "Comparing MPI, MPP, and StarPU Runtimes for Distributed GPU Execution: A Case Study Using N-Body Simulations"
+        authors: "Jhonatan Cléto, Nicolas Vanz, Hervé Yviquel, Márcio Castro"
+      - time: "15:00–15:20"
+        title: "MultiDBSCAN: Exploração Paralela de Múltiplos Raios em GPU"
+        authors: "walter bueno, Matheus Pereira, Olavo Barros, José Augusto Miranda Nacif, Ricardo dos Santos Ferreira"
     - id: gap
       type: gap
       style: gap
@@ -821,7 +965,7 @@
       url: '#wic2'
       title: WIC
       room: Auditório do LAUT
-      description: Workshop de Iniciação Científica (SSCAD-WIC)
+      hide_details: 'yes'
     - id: gap
       type: gap
       style: gap
@@ -886,13 +1030,37 @@
       style: aud_ct
       url: '#st11'
       title: Sessão técnica 11
+      subtitle: "Sistemas operacionais e virtualização"
       room: Auditório do CT (216)
+      description: "Sistemas operacionais e virtualização"
+      papers:
+      - time: "08:00–08:20"
+        title: "AxNUMA: Approximate Computing in the Linux Kernel via NUMA"
+        authors: "Jorge Henrique Monteiro dos Santos, Isaías Felzmann"
+      - time: "08:20–08:40"
+        title: "Avaliação do Overhead de Desempenho Introduzido pelo KPTI no Kernel Linux"
+        authors: "João Vitor Belmonte Rates, João Vicente Ferreira Lima"
+      - time: "08:40–09:00"
+        title: "Avaliação Comparativa de Desempenho entre Contêineres e Máquinas Virtuais Baseadas em KVM"
+        authors: "Davi Kniest da Silva, Artur Zanette Marcon, Julio Augusto Borges, André Sacilotto, Miguel Gomes Xavier, Tiago Coelho Ferreto, Cesar De Rose"
     - id: st12
       type: session
       style: aud_ctec
       url: '#st12'
       title: Sessão técnica 12
+      subtitle: "Simulação e aplicações científicas"
       room: Auditório do CTEC (85)
+      description: "Simulação e aplicações científicas"
+      papers:
+      - time: "08:00–08:20"
+        title: "Experimental Validation of SimGrid Predictions for RTM Applications in Multi-Node Multi-GPU Environments"
+        authors: "Arthur Andrade da Silva, Vinicius Daniel Spadotto, Cristiano Alex Künas, Lucas Mello Schnorr, Philippe Olivier Alexandre Navaux"
+      - time: "08:20–08:40"
+        title: "Dynamic Load Balancing of Corbino-TBG Electronic Transport Simulations on Heterogeneous Clusters"
+        authors: "Arthur M Passos, Calebe de Paula Bianchini"
+      - time: "08:40–09:00"
+        title: "Inclusion and Evaluation of CPU and GPGPU Parallel Processing Backends for a Chemical Reaction Network Simulator"
+        authors: "Sirlenon de Araujo Macedo, Sarah Merigue Baraldi, Renan Albuquerque Marks"
     - id: wic2
       type: workshop
       style: aud_laut
@@ -1002,13 +1170,43 @@
       style: aud_ct
       url: '#st13'
       title: Sessão técnica 13
+      subtitle: "Álgebra linear densa: bibliotecas, compiladores e runtimes"
       room: Auditório do CT (216)
+      description: "Álgebra linear densa: bibliotecas, compiladores e runtimes"
+      papers:
+      - time: "14:00–14:20"
+        title: "Estimating TLB Misses in BLIS-like GEMM"
+        authors: "Girlana Santos, Lucas Wanner, Isaías Felzmann"
+      - time: "14:20–14:40"
+        title: "LP-GEMM: Integrating Layout Propagation into GEMM Operations"
+        authors: "César Carneiro, Lucas Alvarenga, Guido Araujo, Sandro Rigo"
+      - time: "14:40–15:00"
+        title: "A Tile-Based BLAS Library for Tenstorrent Dataflow Architectures"
+        authors: "Calebe de Paula Bianchini, Evaldo Costa, Felipe Portella, Gabriel Freytag, Jeferson Rocha, Leon Barboza, Maicon Melo Alves, Rodrigo Machado, Vinícius Ventura"
+      - time: "15:00–15:20"
+        title: "Análise do Impacto de Runtimes Task-Based no Desempenho de Algoritmos de Álgebra Linear Densa"
+        authors: "Matheus Tregnago, Philippe Olivier Alexandre Navaux, Lucas Mello Schnorr"
     - id: st14
       type: session
       style: aud_ctec
       url: '#st14'
       title: Sessão técnica 14
+      subtitle: "Workflows científicos e processamento de dados"
       room: Auditório do CTEC (85)
+      description: "Workflows científicos e processamento de dados"
+      papers:
+      - time: "14:00–14:20"
+        title: "Escalonador online de workflows sensível ao estado da rede"
+        authors: "Victor' Alvarenga, Guilherme Piêgas. Koslovski, Maurício Pillon"
+      - time: "14:20–14:40"
+        title: "Timing Sensitivity in the Parsl Test Suite: A Study Based on Controlled Delay Injection"
+        authors: "Arthur de Almeida, Alfredo Goldman"
+      - time: "14:40–15:00"
+        title: "Ajuste Automático de Parâmetros Bayesiano com Persistência de Contexto para Operadores Semânticos"
+        authors: "Arthur Vinícius, Luiza Regi, Rafael Alexandre, Willian Barreiros Júnior, George L. M. Teodoro"
+      - time: "15:00–15:20"
+        title: "Can Large Language Models Engineer Parallel Workflows?"
+        authors: "Paula Woyames, Liliane Kunstmann, Débora Pina, Marta Mattoso, Daniel de Oliveira"
     - id: wic2
       type: workshop
       style: aud_laut
