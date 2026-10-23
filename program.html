@@ -95,7 +95,7 @@ permalink: /program/
                                                         </p>
                                                         <span class="keynote_link_hint"><i class="bi bi-info-circle-fill"></i> Detalhes</span>
                                                     </a>
-                                                {% elsif activity.type == "session" and activity.papers %}
+                                                {% elsif activity.papers %}
                                                     <a href="{{ '/program/sessions/' | relative_url }}{{ activity.url }}" class="activity_title keynote_link stretched-link">
                                                         <p class="activity_title">
                                                             {{ activity.title }}

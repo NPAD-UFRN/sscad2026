@@ -216,13 +216,19 @@
       type: gap
       style: gap
       title: ''
-    - id: wic2
+    - id: wic1
       type: workshop
       style: aud_laut
-      url: '#wic2'
-      title: WIC
+      url: '#wic1'
+      title: WIC 1
+      subtitle: "Computação em GPU"
       room: Auditório do LAUT
-      description: Workshop de Iniciação Científica (SSCAD-WIC)
+      description: "Computação em GPU"
+      papers:
+      - title: "Implementação Eficiente de Propagação Diagonal em Algoritmos de Frente de Onda Irregular em GPUs"
+        authors: "Caio Cunha, Gabriel Nunes, Willian Barreiros Júnior, George L. M. Teodoro"
+      - title: "FLAWD: Trazendo Listas Funcionais para a GPU"
+        authors: "Diogo Krüger Souto, João Antonio Soares, Gerson Geraldo H. Cavalheiro, Andre Rauber Du Bois"
     - id: ctd
       type: workshop
       style: aud_npiti
@@ -297,9 +303,19 @@
       type: workshop
       style: aud_laut
       url: '#wic2'
-      title: WIC
+      title: WIC 2
+      subtitle: "Arquitetura de Computadores e RISC-V"
       room: Auditório do LAUT
-      hide_details: 'yes'
+      description: "Arquitetura de Computadores e RISC-V"
+      papers:
+      - title: "A Quantitative Cache Evaluation of Select PolyBench Kernels"
+        authors: "Lucca Pellegrini, Amanda Guimaraes, Ariel Inácio Jordão Coelho, Paulo Júnior, Pedro Vitor Martins Caiafa Andrade, Matheus Alcântara Souza"
+      - title: "Introducing Narvi: A Modular RISC-V Simulator Ecosystem"
+        authors: "Antônio Sousa, Mateus Henrique Medeiros Diniz, Davi Puddo, Henrique Cota de Freitas"
+      - title: "Análise Experimental da Hierarquia de Memória Utilizando o Simulador gem5 sob a ISA RISC-V"
+        authors: "Filipi Pereira de Mesquita Faria, Arthur Henrique Tristão Pinto, Sofia Grossi Vieira Santos, Julio Cesar Thurow Buzzi, Luis Henrique Ferreira Costa, Matheus Alcântara Souza"
+      - title: "Extensão do Conjunto de Instruções em Arquitetura RISC-V para Otimização do Algoritmo Criptográfico GIFT-128"
+        authors: "Arthur Henrique Tristão Pinto, Sofia Grossi Vieira Santos, Filipi Pereira de Mesquita Faria, Julio Buzzi, Luis Henrique Ferreira Costa, Matheus Alcântara Souza"
     - id: ctd
       type: workshop
       style: aud_npiti
@@ -959,13 +975,21 @@
       type: gap
       style: gap
       title: ''
-    - id: wic2
+    - id: wic3
       type: workshop
       style: aud_laut
-      url: '#wic2'
-      title: WIC
+      url: '#wic3'
+      title: WIC 3
+      subtitle: "Computação Aproximada"
       room: Auditório do LAUT
-      hide_details: 'yes'
+      description: "Computação Aproximada"
+      papers:
+      - title: "Análise Estática de Fluxo de Dados para Identificação de Oportunidades de Aproximação em Nível de Instrução"
+        authors: "Marco Antônio de Rezende Zárate, Gislayne Garabini Damasceno, Gregório Koslinski Neto, Liana Duenha"
+      - title: "Computação Aproximada em nível de instrução utilizando o simulador GEM5"
+        authors: "Hytalo Maito Bassi, Pedro e Silva Candia, Jailton Nunes Filho, Eduardo Paes, Ricardo Santos, Daniela Catelan"
+      - title: "Computação Aproximada Aplicada ao Treinamento de Modelos de Regressão"
+        authors: "Pedro e Silva Candia, Daniela Catelan, Jailton Nunes Filho, Hytalo Maito Bassi, Eduardo Paes, Ricardo Santos"
     - id: gap
       type: gap
       style: gap
@@ -1061,13 +1085,21 @@
       - time: "08:40–09:00"
         title: "Inclusion and Evaluation of CPU and GPGPU Parallel Processing Backends for a Chemical Reaction Network Simulator"
         authors: "Sirlenon de Araujo Macedo, Sarah Merigue Baraldi, Renan Albuquerque Marks"
-    - id: wic2
+    - id: wic4
       type: workshop
       style: aud_laut
-      url: '#wic2'
-      title: WIC
+      url: '#wic4'
+      title: WIC 4
+      subtitle: "HPC Sustentável e Gerenciamento de Recursos"
       room: Auditório do LAUT
-      description: Workshop de Iniciação Científica (SSCAD-WIC)
+      description: "HPC Sustentável e Gerenciamento de Recursos"
+      papers:
+      - title: "Análise do consumo energético de aplicações HPC em arquiteturas de memória compartilhada"
+        authors: "Pedro Thiago Eloi de Lima, Sérgio Queiroz de Medeiros, Idalmis Milián Sardiña"
+      - title: "A Simulation Testbed for Carbon- and Water-Aware HPC Job Scheduling"
+        authors: "André Schwarz, Bruno Lima, Lucas Rosa, Victor Lima, Alfredo Goldman"
+      - title: "Refrigeração Ativa em Clusters HPC Sustentáveis: Avaliação de Desempenho com TV Boxes RK3229 Reaproveitadas"
+        authors: "Pedro Henrique Santos Souza Duarte, Fernando Ferreira, Marcelo Guimarães"
     - id: wpads
       type: workshop
       style: aud_npiti
@@ -1089,13 +1121,19 @@
       type: gap
       style: gap
       title: ''
-    - id: wic2
+    - id: wic5
       type: workshop
       style: aud_laut
-      url: '#wic2'
-      title: WIC
+      url: '#wic5'
+      title: WIC 5
+      subtitle: "Sistemas Embarcados e Computação Emergente"
       room: Auditório do LAUT
-      hide_details: 'yes'
+      description: "Sistemas Embarcados e Computação Emergente"
+      papers:
+      - title: "Practical Assessment of ML-KEM and Lightweight Ciphers on Embedded IoT Platforms"
+        authors: "Gabriel Diniz Reis Vianna, Matheus Silva Coxir, Arthur Costa Serra Negra, Gabriel Costa Vianna, Pedro Félix, Felipe Domingos da Cunha, Rafael Henriques Nogueira Diniz, Matheus Alcântara Souza"
+      - title: "Scaling Quantum Resource Estimates for Lattice Sieving Beyond Simulable Dimensions: A Hinge-Breakpoint Extrapolation Approach"
+        authors: "Bernardo Vieira, Matheus Alcântara Souza"
     - id: wpads
       type: workshop
       style: aud_npiti
@@ -1207,13 +1245,23 @@
       - time: "15:00–15:20"
         title: "Can Large Language Models Engineer Parallel Workflows?"
         authors: "Paula Woyames, Liliane Kunstmann, Débora Pina, Marta Mattoso, Daniel de Oliveira"
-    - id: wic2
+    - id: wic6
       type: workshop
       style: aud_laut
-      url: '#wic2'
-      title: WIC
+      url: '#wic6'
+      title: WIC 6
+      subtitle: "Sistemas Distribuídos, E/S e Infraestrutura HPC"
       room: Auditório do LAUT
-      hide_details: 'yes'
+      description: "Sistemas Distribuídos, E/S e Infraestrutura HPC"
+      papers:
+      - title: "Revisitando o Intervalo Ótimo de Checkpoint em Clusters Multi-Tenant de Treinamento de IA: Um Estudo Empírico com o Trace Helios"
+        authors: "Roberta Graziela de Oliveira Brasil, Elaine Harada"
+      - title: "Estratégia Distribuída para Resolução de Deadlocks no Modelo Ou por Deleção de Arcos"
+        authors: "Júlia Boaventura, Alan Diêgo Carneiro, Pedro Sousa"
+      - title: "Mitigação do Custo de I/O em Sistemas de Arquivos em Espaço de Usuário com Processamento Assíncrono, Batching e Compressão"
+        authors: "Jean Paulo, Roussian Di Ramos Alves Gaioso"
+      - title: "Integrating SmolTCP into Nanvix"
+        authors: "Antônio Sousa, Davi Puddo, Gabriel Valedo, Mateus Henrique Medeiros Diniz, Raquel de Parde Motta, Rafael Henriques Nogueira Diniz, Matheus Alcântara Souza, Felipe Domingos da Cunha"
     - id: wpads
       type: workshop
       style: aud_npiti

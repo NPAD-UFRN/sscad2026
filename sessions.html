@@ -29,7 +29,8 @@ permalink: /program/sessions/
                     {% for block in day.blocks %}
                         {% if block.hide_details %}{% continue %}{% endif %}
                         {% for activity in block.activities %}
-                            {% if activity.hide_details or activity.type != "session" %}{% continue %}{% endif %}
+                            {% if activity.hide_details %}{% continue %}{% endif %}
+                            {% unless activity.type == "session" or activity.papers %}{% continue %}{% endunless %}
 
                             <article class="keynote_card" id="{{ activity.id }}">
                                 <!-- A sessão -->
@@ -52,7 +53,7 @@ permalink: /program/sessions/
                                     <ol class="session_papers">
                                         {% for paper in activity.papers %}
                                             <li class="session_paper">
-                                                <span class="session_paper_time"><i class="bi bi-clock"></i> {{ paper.time }}</span>
+                                                {% if paper.time %}<span class="session_paper_time"><i class="bi bi-clock"></i> {{ paper.time }}</span>{% endif %}
                                                 <div class="session_paper_info">
                                                     <p class="session_paper_title">{{ paper.title }}</p>
                                                     <p class="session_paper_authors">{{ paper.authors }}</p>
