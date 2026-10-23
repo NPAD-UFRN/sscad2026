@@ -1,40 +1,67 @@
 <section id="program">
     <br><br>
     <h1 class="text-center">{{ page.title }}</h1>
-    <br><br>
-    <div class="container">
-        {% for mc in page.minicursos %}
-            <h3 id="{{ mc.id }}">Minicurso {{ forloop.index }}: {{ mc.titulo }}</h3>
-            <p class="activity_authors"><b>Autores</b>:
-                {% for autor in mc.autores %}{{ autor.nome }}{% if autor.instituicao %} ({{ autor.instituicao }}){% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}
-            </p>
-            {% comment %} Sala e horários vêm de _data/program.yml (mesmo id) {% endcomment %}
+    <br>
+    <div class="container keynotes">
+        {% include program_days.html type="tutorial" %}
+        {% include day_tabs.html %}
+
+        <div class="tab-content">
             {% for day in site.data.program %}
-                {% assign inicio = nil %}
-                {% assign fim = nil %}
-                {% assign ext_inicio = nil %}
-                {% assign ext_fim = nil %}
-                {% for block in day.blocks %}
-                    {% for activity in block.activities %}
-                        {% if activity.id != mc.id %}{% continue %}{% endif %}
-                        {% assign sala = activity.room %}
-                        {% if activity.subtitle contains "cont" %}
-                            {% unless ext_inicio %}{% assign ext_inicio = block.start %}{% endunless %}
-                            {% assign ext_fim = block.end %}
-                        {% else %}
-                            {% unless inicio %}{% assign inicio = block.start %}{% endunless %}
-                            {% assign fim = block.end %}
-                        {% endif %}
+                {% unless dias_programa contains day.id %}{% continue %}{% endunless %}
+                <div class="tab-pane fade{% if day.id == dias_programa.first %} show active{% endif %}" id="dia-{{ day.id }}" role="tabpanel"
+                    aria-labelledby="tab-{{ day.id }}">
+                    {% for block in day.blocks %}
+                        {% if block.hide_details %}{% continue %}{% endif %}
+                        {% for activity in block.activities %}
+                            {% if activity.hide_details or activity.type != "tutorial" %}{% continue %}{% endif %}
+                            {% assign mc = page.minicursos | where: "id", activity.id | first %}
+                            {% unless mc %}{% continue %}{% endunless %}
+
+                            {% comment %} Horário principal e continuação vêm de todos os blocos do dia com o mesmo id {% endcomment %}
+                            {% assign inicio = nil %}{% assign fim = nil %}{% assign ext_inicio = nil %}{% assign ext_fim = nil %}
+                            {% for b in day.blocks %}
+                                {% for a in b.activities %}
+                                    {% if a.id != mc.id %}{% continue %}{% endif %}
+                                    {% if a.subtitle contains "cont" %}
+                                        {% unless ext_inicio %}{% assign ext_inicio = b.start %}{% endunless %}
+                                        {% assign ext_fim = b.end %}
+                                    {% else %}
+                                        {% unless inicio %}{% assign inicio = b.start %}{% endunless %}
+                                        {% assign fim = b.end %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+                            {% assign continuacao = nil %}
+                            {% if ext_inicio %}{% capture continuacao %}Continuação {{ ext_inicio }} – {{ ext_fim }}{% endcapture %}{% endif %}
+
+                            <article class="keynote_card" id="{{ mc.id }}">
+                                <!-- O minicurso -->
+                                <div class="keynote_talk">
+                                    {% include card_meta.html label=activity.title start=inicio end=fim room=activity.room extra=continuacao %}
+                                    <h3 class="keynote_title">{{ mc.titulo }}</h3>
+                                    {% include expandable_text.html text=mc.resumo %}
+                                </div>
+
+                                <!-- Os ministrantes -->
+                                <div class="keynote_speaker">
+                                    <div class="keynote_speaker_info">
+                                        <span class="keynote_speaker_label">{% if mc.autores.size > 1 %}Ministrantes{% else %}Ministrante{% endif %}</span>
+                                        <ul class="keynote_people">
+                                            {% for autor in mc.autores %}
+                                                <li><b>{{ autor.nome }}</b>{% if autor.instituicao %} <span>{{ autor.instituicao }}</span>{% endif %}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+                        {% endfor %}
                     {% endfor %}
-                {% endfor %}
-                {% if inicio %}
-                    <p class="activity_room"><b>Sala:</b> {{ sala }}</p>
-                    <p><b>Horário:</b> {{ day.title }} ({{ day.date }}), {{ inicio }} - {{ fim }}{% if ext_inicio %} (continuação até {{ ext_fim }}){% endif %}</p>
-                {% endif %}
+                </div>
             {% endfor %}
-            <p><b>Resumo</b>: {{ mc.resumo }}</p>
-            <hr>
-        {% endfor %}
+        </div>
     </div>
     <br><br>
 </section>
+
+{% include program_cards_script.html %}
