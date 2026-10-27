@@ -105,6 +105,29 @@
       title: WEAC
       room: Auditório do LAUT
       description: Workshop sobre Educação em Arquitetura de Computadores
+      page: /cfp_weac/
+      papers:
+      - time: "10:20"
+        title: "Um Estudo de Caso de Plataforma Web para o Ensino de Programação Paralela"
+        authors: "Marcos Saavedra (UFPA), Marcos Amaris (UFPA), Josivaldo Araújo (UFPA)"
+      - time: "10:38"
+        title: "Do conceito à prática: facilitando a compreensão da arquitetura RISC-V com Logisim"
+        authors: "Pedro Henrique Tardivo Rodrigues (UTFPR), Victória Stephanie Mottin (UTFPR), Rogério Aparecido Gonçalves (UTFPR), João Fabrício Filho (UTFPR)"
+      - time: "10:56"
+        title: "BlockMIPS: uma plataforma web baseada em blocos e gamificação para o ensino de programação Assembly MIPS"
+        authors: "Sílvio Roberto Fernandes (UFERSA)"
+      - time: "11:14"
+        title: "RAVEN Simulator: A Support Tool for Microarchitecture Education"
+        authors: "Luis Phillip Lemos Martins (PUC-MG), Matheus Alcântara Souza (PUC-MG)"
+      - time: "11:32"
+        title: "Ensino de Processamento de Alto Desempenho nos Cursos de Graduação do Sul do Brasil: Desafios e Lições Aprendidas"
+        authors: "Guilherme Galante (UNIOESTE), Claudio Schepke (UNIPAMPA), Rodrigo da Rosa Righi (UNISINOS), Guilherme Piêgas Koslovski (UDESC), Maurício Aronne Pillon (UDESC), Lucas Mello Schnorr (UFRGS), Arthur Francisco Lorenzon (UFRGS), Philippe O. A. Navaux (UFRGS), Márcio Castro (UFSC), César A. F. De Rose (PUC-RS), Tiago Ferreto (PUC-RS), Marco Antonio Zanata Alves (UFPR), Joao V. F. Lima (UFSM), Gerson Geraldo H. Cavalheiro (UFPEL)"
+      - time: "11:50"
+        title: "Metodologia de Desenvolvimento de Ferramentas de Ensino com LLM para Sistemas Digitais"
+        authors: "Hugo Costa Araújo (UFV), Caio Sobreira (UFV), Franklin Liesner Tomich (UFOP), Racyus Delano Garcia Pacífico (UFOP), Ricardo Ferreira (UFV)"
+      - time: "12:08"
+        title: "SPECTH: Script de Plotagem Educacional para Contadores de Hardware"
+        authors: "Pedro Paulo O. Andrade (UFMS), Renan A. Marks (UFMS)"
     - id: gap
       type: gap
       style: gap
