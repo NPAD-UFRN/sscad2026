@@ -75,7 +75,6 @@ workshops:
 
   <div class="card-grid">
     {% for w in page.workshops %}
-      {% assign tam = w.id | size %}
       <article class="content-card workshop-card" id="{{ w.id }}">
         <div class="workshop-head">
           <span class="keynote_label">{{ w.sigla }}</span>
@@ -84,33 +83,7 @@ workshops:
         <h3>{{ w.nome }}</h3>
         <p>{{ w.descricao }}</p>
 
-        {% comment %} Horários: blocos seguidos do mesmo workshop viram um intervalo só {% endcomment %}
-        <ul class="workshop-schedule">
-          {% for day in site.data.program %}
-            {% assign inicio = nil %}{% assign fim = nil %}{% assign sala = nil %}{% assign faixas = "" %}
-            {% for block in day.blocks %}
-              {% for activity in block.activities %}
-                {% assign prefixo = activity.id | slice: 0, tam %}
-                {% if activity.type != "workshop" or prefixo != w.id %}{% continue %}{% endif %}
-                {% assign sala = activity.room %}
-                {% if inicio and block.start == fim %}
-                  {% assign fim = block.end %}
-                {% else %}
-                  {% if inicio %}{% assign faixas = faixas | append: inicio | append: " – " | append: fim | append: ", " %}{% endif %}
-                  {% assign inicio = block.start %}{% assign fim = block.end %}
-                {% endif %}
-              {% endfor %}
-            {% endfor %}
-            {% if inicio %}
-              {% assign faixas = faixas | append: inicio | append: " – " | append: fim %}
-              <li>
-                <b>{{ day.title }} ({{ day.date | slice: 0, 5 }})</b>
-                <span><i class="bi bi-clock"></i> {{ faixas }}</span>
-                <span><i class="bi bi-geo-alt"></i> {{ sala }}</span>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
+        {% include workshop_schedule.html id=w.id %}
 
         <div class="button-row">
           <a class="btn btn-accent" href="{{ w.pagina | relative_url }}">Página do {{ w.sigla }}</a>

@@ -1,0 +1,31 @@
+{% comment %}
+  Dias, horários e salas de um evento lidos de _data/program.yml; blocos seguidos viram um intervalo só.
+  Parâmetro: id (prefixo dos ids na programação, ex.: "wic" pega wic1..wic6)
+{% endcomment %}
+{% assign tam = include.id | size %}
+<ul class="workshop-schedule">
+  {% for day in site.data.program %}
+    {% assign inicio = nil %}{% assign fim = nil %}{% assign sala = nil %}{% assign faixas = "" %}
+    {% for block in day.blocks %}
+      {% for activity in block.activities %}
+        {% assign prefixo = activity.id | slice: 0, tam %}
+        {% if activity.type != "workshop" or prefixo != include.id %}{% continue %}{% endif %}
+        {% assign sala = activity.room %}
+        {% if inicio and block.start == fim %}
+          {% assign fim = block.end %}
+        {% else %}
+          {% if inicio %}{% assign faixas = faixas | append: inicio | append: " – " | append: fim | append: ", " %}{% endif %}
+          {% assign inicio = block.start %}{% assign fim = block.end %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {% if inicio %}
+      {% assign faixas = faixas | append: inicio | append: " – " | append: fim %}
+      <li>
+        <b>{{ day.title }} ({{ day.date | slice: 0, 5 }})</b>
+        <span><i class="bi bi-clock"></i> {{ faixas }}</span>
+        <span><i class="bi bi-geo-alt"></i> {{ sala }}</span>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
