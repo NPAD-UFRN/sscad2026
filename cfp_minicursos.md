@@ -8,7 +8,7 @@ linkjems: "https://jems3.sbc.org.br/sscad2026-minicursos"
 
 ##  Chamada para Propostas de Minicursos
 
-O Simpósio de Sistemas Computacionais de Alto Desempenho (SSCAD – antigo WSCAD)
+O Simpósio em Sistemas Computacionais de Alto Desempenho (SSCAD – antigo WSCAD)
 é um evento anual que apresenta, desde o ano 2000, os principais
 desenvolvimentos, aplicações e tendências nas áreas de Arquitetura de
 Computadores, Processamento de Alto Desempenho e Sistemas Distribuídos. Em sua
@@ -20,7 +20,7 @@ exploradas e em temas com grande potencial para atrair o interesse de
 estudantes, pesquisadores, professores e profissionais, de forma a melhor
 qualificá-los para suas pesquisas e/ou mercado de trabalho. Poderão ser
 submetidos minicursos sobre os temas sugeridos na 
-[Chamada de Trabalhos da Trilha Principal do SSCAD 2026](/cfp/) ou mesmo
+[Chamada de Trabalhos da Trilha Principal do SSCAD 2026]({{ '/cfp/' | relative_url }}) ou mesmo
 sobre outros temas que os proponentes julguem relevantes à área de Arquitetura
 de Computadores, Processamento de Alto Desempenho e Sistemas Distribuídos.
 
@@ -34,14 +34,14 @@ Publicação de Capítulos de Livros.
 
 O livro dos Minicursos do SSCAD 2026 será publicado na SBC OpenLib (SOL), a
 biblioteca digital mantida pela Sociedade Brasileira de Computação (SBC), e
-estará disponível gratuitamente para toda sociedade.
+estará disponível gratuitamente para toda a sociedade.
 
 ## Submissão das Propostas
 
 A proposta de minicurso deve possuir 2 páginas, escrita seguindo os padrões
 sugeridos para redação de capítulos de livros da Sociedade Brasileira de
 Computação (SBC). Os arquivos deverão ser submetidos em formato PDF no [sistema
-JEMS]({{page.linkjems}}).
+JEMS3]({{page.linkjems}}).
 
 O texto da proposta deve conter as seguintes informações:
 
@@ -56,7 +56,7 @@ dos tópicos/seções que serão cobertas), bibliografia principal utilizada na
 preparação do curso e infraestrutura necessária para a apresentação.
 
 Os minicursos aprovados serão apresentados durante o evento. O material do
-minicurso, composto pelos slides e o capítulo de livro, será disponibilizado
+minicurso, composto pelos slides e pelo capítulo de livro, será disponibilizado
 para os participantes do evento.
 
 ## Critérios de aceite para propostas de minicursos
@@ -73,7 +73,7 @@ científico, tecnológico ou formativo.
 
 A proposta de minicurso deve apresentar uma estrutura didática bem definida, com
 objetivos claros, tópicos organizados de forma lógica e bibliografia atualizada.
-A proposta deve ainda evidenciar potencial do minicurso para transferir
+A proposta deve ainda evidenciar o potencial do minicurso para transferir
 conhecimento com profundidade adequada ao público-alvo (estudantes,
 pesquisadores e profissionais).
 
