@@ -3,7 +3,9 @@
     document.addEventListener("DOMContentLoaded", function () {
         // Esconde "Ler mais" quando o texto já cabe inteiro (abas ocultas são verificadas ao serem abertas)
         function ajustarBotoes() {
-            document.querySelectorAll(".tab-pane.active .keynote_more").forEach(function (botao) {
+            document.querySelectorAll(".keynote_more").forEach(function (botao) {
+                var aba = botao.closest(".tab-pane");
+                if (aba && !aba.classList.contains("active")) { return; }
                 var texto = botao.previousElementSibling;
                 if (!texto.classList.contains("is-open")) {
                     botao.hidden = texto.scrollHeight <= texto.clientHeight + 1;

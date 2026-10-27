@@ -93,6 +93,7 @@ $page-border: $gray-300;
 // Título centralizado de seção
 .section-head {
   text-align: center;
+  scroll-margin-top: 5rem;
   margin-bottom: 1.5rem;
 
   h2 {
@@ -136,6 +137,7 @@ $page-border: $gray-300;
 
 // Card branco com borda e sombra leve
 .content-card {
+  scroll-margin-top: 5rem;
   padding: 1.5rem;
   border: 1px solid $page-border;
   border-radius: $border-radius-lg;
@@ -219,6 +221,11 @@ $page-border: $gray-300;
 
 .card-grid {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+// Duas colunas (ex.: quatro itens, sem card sozinho na última linha)
+.card-grid-pairs {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
 }
 
 .highlight-grid {
@@ -319,4 +326,13 @@ $page-border: $gray-300;
   > div > h3 {
     margin-bottom: .2rem;
   }
+}
+
+// Logo do evento acima do selo de abertura (ex.: W-MAD)
+.page-logo {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin: 0 auto 1.5rem;
 }
