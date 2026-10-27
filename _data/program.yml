@@ -1176,6 +1176,9 @@
   - id: aud_npiti
     name: Aud. nPITI
     style: aud_npiti
+  - id: lab_dca
+    name: LabGrad DCA
+    style: lab_dca
   blocks:
   - start: "07:00"
     end: "08:00"
@@ -1248,6 +1251,10 @@
       room: Auditório do nPITI
       page: /cfp_wpads/
       description: Workshop de Processamento de Alto Desempenho Sustentável
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "09:00"
     end: "09:50"
     activities:
@@ -1283,6 +1290,10 @@
       room: Auditório do nPITI
       page: /cfp_wpads/
       hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "09:50"
     end: "10:20"
     hide_details: 'yes'
@@ -1324,6 +1335,10 @@
       type: gap
       style: gap
       title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "11:20"
     end: "12:20"
     activities:
@@ -1331,7 +1346,7 @@
       type: panel
       style: aud_ct
       url: '#painel'
-      title: Tema a definir
+      title: Painel temático
       room: Auditório do CT (216)
       description: Tema a definir
   - start: "12:20"
@@ -1412,38 +1427,15 @@
       room: Auditório do nPITI
       page: /cfp_wpads/
       hide_details: 'yes'
+    - id: mc-praticas
+      type: tutorial
+      style: lab_dca
+      url: '#mc-praticas'
+      title: Minicursos
+      room: LabGrad DCA
+      description: Atividades práticas de minicursos
   - start: "15:20"
-    end: "15:50"
-    hide_details: 'yes'
-    activities:
-    - id: coffee
-      type: blank
-      style: blank
-      title: Pausa do café
-      room: Foyer Aut. CT
-  - start: "15:50"
-    end: "16:50"
-    activities:
-    - id: plenaria6
-      type: keynote
-      style: aud_ct
-      url: '#plenaria6'
-      title: Palestra plenária 6
-      room: Auditório do CT (216)
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-  - start: "16:50"
-    end: "17:50"
+    end: "16:20"
     hide_details: 'yes'
     activities:
     - id: encerramento
