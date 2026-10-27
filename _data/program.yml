@@ -259,7 +259,7 @@
       url: '#ctd'
       title: CTD
       room: Auditório do nPITI
-      description: Concurso de Teses e Dissertações (SSCAD-CTD)
+      description: Concurso de Teses e Dissertações (CTD)
     - id: mc2
       type: tutorial
       style: lab_dca

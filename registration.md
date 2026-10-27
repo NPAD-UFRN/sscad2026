@@ -23,7 +23,7 @@ minicursos e coffee-breaks nos 3 dias do evento.
 ## Informações importantes aos autores
 
 **Pelo menos um dos(as) autores(as) de cada trabalho** aceito na Trilha
-Principal do SSCAD ou em algum dos seus subeventos (SSCAD-WIC, SSCAD-CTD e WEAC)
+Principal do SSCAD ou em algum dos seus subeventos (WIC, CTD e WEAC)
 deve fazer inscrição no SSCAD 2026 até {{page.data-limite-inscricao}} e
 apresentar o seu trabalho durante o SSCAD 2026.
 
@@ -33,7 +33,7 @@ publicação, no valor de R$50,00 por artigo adicional. Autores(as) que se
 inscreverem por isenção institucional devem pagar a taxa de publicação para cada
 artigo, mesmo para um único artigo.
 
-Autores(as) de artigos aceitos na Trilha Principal e SSCAD-WIC deverão também
+Autores(as) de artigos aceitos na Trilha Principal e WIC deverão também
 enviar [o termo de autorização de publicação da
 SBC](https://ce-acpad.github.io/sscad2024/assets/pdf/Autorizacao-Publicacao-SSCAD2024.pdf)
 via JEMS **até o prazo limite para inscrição de autores**. O termo deverá estar,

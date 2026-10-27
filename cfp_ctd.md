@@ -1,12 +1,12 @@
 ---
 layout: textpage
-title: "SSCAD-CTD"
+title: "CTD"
 permalink: /cfp_ctd/
 ---
 
-## Chamada para Teses e Dissertações (SSCAD-CTD)
+## Chamada para Teses e Dissertações (CTD)
 
-A Comissão Especial de Arquitetura de Computadores está promovendo mais uma edição do Concurso de Teses e Dissertações. As monografias de mestrado e doutorado defendidas e homologadas a partir de julho de 2025 até a data de submissão do SSCAD-CTD em 2026 nas áreas de Arquitetura de Computadores e Computação de Alto Desempenho estão convidadas a participar do concurso.
+A Comissão Especial de Arquitetura de Computadores está promovendo mais uma edição do Concurso de Teses e Dissertações. As monografias de mestrado e doutorado defendidas e homologadas a partir de julho de 2025 até a data de submissão do CTD em 2026 nas áreas de Arquitetura de Computadores e Computação de Alto Desempenho estão convidadas a participar do concurso.
 
 ## Selecionados para a Apresentação Final
 
@@ -104,7 +104,7 @@ defendeu e teve o trabalho aprovado.
 ## Processo de Seleção
 
 Na primeira fase, os trabalhos serão avaliados por um comitê específico do
-SSCAD-CTD responsável por selecionar as teses e dissertações finalistas. Estes
+CTD responsável por selecionar as teses e dissertações finalistas. Estes
 finalistas serão conhecidos antes do evento e serão convidados a apresentar seus
 trabalhos no SSCAD 2026. Na segunda fase, uma banca formada por professores
 participantes do evento irá avaliar as apresentações. Ambas avaliações definirão

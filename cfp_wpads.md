@@ -16,7 +16,7 @@ responsabilidade socioambiental.
 
 ## MODALIDADE DE SUBMISSÃO
 
-Os artigos a serem submetidos ao SSCAD-WIC 2026 poderão ser escritos em português ou
+Os artigos a serem submetidos ao WIC 2026 poderão ser escritos em português ou
 em inglês e serão avaliados pelos membros do Comitê de Programa. Os artigos devem ser
 submetidos no formato PDF, com até 8 páginas de texto (as referências bibliográficas não
 constam desse total; ou seja, o artigo pode ter mais do que 8 páginas), e seguir o modelo

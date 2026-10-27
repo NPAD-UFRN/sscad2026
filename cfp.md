@@ -74,9 +74,9 @@ JEMS3](https://jems3.sbc.org.br/sscad2026).
 Além das sessões técnicas da Trilha Principal e dos Minicursos, o SSCAD 2026
 realizará os seguintes eventos associados:
 - Concurso de Teses e Dissertações em Arquitetura de Computadores e Computação
-  de Alto Desempenho (SSCAD-CTD);
+  de Alto Desempenho (CTD);
 - Workshop de Iniciação Científica em Arquitetura de Computadores e Computação
-  de Alto Desempenho (SSCAD-WIC);
+  de Alto Desempenho (WIC);
 - Workshop sobre Educação em Arquitetura de Computadores (WEAC);
 - Maratona de Programação Paralela (MPP);
 - Workshop de Mulheres em Alto Desempenho (W-MAD);

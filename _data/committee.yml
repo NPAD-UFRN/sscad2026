@@ -19,11 +19,11 @@ committees:
             institution: UnB
           - name: Daniel Cordeiro
             institution: USP
-      - name: "Coordenação do Workshop de Iniciação Científica (SSCAD-WIC)"
+      - name: "Coordenação do Workshop de Iniciação Científica (WIC)"
         people:
           - name: Hervé Yviquel
             institution: UNICAMP
-      - name: "Coordenação do Concurso de Teses e Dissertações (SSCAD-CTD)"
+      - name: "Coordenação do Concurso de Teses e Dissertações (CTD)"
         people:
           - name: Evaldo Costa
             institution: Cesar
