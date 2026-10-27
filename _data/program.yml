@@ -594,6 +594,35 @@
       room: Auditório do nPITI
       page: /cfp_wmad/
       description: Workshop de Mulheres em Alto Desempenho
+      papers:
+      - time: "07:00–08:00"
+        title: "Credenciamento e Boas-vindas"
+      - time: "08:00–08:20"
+        title: "Abertura Oficial do Workshop"
+      - time: "08:20–09:00"
+        title: "Painel 1: Panorama da participação feminina em HPC"
+        authors: "Moderadora: Aletéia Patrícia Favacho de Araújo"
+      - time: "09:00–09:50"
+        title: "Palestra 1: Pesquisa em Supercomputação e Bioinformática em Quatro Décadas: A Busca Incansável por Desempenho"
+        authors: "Alba Cristina Magalhães Alves de Melo (UnB)"
+      - time: "09:50–10:20"
+        title: "Intervalo / Networking"
+      - time: "10:20–11:20"
+        title: "Palestra 2: Se funciona, tá bom? Como serverless pode revolucionar sua aplicação"
+        authors: "Giovana Armani (AWS)"
+      - time: "11:20–14:00"
+        title: "Intervalo para o almoço"
+      - time: "14:00–14:40"
+        title: "Palestra 3: Carreiras e Oportunidades para Mulheres em HPC e Computação Científica"
+        authors: "Rafaela Correia Brum (UERJ)"
+      - time: "14:40–15:00"
+        title: "Palestra 4: Desafios da Diversidade e Inclusão em Computação de Alto Desempenho"
+        authors: "Aline Galdino de Oliveira (UFRJ)"
+      - time: "15:00–15:40"
+        title: "Painel 2: Mulheres que Lideram em HPC"
+        authors: "Debate com pesquisadoras e profissionais da academia, indústria e centros de supercomputação — Moderadora: Maria Clicia Castro"
+      - time: "15:40–15:50"
+        title: "Encerramento"
     - id: mc4
       type: tutorial
       style: lab_dimap

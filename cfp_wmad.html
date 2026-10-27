@@ -69,26 +69,16 @@ permalink: /cfp_wmad/
     </div>
   </div>
 
-  <!-- Programação -->
+  <!-- Programa -->
   <div class="section-head" id="wmad">
-    <h2>Cronograma</h2>
-    <p>{{ site.data.program_wmad.date }} · Auditório do nPITI</p>
+    <h2>Programa</h2>
+    <p>Atividades no Auditório do nPITI, na quarta-feira (04/11).</p>
   </div>
+</section>
 
-  <div class="content-card">
-    <ol class="timeline">
-      {% for block in site.data.program_wmad.blocks %}
-        {% for activity in block.activities %}
-          <li>
-            <span class="timeline-date">{{ block.start }} – {{ block.end }}</span>
-            {% if activity.style == "blank" %}<span class="text-muted">{{ activity.title }}</span>{% else %}<b>{{ activity.title }}</b>{% endif %}
-            {% if activity.subtitle %}<br><small class="text-muted">{{ activity.subtitle }}</small>{% endif %}
-          </li>
-        {% endfor %}
-      {% endfor %}
-    </ol>
-  </div>
+{% include session_cards.html type="workshop" prefix="wmad" %}
 
+<section class="content-page">
   <!-- Palestrantes -->
   <div class="section-head" id="palestrantes">
     <h2>Palestrantes</h2>
@@ -97,20 +87,25 @@ permalink: /cfp_wmad/
   {% capture quebra %}
 {% endcapture %}
   {% for speaker in site.data.speakers_wmad %}
-    {% comment %} Horário da palestra: bloco do cronograma cujo título começa com o rótulo (ex.: "Palestra 1:") {% endcomment %}
+    {% comment %} Horário da palestra: item do programa do W-MAD cujo título começa com o rótulo (ex.: "Palestra 1:") {% endcomment %}
     {% assign rotulo = speaker.talk_label | append: ":" %}
-    {% assign inicio = nil %}{% assign fim = nil %}
-    {% for block in site.data.program_wmad.blocks %}
-      {% for activity in block.activities %}
-        {% assign titulo = activity.title | slice: 0, rotulo.size %}
-        {% if titulo == rotulo %}{% assign inicio = block.start %}{% assign fim = block.end %}{% endif %}
+    {% assign horario = nil %}
+    {% for day in site.data.program %}
+      {% for block in day.blocks %}
+        {% for activity in block.activities %}
+          {% if activity.id != "wmad" or activity.papers == nil %}{% continue %}{% endif %}
+          {% for item in activity.papers %}
+            {% assign titulo = item.title | slice: 0, rotulo.size %}
+            {% if titulo == rotulo %}{% assign horario = item.time | replace: "–", " – " %}{% endif %}
+          {% endfor %}
+        {% endfor %}
       {% endfor %}
     {% endfor %}
     {% assign bio = speaker.bio | join: quebra %}
     <article class="keynote_card" id="{{ speaker.id }}">
       <!-- A palestra -->
       <div class="keynote_talk">
-        {% include card_meta.html label=speaker.talk_label start=inicio end=fim room="Auditório do nPITI" %}
+        {% include card_meta.html label=speaker.talk_label start=horario room="Auditório do nPITI" %}
         <h3 class="keynote_title">{{ speaker.talk_title }}</h3>
         {% include expandable_text.html text=speaker.abstract %}
       </div>
@@ -204,4 +199,3 @@ permalink: /cfp_wmad/
   </div>
 </section>
 
-{% include program_cards_script.html %}
