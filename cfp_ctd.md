@@ -35,7 +35,7 @@ Listas em ordem alfabética.
 ## Datas Importantes
 
 - Submissão de trabalhos: 30/08/2026
-- Notificação de selecionados para apresentação: 05/10/2026 (**Prorrogado**)
+- Notificação de selecionados para apresentação: 05/10/2026 (**prorrogado**)
 - Notificação do resultado final: na cerimônia de premiação do evento
 
 ## Tópicos de Interesse
@@ -73,7 +73,7 @@ A chamada de trabalhos está aberta para os seguintes tópicos de interesse (mas
 
 ## Instruções aos Autores
 
-A submissão será exclusivamente eletrônica, por meio do [sistema JEMS](https://jems3.sbc.org.br/sscad-ctd2026).
+A submissão será exclusivamente eletrônica, por meio do [sistema JEMS3](https://jems3.sbc.org.br/sscad-ctd2026).
 
 Cada submissão deverá conter três arquivos:
 
@@ -107,7 +107,7 @@ Na primeira fase, os trabalhos serão avaliados por um comitê específico do
 CTD responsável por selecionar as teses e dissertações finalistas. Estes
 finalistas serão conhecidos antes do evento e serão convidados a apresentar seus
 trabalhos no SSCAD 2026. Na segunda fase, uma banca formada por professores
-participantes do evento irá avaliar as apresentações. Ambas avaliações definirão
+participantes do evento irá avaliar as apresentações. Ambas as avaliações definirão
 os trabalhos vencedores e destaques para cada nível (mestrado e doutorado).
 
 ## Coordenação do Comitê de Programa
