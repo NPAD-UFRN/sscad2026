@@ -259,6 +259,7 @@
       url: '#ctd'
       title: CTD
       room: Auditório do nPITI
+      page: /cfp_ctd/
       description: Concurso de Teses e Dissertações (CTD)
     - id: mc2
       type: tutorial
@@ -346,6 +347,7 @@
       url: '#ctd'
       title: CTD
       room: Auditório do nPITI
+      page: /cfp_ctd/
       hide_details: 'yes'
     - id: mc2
       type: tutorial
@@ -590,6 +592,7 @@
       url: '#wmad'
       title: W-MAD
       room: Auditório do nPITI
+      page: /cfp_wmad/
       description: Workshop de Mulheres em Alto Desempenho
     - id: mc4
       type: tutorial
@@ -627,6 +630,7 @@
       url: '#wmad'
       title: W-MAD
       room: Auditório do nPITI
+      page: /cfp_wmad/
       hide_details: 'yes'
     - id: mc4
       type: tutorial
@@ -721,6 +725,7 @@
       url: '#wmad'
       title: W-MAD
       room: Auditório do nPITI
+      page: /cfp_wmad/
       hide_details: 'yes'
     - id: mc4
       type: tutorial
@@ -864,6 +869,7 @@
       url: '#wmad'
       title: W-MAD
       room: Auditório do nPITI
+      page: /cfp_wmad/
       hide_details: 'yes'
     - id: mc5
       type: tutorial
@@ -901,6 +907,7 @@
       url: '#wmad'
       title: W-MAD
       room: Auditório do nPITI
+      page: /cfp_wmad/
       hide_details: 'yes'
     - id: mc5
       type: tutorial
@@ -1131,6 +1138,7 @@
       url: '#wpads'
       title: WPADS
       room: Auditório do nPITI
+      page: /cfp_wpads/
       description: Workshop de Processamento de Alto Desempenho Sustentável
   - start: "09:00"
     end: "09:50"
@@ -1165,6 +1173,7 @@
       url: '#wpads'
       title: WPADS
       room: Auditório do nPITI
+      page: /cfp_wpads/
       hide_details: 'yes'
   - start: "09:50"
     end: "10:20"
@@ -1293,6 +1302,7 @@
       url: '#wpads'
       title: WPADS
       room: Auditório do nPITI
+      page: /cfp_wpads/
       hide_details: 'yes'
   - start: "15:20"
     end: "15:50"
