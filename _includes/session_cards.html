@@ -1,9 +1,9 @@
-{% comment %} Cards por dia das sessões técnicas (todas) ou dos workshops que têm artigos. Parâmetro: type {% endcomment %}
+{% comment %} Cards por dia das sessões técnicas (todas) ou dos workshops que têm artigos. Parâmetros: type; prefix (opcional, ex.: "wic") {% endcomment %}
 <div class="container keynotes">
     {% if include.type == "session" %}
         {% include program_days.html type="session" %}
     {% else %}
-        {% include program_days.html type=include.type papers=true %}
+        {% include program_days.html type=include.type papers=true prefix=include.prefix %}
     {% endif %}
     {% include day_tabs.html %}
 
@@ -17,11 +17,18 @@
                     {% for activity in block.activities %}
                         {% if activity.hide_details or activity.type != include.type %}{% continue %}{% endif %}
                         {% if include.type != "session" and activity.papers == nil %}{% continue %}{% endif %}
+                        {% if include.prefix %}{% assign tam = include.prefix | size %}{% assign inicio_id = activity.id | slice: 0, tam %}{% if inicio_id != include.prefix %}{% continue %}{% endif %}{% endif %}
+
+                        {% comment %} Término: último bloco do dia com o mesmo id (sessões que ocupam mais de um bloco) {% endcomment %}
+                        {% assign fim = block.end %}
+                        {% for b in day.blocks %}
+                            {% for a in b.activities %}{% if a.id == activity.id %}{% assign fim = b.end %}{% endif %}{% endfor %}
+                        {% endfor %}
 
                         <article class="keynote_card" id="{{ activity.id }}">
                             <!-- A sessão -->
                             <div class="keynote_talk">
-                                {% include card_meta.html label=activity.title start=block.start end=block.end room=activity.room %}
+                                {% include card_meta.html label=activity.title start=block.start end=fim room=activity.room %}
                                 {% if activity.description %}
                                     <h3 class="keynote_title">{{ activity.description }}</h3>
                                 {% endif %}

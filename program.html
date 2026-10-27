@@ -96,7 +96,7 @@ permalink: /program/
                                                         <span class="keynote_link_hint"><i class="bi bi-info-circle-fill"></i> Detalhes</span>
                                                     </a>
                                                 {% elsif activity.papers %}
-                                                    <a href="{% if activity.type == "workshop" %}{{ '/cfp_wic/' | relative_url }}{% else %}{{ '/program/sessions/' | relative_url }}{% endif %}{{ activity.url }}" class="activity_title keynote_link stretched-link">
+                                                    <a href="{% if activity.type == "workshop" %}{{ activity.page | default: '/cfp_wic/' | relative_url }}{% else %}{{ '/program/sessions/' | relative_url }}{% endif %}{{ activity.url }}" class="activity_title keynote_link stretched-link">
                                                         <p class="activity_title">
                                                             {{ activity.title }}
                                                             {% if activity.subtitle %}<br><small class="text-muted">{{ activity.subtitle }}</small>{% endif %}
