@@ -1,9 +1,16 @@
-{% comment %} Cards por dia das sessões técnicas (todas) ou dos workshops que têm artigos. Parâmetros: type; prefix (opcional, ex.: "wic") {% endcomment %}
+{% comment %}
+  Cards por dia das sessões técnicas (todas) ou dos workshops que têm artigos.
+  Parâmetros: type; prefix (opcional, ex.: "wic"; mostra também os workshops ainda sem artigos)
+{% endcomment %}
 <div class="container keynotes">
     {% if include.type == "session" %}
         {% include program_days.html type="session" %}
     {% else %}
-        {% include program_days.html type=include.type papers=true prefix=include.prefix %}
+        {% if include.prefix %}
+            {% include program_days.html type=include.type prefix=include.prefix %}
+        {% else %}
+            {% include program_days.html type=include.type papers=true %}
+        {% endif %}
     {% endif %}
     {% include day_tabs.html %}
 
@@ -16,19 +23,28 @@
                     {% if block.hide_details %}{% continue %}{% endif %}
                     {% for activity in block.activities %}
                         {% if activity.hide_details or activity.type != include.type %}{% continue %}{% endif %}
-                        {% if include.type != "session" and activity.papers == nil %}{% continue %}{% endif %}
+                        {% if include.type != "session" and activity.papers == nil and include.prefix == nil %}{% continue %}{% endif %}
                         {% if include.prefix %}{% assign tam = include.prefix | size %}{% assign inicio_id = activity.id | slice: 0, tam %}{% if inicio_id != include.prefix %}{% continue %}{% endif %}{% endif %}
 
-                        {% comment %} Término: último bloco do dia com o mesmo id (sessões que ocupam mais de um bloco) {% endcomment %}
-                        {% assign fim = block.end %}
+                        {% comment %} Horários: todos os blocos do dia com o mesmo id; blocos seguidos viram um intervalo só {% endcomment %}
+                        {% assign inicio = nil %}{% assign fim = nil %}{% assign faixas = "" %}
                         {% for b in day.blocks %}
-                            {% for a in b.activities %}{% if a.id == activity.id %}{% assign fim = b.end %}{% endif %}{% endfor %}
+                            {% for a in b.activities %}
+                                {% if a.id != activity.id %}{% continue %}{% endif %}
+                                {% if inicio and b.start == fim %}
+                                    {% assign fim = b.end %}
+                                {% else %}
+                                    {% if inicio %}{% assign faixas = faixas | append: inicio | append: " – " | append: fim | append: ", " %}{% endif %}
+                                    {% assign inicio = b.start %}{% assign fim = b.end %}
+                                {% endif %}
+                            {% endfor %}
                         {% endfor %}
+                        {% assign faixas = faixas | append: inicio | append: " – " | append: fim %}
 
                         <article class="keynote_card" id="{{ activity.id }}">
                             <!-- A sessão -->
                             <div class="keynote_talk">
-                                {% include card_meta.html label=activity.title start=block.start end=fim room=activity.room %}
+                                {% include card_meta.html label=activity.title start=faixas room=activity.room %}
                                 {% if activity.description %}
                                     <h3 class="keynote_title">{{ activity.description }}</h3>
                                 {% endif %}
@@ -42,7 +58,8 @@
                             <ol class="session_papers">
                                 {% for paper in activity.papers %}
                                     <li class="session_paper">
-                                        {% if paper.time %}<span class="session_paper_time"><i class="bi bi-clock"></i> {{ paper.time }}</span>{% endif %}
+                                        {% if paper.time %}<span class="session_paper_time"><i class="bi bi-clock"></i> {{ paper.time }}</span>
+                                        {% elsif paper.label %}<span class="session_paper_time">{{ paper.label }}</span>{% endif %}
                                         <div class="session_paper_info">
                                             <p class="session_paper_title">{{ paper.title }}</p>
                                             <p class="session_paper_authors">{{ paper.authors }}</p>

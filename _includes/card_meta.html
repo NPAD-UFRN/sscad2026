@@ -1,7 +1,7 @@
-{% comment %} Linha de rótulo, horário e sala dos cards. Parâmetros: label, start, end, room; extra (opcional, ex.: continuação) {% endcomment %}
+{% comment %} Linha de rótulo, horário e sala dos cards. Parâmetros: label, start, end (opcional, se start já traz o intervalo), room; extra (opcional, ex.: continuação) {% endcomment %}
 <div class="keynote_meta">
     <span class="keynote_label">{{ include.label }}</span>
-    <span><i class="bi bi-clock"></i> {{ include.start }} – {{ include.end }}</span>
+    <span><i class="bi bi-clock"></i> {{ include.start }}{% if include.end %} – {{ include.end }}{% endif %}</span>
     {% if include.extra %}<span><i class="bi bi-arrow-repeat"></i> {{ include.extra }}</span>{% endif %}
     {% if include.room %}<span><i class="bi bi-geo-alt"></i> {{ include.room | split: " (" | first }}</span>{% endif %}
 </div>
