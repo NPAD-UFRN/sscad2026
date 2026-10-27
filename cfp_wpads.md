@@ -16,7 +16,7 @@ responsabilidade socioambiental.
 
 ## MODALIDADE DE SUBMISSÃO
 
-Os artigos a serem submetidos ao WIC 2026 poderão ser escritos em português ou
+Os artigos a serem submetidos ao WPADS 2026 poderão ser escritos em português ou
 em inglês e serão avaliados pelos membros do Comitê de Programa. Os artigos devem ser
 submetidos no formato PDF, com até 8 páginas de texto (as referências bibliográficas não
 constam desse total; ou seja, o artigo pode ter mais do que 8 páginas), e seguir o modelo
@@ -40,7 +40,7 @@ O WPADS incentiva submissões de trabalhos originais e inovadores nas seguintes 
 - Eficiência energética em HPC e IA.
 - Escalonamento ciente de energia e de carbono.
 - Monitoramento, observabilidade e medição de energia e carbono.
-- Sustentabilidade de datacenters e infraestrutura de HPC/AI.
+- Sustentabilidade de datacenters e infraestrutura de HPC/IA.
 - Soluções baseadas em hardware e software para melhoria da eficiência energética.
 - Computação aproximada para sustentabilidade.
 - Metodologias e estruturas (frameworks) de computação sustentável.
@@ -53,7 +53,7 @@ O WPADS incentiva submissões de trabalhos originais e inovadores nas seguintes 
 ## COORDENAÇÃO DO EVENTO
 
 - **Coordenação Geral**: Alvaro Luiz Fazenda (Unifesp) e Silvana Rossetto (UFRJ).
-- **Coordenação Científica**: Sarita Mazzini Bruschi (USP) e Emilio de Camargo rancesquini (UFABC).
+- **Coordenação Científica**: Sarita Mazzini Bruschi (USP) e Emilio de Camargo Francesquini (UFABC).
 - **Divulgação e Execução**: Alessandro Santiago dos Santos (IPT).
 
 ## DATAS IMPORTANTES
