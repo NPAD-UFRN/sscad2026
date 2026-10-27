@@ -197,6 +197,7 @@
       url: '#weac'
       title: WEAC
       room: Auditório do LAUT
+      page: /cfp_weac/
       hide_details: 'yes'
     - id: gap
       type: gap
