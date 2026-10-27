@@ -47,75 +47,14 @@ permalink: /cfp_ctd/
     </div>
   </div>
 
-  <!-- Finalistas -->
-  <div class="section-head" id="finalistas">
-    <h2>Selecionados para a apresentação final</h2>
-    <p>Listas em ordem alfabética.</p>
+  <!-- Programa -->
+  <div class="section-head" id="programa">
+    <h2>Programa</h2>
+    <p>Selecionados para a apresentação final, no Auditório do nPITI, na terça-feira (03/11). Listas em ordem alfabética.</p>
   </div>
-
-  <div class="content-card" id="ctd">
-    <h3><i class="bi bi-clock-fill"></i> Na programação</h3>
-    {% include workshop_schedule.html id="ctd" %}
-  </div>
-
-  <article class="keynote_card" id="doutorado">
-    <div class="keynote_talk">
-      <div class="keynote_meta"><span class="keynote_label">Tese de Doutorado</span></div>
-    </div>
-    <ol class="session_papers">
-      <li class="session_paper">
-        <div class="session_paper_info">
-          <p class="session_paper_title">Action and State Representations For Agent-Directed Test Generation Targeting Multicore Designs</p>
-          <p class="session_paper_authors">Bruno Miranda, Márcio Castro, Luiz Santos</p>
-        </div>
-      </li>
-      <li class="session_paper">
-        <div class="session_paper_info">
-          <p class="session_paper_title">Exploring Hardware Acceleration of a Transformer-Based Architecture for Hyperspectral Image Classification</p>
-          <p class="session_paper_authors">Felipe Viel, Cesar Albenes Zeferino, Eduardo Augusto Bezerra</p>
-        </div>
-      </li>
-      <li class="session_paper">
-        <div class="session_paper_info">
-          <p class="session_paper_title">Orama++: Um Framework Orientado a Redes Neurais Artificiais para Predição de Tempo de Execução e Custos em Plataformas FaaS Multi-Nuvem</p>
-          <p class="session_paper_authors">Leonardo Rebouças de Carvalho, Aleteia de Araujo</p>
-        </div>
-      </li>
-      <li class="session_paper">
-        <div class="session_paper_info">
-          <p class="session_paper_title">Scheduling Algorithms for the Optimization of Distributed Machine Learning Models on Heterogeneous Resources</p>
-          <p class="session_paper_authors">Alan Lira Nunes, Lucia M. A. Drummond, Cristina Boeres, Laércio Lima Pilla</p>
-        </div>
-      </li>
-    </ol>
-  </article>
-
-  <article class="keynote_card" id="mestrado">
-    <div class="keynote_talk">
-      <div class="keynote_meta"><span class="keynote_label">Dissertação de Mestrado</span></div>
-    </div>
-    <ol class="session_papers">
-      <li class="session_paper">
-        <div class="session_paper_info">
-          <p class="session_paper_title">Checkpointing Optimization in Adjoint-Mode Applications: A Prefetching and Compression-Based Approach</p>
-          <p class="session_paper_authors">Thiago Maltempi, Guido Araujo, Sandro Rigo</p>
-        </div>
-      </li>
-      <li class="session_paper">
-        <div class="session_paper_info">
-          <p class="session_paper_title">OpenMP Beyond the Node: Scalable Remote Offloading and Communication for GPU Clusters</p>
-          <p class="session_paper_authors">Jhonatan Cléto, Hervé Yviquel</p>
-        </div>
-      </li>
-      <li class="session_paper">
-        <div class="session_paper_info">
-          <p class="session_paper_title">Resilient Dataflow Abstraction for Parallel Programming in C++</p>
-          <p class="session_paper_authors">Eduardo Martins, Dalvan Griebler</p>
-        </div>
-      </li>
-    </ol>
-  </article>
 </section>
+
+{% include session_cards.html type="workshop" prefix="ctd" %}
 
 <section class="content-page content-page-end">
   <div class="section-head" id="chamada">

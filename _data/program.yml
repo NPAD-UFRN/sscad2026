@@ -261,6 +261,28 @@
       room: Auditório do nPITI
       page: /cfp_ctd/
       description: Concurso de Teses e Dissertações (CTD)
+      papers:
+      - label: "Tese de Doutorado"
+        title: "Action and State Representations For Agent-Directed Test Generation Targeting Multicore Designs"
+        authors: "Bruno Miranda, Márcio Castro, Luiz Santos"
+      - label: "Tese de Doutorado"
+        title: "Exploring Hardware Acceleration of a Transformer-Based Architecture for Hyperspectral Image Classification"
+        authors: "Felipe Viel, Cesar Albenes Zeferino, Eduardo Augusto Bezerra"
+      - label: "Tese de Doutorado"
+        title: "Orama++: Um Framework Orientado a Redes Neurais Artificiais para Predição de Tempo de Execução e Custos em Plataformas FaaS Multi-Nuvem"
+        authors: "Leonardo Rebouças de Carvalho, Aleteia de Araujo"
+      - label: "Tese de Doutorado"
+        title: "Scheduling Algorithms for the Optimization of Distributed Machine Learning Models on Heterogeneous Resources"
+        authors: "Alan Lira Nunes, Lucia M. A. Drummond, Cristina Boeres, Laércio Lima Pilla"
+      - label: "Dissertação de Mestrado"
+        title: "Checkpointing Optimization in Adjoint-Mode Applications: A Prefetching and Compression-Based Approach"
+        authors: "Thiago Maltempi, Guido Araujo, Sandro Rigo"
+      - label: "Dissertação de Mestrado"
+        title: "OpenMP Beyond the Node: Scalable Remote Offloading and Communication for GPU Clusters"
+        authors: "Jhonatan Cléto, Hervé Yviquel"
+      - label: "Dissertação de Mestrado"
+        title: "Resilient Dataflow Abstraction for Parallel Programming in C++"
+        authors: "Eduardo Martins, Dalvan Griebler"
     - id: mc2
       type: tutorial
       style: lab_dca
