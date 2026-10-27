@@ -10,13 +10,13 @@ permalink: /cfp/
 
 3–5 de novembro de 2026, Natal/RN
 
-O Simpósio de Sistemas Computacionais de Alto Desempenho (SSCAD) é um evento
+O Simpósio em Sistemas Computacionais de Alto Desempenho (SSCAD) é um evento
 anual que, desde 2000, apresenta os principais desenvolvimentos, aplicações e
 tendências nas áreas de Arquitetura de Computadores, Processamento de Alto
 Desempenho e Sistemas Distribuídos.
 
 A vigésima sétima edição do SSCAD será realizada em Natal/RN no período de 3 a 5
-de novembro. Natal é uma cidade turística, vibrante e acolhedora, conhecida por
+de novembro de 2026. Natal é uma cidade turística, vibrante e acolhedora, conhecida por
 suas praias e dunas e por se destacar como polo tecnológico e de inovação no
 Nordeste.
 
@@ -44,7 +44,7 @@ Nordeste.
 - IA Generativa e HPC
 - Lakehouse e Data Lakes em Ambientes de Alto Desempenho
 - Linguagens, Compiladores e Ferramentas para Alto Desempenho
-- Modelos de programação paralela e distribuída
+- Modelos de Programação Paralela e Distribuída
 - Observabilidade em Sistemas de Alto Desempenho
 - Orquestração de Recursos em Ambientes Heterogêneos e Distribuídos
 - Redes e Protocolos de Comunicação de Alto Desempenho
