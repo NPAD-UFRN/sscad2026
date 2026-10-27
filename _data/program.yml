@@ -1346,7 +1346,6 @@
       url: '#painel'
       title: Painel temático
       room: Auditório do CT (216)
-      description: Tema a definir
   - start: "12:20"
     end: "14:00"
     hide_details: 'yes'
