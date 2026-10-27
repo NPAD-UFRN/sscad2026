@@ -10,7 +10,7 @@ permalink: /cfp_wmad/
 
 ## Workshop de Mulheres em Alto Desempenho
 
-Evento satélite do **SSCAD 2026 – 27º Simpósio de Sistemas Computacionais de Alto Desempenho**, dedicado à promoção da diversidade, equidade e inclusão na comunidade brasileira de High Performance Computing (HPC).
+Evento satélite do **SSCAD 2026 – 27º Simpósio em Sistemas Computacionais de Alto Desempenho**, dedicado à promoção da diversidade, equidade e inclusão na comunidade brasileira de High Performance Computing (HPC).
 
 ## Sobre o Workshop
 
@@ -36,7 +36,7 @@ Fortalecer redes nacionais de colaboração entre universidade, indústria e gov
 
 ## Eixos do Workshop
 
-### Dimensão técnica
+### Dimensão Técnica
 
 - Arquiteturas Paralelas
 - Computação Acelerada por GPU
@@ -121,7 +121,7 @@ A iniciativa busca ampliar a participação feminina no SSCAD, fortalecer a visi
 
 ## Coordenação Geral
 
-- Aletéia Patrícia Favacho Araújo (UnB) 
+- Aletéia Patrícia Favacho de Araújo (UnB) 
 - Carla Osthoff (LNCC) 
 - Maria Clicia Stelling de Castro (UERJ)
 
