@@ -448,12 +448,10 @@
       title: Minicurso 3
       room: Lab DIMAp
       hide_details: 'yes'
-    - id: maratona
-      type: marathon
-      style: maratona
-      url: http://lspd.mackenzie.br/marathon/26/
-      title: Maratona
-      hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "16:10"
     end: "16:40"
     activities:
