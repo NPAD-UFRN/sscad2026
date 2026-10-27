@@ -86,13 +86,14 @@
       title: Pausa do café
       room: Foyer Aut. CT
   - start: "10:20"
-    end: "11:00"
+    end: "11:10"
     activities:
-    - id: pe-exclusiva
+    - id: pe1
       type: keynote
       style: aud_ct
-      url: '#pe-exclusiva'
-      title: "Palestra empresarial exclusiva: AWS"
+      url: '#pe1'
+      title: Palestras empresariais 1
+      subtitle: (2 apresentações)
       room: Auditório do CT (216)
     - id: gap
       type: gap
@@ -132,11 +133,11 @@
       type: gap
       style: gap
       title: ''
-    - id: mc3
+    - id: mc1
       type: tutorial
       style: lab_dca
-      url: '#mc3'
-      title: Minicurso 3
+      url: '#mc1'
+      title: Minicurso 1
       room: LabGrad DCA
     - id: gap
       type: gap
@@ -146,8 +147,8 @@
       type: gap
       style: gap
       title: ''
-  - start: "11:00"
-    end: "12:20"
+  - start: "11:10"
+    end: "12:30"
     activities:
     - id: st1
       type: session
@@ -158,16 +159,16 @@
       room: Auditório do CT (216)
       description: "Computação sustentável I: energia e carbono em HPC"
       papers:
-      - time: "11:00–11:20"
+      - time: "11:10–11:30"
         title: "Assessing Operational Carbon Footprint for Task-based Applications using Simulation"
         authors: "Otho José Sirtoli Marcondes, Rayan Raddatz, Lucas Mello Schnorr"
-      - time: "11:20–11:40"
+      - time: "11:30–11:50"
         title: "Thread-Count Tuning for Carbon-Efficient Multicore HPC Applications"
         authors: "Arthur Silveira, Matheus Costa, Carla Osthoff, Philippe Olivier Alexandre Navaux, Arthur Francisco Lorenzon"
-      - time: "11:40–12:00"
+      - time: "11:50–12:10"
         title: "Gerenciamento de Recursos para Execucão Energeticamente Eficiente de Workloads em Data Centers com CPUs Híbridas"
         authors: "Marcelo Koji Moori, Felipe Nunes Laguna, Hiago Mayk Gomes de Araujo Rocha, Antonio Carlos Schneider Beck Filho"
-      - time: "12:00–12:20"
+      - time: "12:10–12:30"
         title: "Sensibilidade de políticas cientes de carbono para VMs: efeitos da especificação, do cenário e da comparabilidade da carga"
         authors: "Guilherme Fernandes Moraes da Silva, Daniel Cordeiro"
     - id: st2
@@ -179,16 +180,16 @@
       room: Auditório do CTEC (85)
       description: "Arquiteturas dedicadas e computação aproximada"
       papers:
-      - time: "11:00–11:20"
+      - time: "11:10–11:30"
         title: "From Code to RTL: A Methodology for Analyzing the HLS Hardware Generation Process"
         authors: "Henrique Gregory Gimenez, Edson Midorikawa, Felipe Valencia de Almeida, Liria Sato"
-      - time: "11:20–11:40"
+      - time: "11:30–11:50"
         title: "Arquitetura de FPGA para Inferência Bit-Exata de GBDTs com Árvores Simétricas"
         authors: "Marcus Nunes, Marcelo A. C. Fernandes"
-      - time: "11:40–12:00"
+      - time: "11:50–12:10"
         title: "Machine Learning-Guided Design Space Exploration for Instruction-Level Approximate Computing"
         authors: "Gregório Koslinski Neto, Marco Antônio de Rezende Zárate, Gislayne Garabini Damasceno, Bruno Nogueira, Daniela Catelan, Ricardo Santos, Liana Duenha"
-      - time: "12:00–12:20"
+      - time: "12:10–12:30"
         title: "How Much Quality Loss is Acceptable? Evaluating Semantic Acceptability and Energy Gains of Approximate Memory in a RISC-V Environment"
         authors: "Guilherme Saides Serbai, Isaías Felzmann, João Fabrício Filho"
     - id: weac
@@ -203,11 +204,11 @@
       type: gap
       style: gap
       title: ''
-    - id: mc3
+    - id: mc1
       type: tutorial
       style: lab_dca
-      url: '#mc3'
-      title: Minicurso 3
+      url: '#mc1'
+      title: Minicurso 1
       room: LabGrad DCA
       hide_details: 'yes'
     - id: gap
@@ -218,7 +219,7 @@
       type: gap
       style: gap
       title: ''
-  - start: "12:20"
+  - start: "12:30"
     end: "14:00"
     hide_details: 'yes'
     activities:
@@ -226,20 +227,51 @@
       type: blank
       style: blank
       title: Almoço
-  - start: "14:00"
+  - start: "14:10"
     end: "14:50"
     activities:
-    - id: pe1
-      type: keynote
+    - id: st3
+      type: session
       style: aud_ct
-      url: '#pe1'
-      title: Palestras empresariais 1
-      subtitle: (2 apresentações)
+      url: '#st3'
+      title: Sessão técnica 3
+      subtitle: "Ferramentas, benchmarks e caracterização de desempenho"
       room: Auditório do CT (216)
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
+      description: "Ferramentas, benchmarks e caracterização de desempenho"
+      papers:
+      - time: "14:10–14:30"
+        title: "An MLIR Version of the PolyBench Benchmark Suite for High-Performance Computing"
+        authors: "Lucas Victor Costa, José Wesley de Souza Magalhães, Michael Canesche, Fernando Magno Quintao Pereira"
+      - time: "14:30–14:50"
+        title: "Defigium: A Modular Framework for Trace-Based Workload Generation"
+        authors: "Felipe Backes Kettl, Bernardo Fraga, Marcos André Vaz, Odorico M. Mendizabal"
+      - time: "14:50–15:10"
+        title: "Low-Intrusion Profiling and Scalability Analysis in Distributed-Memory Environments using PaScal Suite"
+        authors: "Felipe Hidequel Santos da Silva, Italo Assis, João Batista Fernandes, Igor Sérgio de França Correia, Samuel Xavier de Souza"
+      - time: "15:10–15:30"
+        title: "Performance and Memory Characterization of NIST Post-Quantum Cryptography Workloads"
+        authors: "Saulo de Moura Zandona Freitas, Henrique Cota de Freitas, Matheus Alcântara Souza"
+    - id: st4
+      type: session
+      style: aud_ctec
+      url: '#st4'
+      title: Sessão técnica 4
+      subtitle: "Modelos de programação paralela e comunicação"
+      room: Auditório do CTEC (85)
+      description: "Modelos de programação paralela e comunicação"
+      papers:
+      - time: "14:10–14:30"
+        title: "MaReCo: Configurable Map and Reduce Algorithmic Skeletons with Closure Support for GPUs in Elixir"
+        authors: "Frederico Peixoto Antunes, Andre Rauber Du Bois, Gerson Geraldo H. Cavalheiro"
+      - time: "14:30–14:50"
+        title: "Investigating the Scalability of Parallel DTW Distances Computation of Stock Price Time Series"
+        authors: "Daniela Rigoli, Cesar De Rose"
+      - time: "14:50–15:10"
+        title: "Sincronização Orientada por Dependências para Stencils: Modelagem Causal e Avaliação de Barreiras, Semáforos e MPI"
+        authors: "Frederico Cabral, Carla Osthoff, Diego N. Brandão, Sanderson L. Gonzaga de Oliveira"
+      - time: "15:10–15:30"
+        title: "Characterizing Compute-Communication Duality in Halo-Exchange Masking for Seismic Wave Simulation"
+        authors: "Francisco Etcheverria, Lucas Mello Schnorr"
     - id: wic1
       type: workshop
       style: aud_laut
@@ -289,11 +321,11 @@
       url: '#mc2'
       title: Minicurso 2
       room: LabGrad DCA
-    - id: mc1
+    - id: mc3
       type: tutorial
       style: lab_dimap
-      url: '#mc1'
-      title: Minicurso 1
+      url: '#mc3'
+      title: Minicurso 3
       room: Lab DIMAp
     - id: maratona
       type: marathon
@@ -302,50 +334,24 @@
       title: Maratona
       room: Maratona de Programação Paralela
   - start: "14:50"
-    end: "16:10"
+    end: "15:30"
     activities:
     - id: st3
       type: session
       style: aud_ct
       url: '#st3'
       title: Sessão técnica 3
-      subtitle: "Ferramentas, benchmarks e caracterização de desempenho"
       room: Auditório do CT (216)
-      description: "Ferramentas, benchmarks e caracterização de desempenho"
-      papers:
-      - time: "14:50–15:10"
-        title: "An MLIR Version of the PolyBench Benchmark Suite for High-Performance Computing"
-        authors: "Lucas Victor Costa, José Wesley de Souza Magalhães, Michael Canesche, Fernando Magno Quintao Pereira"
-      - time: "15:10–15:30"
-        title: "Defigium: A Modular Framework for Trace-Based Workload Generation"
-        authors: "Felipe Backes Kettl, Bernardo Fraga, Marcos André Vaz, Odorico M. Mendizabal"
-      - time: "15:30–15:50"
-        title: "Low-Intrusion Profiling and Scalability Analysis in Distributed-Memory Environments using PaScal Suite"
-        authors: "Felipe Hidequel Santos da Silva, Italo Assis, João Batista Fernandes, Igor Sérgio de França Correia, Samuel Xavier de Souza"
-      - time: "15:50–16:10"
-        title: "Performance and Memory Characterization of NIST Post-Quantum Cryptography Workloads"
-        authors: "Saulo de Moura Zandona Freitas, Henrique Cota de Freitas, Matheus Alcântara Souza"
+      page: /program/sessions/
+      hide_details: yes
     - id: st4
       type: session
       style: aud_ctec
       url: '#st4'
       title: Sessão técnica 4
-      subtitle: "Modelos de programação paralela e comunicação"
       room: Auditório do CTEC (85)
-      description: "Modelos de programação paralela e comunicação"
-      papers:
-      - time: "14:50–15:10"
-        title: "MaReCo: Configurable Map and Reduce Algorithmic Skeletons with Closure Support for GPUs in Elixir"
-        authors: "Frederico Peixoto Antunes, Andre Rauber Du Bois, Gerson Geraldo H. Cavalheiro"
-      - time: "15:10–15:30"
-        title: "Investigating the Scalability of Parallel DTW Distances Computation of Stock Price Time Series"
-        authors: "Daniela Rigoli, Cesar De Rose"
-      - time: "15:30–15:50"
-        title: "Sincronização Orientada por Dependências para Stencils: Modelagem Causal e Avaliação de Barreiras, Semáforos e MPI"
-        authors: "Frederico Cabral, Carla Osthoff, Diego N. Brandão, Sanderson L. Gonzaga de Oliveira"
-      - time: "15:50–16:10"
-        title: "Characterizing Compute-Communication Duality in Halo-Exchange Masking for Seismic Wave Simulation"
-        authors: "Francisco Etcheverria, Lucas Mello Schnorr"
+      page: /program/sessions/
+      hide_details: yes
     - id: wic2
       type: workshop
       style: aud_laut
@@ -378,11 +384,60 @@
       title: Minicurso 2
       room: LabGrad DCA
       hide_details: 'yes'
-    - id: mc1
+    - id: mc3
       type: tutorial
       style: lab_dimap
-      url: '#mc1'
-      title: Minicurso 1
+      url: '#mc3'
+      title: Minicurso 3
+      room: Lab DIMAp
+      hide_details: 'yes'
+    - id: maratona
+      type: marathon
+      style: maratona
+      url: http://lspd.mackenzie.br/marathon/26/
+      title: Maratona
+      hide_details: 'yes'
+  - start: "15:30"
+    end: "16:10"
+    activities:
+    - id: pe-exclusiva
+      type: keynote
+      style: aud_ct
+      url: '#pe-exclusiva'
+      title: "Palestra empresarial exclusiva: AWS"
+      room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: wic2
+      type: workshop
+      style: aud_laut
+      url: '#wic2'
+      title: WIC 2
+      room: Auditório do LAUT
+      page: /cfp_wic/
+      hide_details: yes
+    - id: ctd
+      type: workshop
+      style: aud_npiti
+      url: '#ctd'
+      title: CTD
+      room: Auditório do nPITI
+      page: /cfp_ctd/
+      hide_details: 'yes'
+    - id: mc2
+      type: tutorial
+      style: lab_dca
+      url: '#mc2'
+      title: Minicurso 2
+      room: LabGrad DCA
+      hide_details: 'yes'
+    - id: mc3
+      type: tutorial
+      style: lab_dimap
+      url: '#mc3'
+      title: Minicurso 3
       room: Lab DIMAp
       hide_details: 'yes'
     - id: maratona
@@ -392,7 +447,7 @@
       title: Maratona
       hide_details: 'yes'
   - start: "16:10"
-    end: "17:00"
+    end: "16:40"
     activities:
     - id: coffee
       type: blank
@@ -426,8 +481,8 @@
       url: http://lspd.mackenzie.br/marathon/26/
       title: Maratona
       hide_details: 'yes'
-  - start: "17:00"
-    end: "18:00"
+  - start: "16:40"
+    end: "17:40"
     activities:
     - id: plenaria2
       type: keynote
@@ -1052,8 +1107,7 @@
       url: '#ce-acpad'
       title: Reunião CE-ACPAD
       room: Auditório do CT (216)
-      description: Reunião da Comissão Especial de Arquitetura de Computadores e Processamento
-        de Alto Desempenho
+      description: Reunião da Comissão Especial de Arquitetura de Computadores e Processamento de Alto Desempenho
     - id: gap
       type: gap
       style: gap
