@@ -101,7 +101,7 @@
       style: aud_ct
       url: '#pe1'
       title: Palestras empresariais 1
-      subtitle: (2 apresentações)
+      subtitle: ARIT/NVIDIA/DELL e Versatus
       room: Auditório do CT (216)
     - id: gap
       type: gap
@@ -728,7 +728,7 @@
       style: aud_ct
       url: '#mpe1'
       title: Minipalestras empresariais 1
-      subtitle: (2 apresentações)
+      subtitle: CESAR e AWS
       room: Auditório do CT (216)
     - id: gap
       type: gap
@@ -1004,8 +1004,9 @@
       type: keynote
       style: aud_ct
       url: '#mpe2'
-      title: Minipalestras empresariais 2
-      subtitle: (2 apresentações)
+      title: O novo SINAPAD
+      subtitle: Guilherme Correa
+      authors: Guilherme Correa
       room: Auditório do CT (216)
     - id: gap
       type: gap
@@ -1255,7 +1256,7 @@
       style: aud_ct
       url: '#pe2'
       title: Palestras empresariais 2
-      subtitle: (2 apresentações)
+      subtitle: (1) a definir e (2) HPE
       room: Auditório do CT (216)
     - id: gap
       type: gap
