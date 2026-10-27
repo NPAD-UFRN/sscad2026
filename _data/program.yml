@@ -50,7 +50,15 @@
       style: aud_ct
       url: '#plenaria1'
       title: Palestra plenária 1
+      subtitle: Wedson Almeida
+      authors: Wedson Almeida
       room: Auditório do CT (216)
+      image: keynote_wedson_almeida.jpg
+      keynote_title: "Rustics: uma alternativa ao kernel Linux"
+      abstract: |-
+        O Linux é um dos maiores feitos da engenharia de software, mas seu tamanho e sua longa história de desenvolvimento trazem desafios importantes para a segurança e resiliência, especialmente em relação às vulnerabilidades de memória e à viabilidade da verificação formal. Esta apresentação introduz o Rustics, um núcleo de sistema operacional escrito em Rust e compatível com Linux, que busca combinar segurança de memória, alto desempenho e resiliência.
+      short_bio: |-
+        Wedson é um veterano da indústria de software, com mais de 23 anos de experiência nas empresas Microsoft, Facebook e Google. Ao longo de sua carreira, contribuiu para projetos relevantes de sistemas operacionais, virtualização e segurança. Foi um dos engenheiros fundadores do gVisor, autor original do hipervisor Hafnium e co-mantenedor do projeto Rust for Linux, dedicado à integração da linguagem Rust ao kernel Linux.
       description: Palestra plenária de abertura
     - id: gap
       type: gap
@@ -489,15 +497,15 @@
       style: aud_ct
       url: '#plenaria2'
       title: Palestra plenária 2
-      subtitle: Wedson Almeida
-      authors: Wedson Almeida
+      subtitle: Prof. Luiz Felipe Pereira
+      authors: Luiz Felipe Pereira (UFPE)
       room: Auditório do CT (216)
-      image: keynote_wedson_almeida.jpg
-      keynote_title: "Rustics: uma alternativa ao kernel Linux"
+      keynote_title: Computação de alto desempenho aplicada à física de materiais na era da inteligência artificial
+      image: keynote_luiz_felipe_pereira.jpg
       abstract: |-
-        O Linux é um dos maiores feitos da engenharia de software, mas seu tamanho e sua longa história de desenvolvimento trazem desafios importantes para a segurança e resiliência, especialmente em relação às vulnerabilidades de memória e à viabilidade da verificação formal. Esta apresentação introduz o Rustics, um núcleo de sistema operacional escrito em Rust e compatível com Linux, que busca combinar segurança de memória, alto desempenho e resiliência.
+        A relação entre física e computação de alto desempenho (HPC) antecede o computador digital. No projeto Manhattan, equações diferenciais eram resolvidas por equipes que dividiam cálculos em etapas independentes executadas em paralelo com calculadoras mecânicas — um dos primeiros exemplos de paralelismo e pipeline aplicados a um problema científico. Nas décadas seguintes, máquinas de cartões perfurados, o ENIAC, o MANIAC e seus sucessores inauguraram a computação eletrônica e originaram a física computacional, ramo que utiliza modelos fundamentados em teorias para simular sistemas físicos e prever medidas experimentais, ampliando nossa compreensão da natureza e do universo. O método Monte Carlo e as simulações de dinâmica molecular nasceram dessa interação, acompanhando cada geração de arquitetura: vetoriais, processamento paralelo, clusters, aceleradores e GPUs. Na física de materiais, o problema central é a interação quântica entre átomos, calculável com alta precisão apenas para sistemas com poucos átomos. Métodos aproximativos ampliaram esse alcance, mas ainda se limitam a centenas de átomos. Com redes neurais e aprendizagem de máquina, tornou-se possível usar cálculos precisos de poucos átomos para treinar modelos capazes de descrever milhões de átomos com alta precisão e custo computacional modesto. Isso reconfigurou a demanda por HPC na área: geração de dados, treinamento e simulações em larga escala. Nesta palestra, apresento uma perspectiva de quase duas décadas na interface entre HPC e física de materiais, percorrendo os desenvolvimentos históricos, os fundamentos da simulação de materiais, a construção e o treinamento de redes neurais para modelar interações atômicas e sua aplicação na modelagem de materiais. Destaco ainda como física, algoritmos e arquitetura de computadores evoluíram juntos, criando uma sinergia indispensável na ciência moderna.
       short_bio: |-
-        Wedson é um veterano da indústria de software, com mais de 23 anos de experiência nas empresas Microsoft, Facebook e Google. Ao longo de sua carreira, contribuiu para projetos relevantes de sistemas operacionais, virtualização e segurança. Foi um dos engenheiros fundadores do gVisor, autor original do hipervisor Hafnium e co-mantenedor do projeto Rust for Linux, dedicado à integração da linguagem Rust ao kernel Linux.
+        Obteve os graus de Bacharel e Mestre em Física na UFPE e o título de Ph.D. no Trinity College Dublin (Irlanda). Foi pesquisador de pós-doutorado no Instituto Max Planck de Pesquisa em Polímeros (Alemanha), professor do Departamento de Física da UFRN, membro afiliado da Academia Brasileira de Ciências e professor visitante na Universidade de Roma - La Sapienza (Itália). Atualmente, é professor e vice-chefe do Departamento de Física da UFPE, coordenador do Centro de Computação de Alto Desempenho da UFPE, líder do Grupo de Pesquisa em Transporte & Nanoestruturas, bolsista de produtividade do Conselho Nacional de Pesquisa e Desenvolvimento - CNPq (Brasil) e pesquisador associado ao Centro Internacional de Física Teórica em Trieste (Itália). Na UFPE, ministra regularmente disciplinas do ciclo básico dos cursos de engenharia e ciências exatas, disciplinas do ciclo profissionalizante do bacharelado e da licenciatura em física, e disciplinas dos programas de mestrado e doutorado em física. Supervisionou 2 pesquisadores de pós-doutorado, orientou 3 teses de doutorado e 3 dissertações de mestrado. Atualmente, orienta 2 teses de doutorado. Publicou mais de 50 artigos em periódicos científicos internacionais, que já foram citados mais de 4500 vezes em outras publicações internacionais, sendo reconhecido como um dos pesquisadores mais influentes do mundo na área de simulação computacional e modelagem de materiais nanoestruturados.
     - id: gap
       type: gap
       style: gap
@@ -1067,15 +1075,9 @@
       style: aud_ct
       url: '#plenaria-aberta'
       title: Palestra plenária 4
-      subtitle: Prof. Luiz Felipe Pereira
-      authors: Luiz Felipe Pereira (UFPE)
+      subtitle: Rafael Sene
+      authors: Rafael Sene
       room: Auditório do CT (216)
-      keynote_title: Computação de alto desempenho aplicada à física de materiais na era da inteligência artificial
-      image: keynote_luiz_felipe_pereira.jpg
-      abstract: |-
-        A relação entre física e computação de alto desempenho (HPC) antecede o computador digital. No projeto Manhattan, equações diferenciais eram resolvidas por equipes que dividiam cálculos em etapas independentes executadas em paralelo com calculadoras mecânicas — um dos primeiros exemplos de paralelismo e pipeline aplicados a um problema científico. Nas décadas seguintes, máquinas de cartões perfurados, o ENIAC, o MANIAC e seus sucessores inauguraram a computação eletrônica e originaram a física computacional, ramo que utiliza modelos fundamentados em teorias para simular sistemas físicos e prever medidas experimentais, ampliando nossa compreensão da natureza e do universo. O método Monte Carlo e as simulações de dinâmica molecular nasceram dessa interação, acompanhando cada geração de arquitetura: vetoriais, processamento paralelo, clusters, aceleradores e GPUs. Na física de materiais, o problema central é a interação quântica entre átomos, calculável com alta precisão apenas para sistemas com poucos átomos. Métodos aproximativos ampliaram esse alcance, mas ainda se limitam a centenas de átomos. Com redes neurais e aprendizagem de máquina, tornou-se possível usar cálculos precisos de poucos átomos para treinar modelos capazes de descrever milhões de átomos com alta precisão e custo computacional modesto. Isso reconfigurou a demanda por HPC na área: geração de dados, treinamento e simulações em larga escala. Nesta palestra, apresento uma perspectiva de quase duas décadas na interface entre HPC e física de materiais, percorrendo os desenvolvimentos históricos, os fundamentos da simulação de materiais, a construção e o treinamento de redes neurais para modelar interações atômicas e sua aplicação na modelagem de materiais. Destaco ainda como física, algoritmos e arquitetura de computadores evoluíram juntos, criando uma sinergia indispensável na ciência moderna.
-      short_bio: |-
-        Obteve os graus de Bacharel e Mestre em Física na UFPE e o título de Ph.D. no Trinity College Dublin (Irlanda). Foi pesquisador de pós-doutorado no Instituto Max Planck de Pesquisa em Polímeros (Alemanha), professor do Departamento de Física da UFRN, membro afiliado da Academia Brasileira de Ciências e professor visitante na Universidade de Roma - La Sapienza (Itália). Atualmente, é professor e vice-chefe do Departamento de Física da UFPE, coordenador do Centro de Computação de Alto Desempenho da UFPE, líder do Grupo de Pesquisa em Transporte & Nanoestruturas, bolsista de produtividade do Conselho Nacional de Pesquisa e Desenvolvimento - CNPq (Brasil) e pesquisador associado ao Centro Internacional de Física Teórica em Trieste (Itália). Na UFPE, ministra regularmente disciplinas do ciclo básico dos cursos de engenharia e ciências exatas, disciplinas do ciclo profissionalizante do bacharelado e da licenciatura em física, e disciplinas dos programas de mestrado e doutorado em física. Supervisionou 2 pesquisadores de pós-doutorado, orientou 3 teses de doutorado e 3 dissertações de mestrado. Atualmente, orienta 2 teses de doutorado. Publicou mais de 50 artigos em periódicos científicos internacionais, que já foram citados mais de 4500 vezes em outras publicações internacionais, sendo reconhecido como um dos pesquisadores mais influentes do mundo na área de simulação computacional e modelagem de materiais nanoestruturados.
     - id: gap
       type: gap
       style: gap
