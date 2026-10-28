@@ -1156,7 +1156,38 @@
       url: http://lspd.mackenzie.br/marathon/26/
       title: Maratona
       hide_details: 'yes'
-  - start: "19:00"
+  - start: "18:20"
+    end: "18:50"
+    activities:
+    - id: ce-acpad
+      type: meeting
+      style: aud_ct
+      url: '#ce-acpad'
+      title: Reunião CE-ACPAD
+      subtitle: (cont.)
+      room: Auditório do CT (216)
+      hide_details: 'yes'
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+  - start: "19:30"
     end: "22:00"
     hide_details: 'yes'
     activities:
