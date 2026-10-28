@@ -15,22 +15,38 @@ permalink: /program/tutorials/
 # ---------------------------------------------------------------------------
 minicursos:
   - id: mc1
-    titulo: "Duas décadas de CUDA: Como programar, Técnicas de Otimização e o papel do Compilador"
+    titulo: "Development of parallel applications with the task-oriented paradigm in the StarPU runtime"
     autores:
-      - nome: Ricardo dos Santos Ferreira
-        instituicao: UFV
-      - nome: Ian Otoni
-        instituicao: UFV
-      - nome: Nicolas Silva
-        instituicao: UFV
-      - nome: Leanderson Leles
-        instituicao: UFV
+      - nome: Lucas Mello Schnorr
+        instituicao: UFRGS
+      - nome: Vinicius Garcia Pinto
+        instituicao: FURG
+      - nome: Raymond Namyst
+        instituicao: Université de Bordeaux
+      - nome: Samuel Thibault
+        instituicao: Inria Bordeaux Sud-Ouest
     resumo: >
-      Este minicurso explora a evolução de duas décadas da programação CUDA,
-      capacitando estudantes, pesquisadores e profissionais a dominarem detalhes
-      arquiteturais da GPU e do compilador. Serão apresentadas estratégias
-      avançadas de otimização, microbenchmarks e análise prática de limites de
-      desempenho para extrair o máximo de desempenho da aplicação.
+      The heterogeneity of computational resources in modern High Performance
+      Computing (HPC) systems, featuring multicore CPUs, GPGPU accelerators, and
+      multi-node clusters, has made traditional parallel programming paradigms
+      increasingly complex and difficult to port across architectures. The
+      task-based parallel programming paradigm addresses this challenge by
+      transferring responsibilities such as scheduling, data management, and
+      resource mapping to a runtime system, allowing the programmer to focus on
+      defining tasks, their implementations, and data dependencies. This advanced
+      tutorial presents the task-based paradigm and demonstrates how to build,
+      optimize, and analyze parallel applications using the StarPU runtime.
+      Participants will learn to construct Directed Acyclic Graphs (DAGs) from
+      sequential code, define tasks with multiple implementations for
+      heterogeneous resources (CPU and GPU), and leverage StarPU's data flow
+      scheduling model. The tutorial covers practical topics including
+      block-matrix computations, data partitioning, dependency management, and
+      heterogeneous programming with CUDA/cuBLAS. The tutorial also introduces
+      performance analysis techniques for task-based applications, going beyond
+      traditional metrics (makespan, speedup, efficiency) with the StarVZ
+      framework for trace visualization and bottleneck detection. Through
+      hands-on exercises, participants will build complete applications and
+      analyze their performance using execution traces.
 
   - id: mc2
     titulo: "Explorando Tenstorrent e RISC-V como uma nova arquitetura para HPC"
@@ -69,38 +85,22 @@ minicursos:
       novas formas de organização, programação e execução de aplicações paralelas.
 
   - id: mc3
-    titulo: "Development of parallel applications with the task-oriented paradigm in the StarPU runtime"
+    titulo: "Duas décadas de CUDA: Como programar, Técnicas de Otimização e o papel do Compilador"
     autores:
-      - nome: Lucas Mello Schnorr
-        instituicao: UFRGS
-      - nome: Vinicius Garcia Pinto
-        instituicao: FURG
-      - nome: Raymond Namyst
-        instituicao: Université de Bordeaux
-      - nome: Samuel Thibault
-        instituicao: Inria Bordeaux Sud-Ouest
+      - nome: Ricardo dos Santos Ferreira
+        instituicao: UFV
+      - nome: Ian Otoni
+        instituicao: UFV
+      - nome: Nicolas Silva
+        instituicao: UFV
+      - nome: Leanderson Leles
+        instituicao: UFV
     resumo: >
-      The heterogeneity of computational resources in modern High Performance
-      Computing (HPC) systems, featuring multicore CPUs, GPGPU accelerators, and
-      multi-node clusters, has made traditional parallel programming paradigms
-      increasingly complex and difficult to port across architectures. The
-      task-based parallel programming paradigm addresses this challenge by
-      transferring responsibilities such as scheduling, data management, and
-      resource mapping to a runtime system, allowing the programmer to focus on
-      defining tasks, their implementations, and data dependencies. This advanced
-      tutorial presents the task-based paradigm and demonstrates how to build,
-      optimize, and analyze parallel applications using the StarPU runtime.
-      Participants will learn to construct Directed Acyclic Graphs (DAGs) from
-      sequential code, define tasks with multiple implementations for
-      heterogeneous resources (CPU and GPU), and leverage StarPU's data flow
-      scheduling model. The tutorial covers practical topics including
-      block-matrix computations, data partitioning, dependency management, and
-      heterogeneous programming with CUDA/cuBLAS. The tutorial also introduces
-      performance analysis techniques for task-based applications, going beyond
-      traditional metrics (makespan, speedup, efficiency) with the StarVZ
-      framework for trace visualization and bottleneck detection. Through
-      hands-on exercises, participants will build complete applications and
-      analyze their performance using execution traces.
+      Este minicurso explora a evolução de duas décadas da programação CUDA,
+      capacitando estudantes, pesquisadores e profissionais a dominarem detalhes
+      arquiteturais da GPU e do compilador. Serão apresentadas estratégias
+      avançadas de otimização, microbenchmarks e análise prática de limites de
+      desempenho para extrair o máximo de desempenho da aplicação.
 
   - id: mc4
     titulo: "Compressão de Dados Científicos em GPUs: Conceitos, Ferramentas e Aplicações em HPC"
