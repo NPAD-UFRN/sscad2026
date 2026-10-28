@@ -87,7 +87,7 @@ permalink: /program/
                                                             {% if activity.subtitle %}<br><small class="text-muted">{{ activity.subtitle }}</small>{% endif %}
                                                         </p>
                                                     </a>
-                                                {% elsif activity.type == "keynote" and activity.authors %}
+                                                {% elsif activity.type == "keynote" and activity.authors or activity.type == "keynote" and activity.keynote_title %}
                                                     <a href="{{ '/program/keynotes/' | relative_url }}{{ activity.url }}" class="activity_title keynote_link stretched-link">
                                                         <p class="activity_title">
                                                             {{ activity.title }}
