@@ -349,17 +349,19 @@
       style: aud_ct
       url: '#st3'
       title: Sessão técnica 3
+      subtitle: (cont.)
       room: Auditório do CT (216)
       page: /program/sessions/
-      hide_details: yes
+      hide_details: 'yes'
     - id: st4
       type: session
       style: aud_ctec
       url: '#st4'
       title: Sessão técnica 4
+      subtitle: (cont.)
       room: Auditório do CTEC (85)
       page: /program/sessions/
-      hide_details: yes
+      hide_details: 'yes'
     - id: wic2
       type: workshop
       style: aud_laut
