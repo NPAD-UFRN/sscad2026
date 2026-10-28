@@ -2,12 +2,16 @@
   Define, para uma atividade da programação, `subtitulo`, `link` (página de detalhes) e `link_externo` (true para sites de fora).
   Parâmetro: activity. Requer `pagina_minicursos` (página /program/tutorials/) para o título dos minicursos.
   Minicursos: título vindo da página de minicursos no primeiro bloco; nos demais, só "(cont.)" quando houver.
+  Palestras: tema (keynote_title) antes do palestrante, quando o tema já não for o título.
 {% endcomment %}
 {% assign a = include.activity %}
 {% assign subtitulo = a.subtitle %}{% assign mc = nil %}{% assign link = nil %}{% assign link_externo = false %}
 {% if a.type == "tutorial" %}
     {% assign mc = pagina_minicursos.minicursos | where: "id", a.id | first %}
     {% if mc and a.hide_details == nil %}{% assign subtitulo = mc.titulo | append: " " | append: a.subtitle | strip %}{% endif %}
+{% elsif a.type == "keynote" and a.keynote_title and a.keynote_title != a.title %}
+    {% assign subtitulo = a.keynote_title %}
+    {% if a.subtitle %}{% assign subtitulo = subtitulo | append: " · " | append: a.subtitle %}{% endif %}
 {% endif %}
 {% if a.url and a.url contains '://' %}
     {% assign link = a.url %}{% assign link_externo = true %}

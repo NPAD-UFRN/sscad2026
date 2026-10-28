@@ -184,6 +184,7 @@
       style: aud_laut
       url: '#weac'
       title: WEAC
+      subtitle: "Workshop sobre Educação em Arquitetura de Computadores"
       room: Auditório do LAUT
       description: Workshop sobre Educação em Arquitetura de Computadores
       page: /cfp_weac/
@@ -374,6 +375,7 @@
       style: aud_npiti
       url: '#ctd'
       title: CTD
+      subtitle: "Concurso de Teses e Dissertações"
       room: Auditório do nPITI
       page: /cfp_ctd/
       description: Concurso de Teses e Dissertações (CTD)
@@ -674,6 +676,7 @@
       style: aud_npiti
       url: '#wmad'
       title: W-MAD
+      subtitle: "Workshop de Mulheres em Alto Desempenho"
       room: Auditório do nPITI
       page: /cfp_wmad/
       description: Workshop de Mulheres em Alto Desempenho
@@ -1085,6 +1088,7 @@
       style: aud_ct
       url: '#ce-acpad'
       title: Reunião CE-ACPAD
+      subtitle: "Comissão Especial de Arquitetura de Computadores e Processamento de Alto Desempenho"
       room: Auditório do CT (216)
       description: Reunião da Comissão Especial de Arquitetura de Computadores e Processamento de Alto Desempenho
     - id: gap
@@ -1240,6 +1244,7 @@
       style: aud_npiti
       url: '#wpads'
       title: WPADS
+      subtitle: "Workshop de Processamento de Alto Desempenho Sustentável"
       room: Auditório do nPITI
       page: /cfp_wpads/
       description: Workshop de Processamento de Alto Desempenho Sustentável
@@ -1455,6 +1460,7 @@
       style: lab_dca
       url: '#mc-praticas'
       title: Minicursos
+      subtitle: "Atividades práticas de minicursos"
       room: LabGrad DCA
       description: Atividades práticas de minicursos
   - start: "15:20"
