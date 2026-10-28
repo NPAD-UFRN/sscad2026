@@ -33,6 +33,30 @@
       style: blank
       title: Boas-vindas e cadastramento
       room: Auditório do CT
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "08:00"
     end: "08:50"
     hide_details: 'yes'
@@ -42,6 +66,30 @@
       style: blank
       title: Sessão de abertura
       room: Auditório do CT
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "08:50"
     end: "09:50"
     activities:
@@ -93,6 +141,30 @@
       style: blank
       title: Pausa do café
       room: Foyer Aut. CT
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "10:20"
     end: "11:10"
     activities:
@@ -486,32 +558,6 @@
       title: Quebra gelo
       room: Rest/Bar
       description: Confraternização inicial do evento no Restaurante / Bar
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: maratona
-      type: marathon
-      style: maratona
-      url: http://lspd.mackenzie.br/marathon/26/
-      title: Maratona
-      hide_details: 'yes'
 - id: second-day
   title: Quarta-Feira
   date: 04/11/2026
@@ -850,28 +896,6 @@
       style: blank
       title: Almoço
       hide_details: 'yes'
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: maratona
-      type: marathon
-      style: maratona
-      url: http://lspd.mackenzie.br/marathon/26/
-      title: Maratona
-      hide_details: 'yes'
   - start: "14:00"
     end: "15:20"
     activities:
@@ -1133,6 +1157,22 @@
       style: blank
       title: Boas-vindas e cadastramento
       room: Auditório do CT
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "08:00"
     end: "09:00"
     activities:
@@ -1247,6 +1287,22 @@
       style: blank
       title: Pausa do café
       room: Foyer Aut. CT
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "10:20"
     end: "11:20"
     activities:
@@ -1292,6 +1348,22 @@
       url: '#painel'
       title: Painel temático
       room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
   - start: "12:20"
     end: "14:00"
     hide_details: 'yes'
@@ -1387,3 +1459,19 @@
       url: '#encerramento'
       title: Cerimônia de Premiação e Encerramento
       room: Auditório do CT (216)
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
+    - id: gap
+      type: gap
+      style: gap
+      title: ''
