@@ -17,7 +17,7 @@ permalink: /program/
     </div>
     <section id="program_overview">
         <div class="container-fluid">
-            <div class="row px-5">
+            <div class="row px-2 px-lg-5 program_days_bar">
                 <ul class="nav nav-pills nav-fill justify-content-center black" id="program-tab" role="tablist">
                     {% for day in site.data.program %}
                         <li class="nav-item" role="presentation">
@@ -46,6 +46,13 @@ permalink: /program/
                     {%- else -%}
                         <div id="program-{{day.id}}" class="tab-pane" role="tabpanel">
                     {%- endif -%}
+                            <!-- Celular e tablet: agenda em lista -->
+                            <div class="d-lg-none">
+                                {% include program_agenda.html day=day %}
+                            </div>
+
+                            <!-- Telas grandes: grade por sala -->
+                            <div class="d-none d-lg-block">
                             <!-- Cabeçalho de Horários / Salas do Dia -->
                             <div class="container">
                                 <div class="row program_header"> 
@@ -101,6 +108,7 @@ permalink: /program/
                                     </div> <!-- block time start end -->
                                 </div>
                             {% endfor %} <!-- block in day.block -->
+                            </div> <!-- grade -->
                         </div> <!-- tab-pane -->
                 {% endfor %} <!-- day in site.data.program -->
             </div> <!-- tab-content -->
@@ -108,3 +116,13 @@ permalink: /program/
     </section> <!-- program overview -->
     <br><br>
 </section> <!-- program -->
+
+<script>
+    // Altura do menu fixo, para as abas dos dias ficarem logo abaixo dele ao rolar no celular
+    (function () {
+        var menu = document.querySelector(".navbar.fixed-top");
+        function ajustar() { if (menu) { document.documentElement.style.setProperty("--altura-menu", menu.offsetHeight + "px"); } }
+        window.addEventListener("resize", ajustar);
+        ajustar();
+    })();
+</script>

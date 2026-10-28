@@ -1,0 +1,74 @@
+{% comment %}
+  Agenda em lista de um dia (versão para telas pequenas da página de programação).
+  Cada atividade aparece uma vez, no horário em que começa, com o intervalo completo (blocos seguidos com o mesmo id).
+  Atividades gerais (type: blank) viram linhas discretas. Parâmetro: day
+{% endcomment %}
+{% assign dia = include.day %}
+<div class="agenda">
+    {% for block in dia.blocks %}
+        {% assign bi = forloop.index0 %}
+        {% assign anterior = nil %}{% assign ids_anterior = "" %}
+        {% if bi > 0 %}
+            {% assign ant = bi | minus: 1 %}
+            {% assign anterior = dia.blocks[ant] %}
+            {% if anterior.end == block.start %}{% assign ids_anterior = anterior.activities | map: "id" %}{% endif %}
+        {% endif %}
+
+        {% comment %} Conta as atividades que começam neste bloco (as que continuam do bloco anterior ficam de fora) {% endcomment %}
+        {% assign novas = 0 %}{% assign gerais = 0 %}
+        {% for atv in block.activities %}
+            {% if atv.id == "gap" or ids_anterior contains atv.id %}{% continue %}{% endif %}
+            {% assign novas = novas | plus: 1 %}
+            {% if atv.type == "blank" %}{% assign gerais = gerais | plus: 1 %}{% endif %}
+        {% endfor %}
+        {% if novas == 0 %}{% continue %}{% endif %}
+
+        {% if novas == gerais %}
+            {% for atv in block.activities %}
+                {% if atv.id == "gap" or ids_anterior contains atv.id %}{% continue %}{% endif %}
+                <div class="agenda_geral">
+                    <span class="agenda_geral_hora">{{ block.start }}</span>
+                    <span>{{ atv.title }}{% if atv.room %} <small>· {{ atv.room | split: " (" | first }}</small>{% endif %}</span>
+                </div>
+            {% endfor %}
+        {% else %}
+            <section class="agenda_bloco">
+                <h3 class="agenda_hora">{{ block.start }}</h3>
+                {% for atv in block.activities %}
+                    {% if atv.id == "gap" or ids_anterior contains atv.id %}{% continue %}{% endif %}
+                    {% if atv.type == "blank" %}
+                        <div class="agenda_geral">
+                            <span>{{ atv.title }}{% if atv.room %} <small>· {{ atv.room | split: " (" | first }}</small>{% endif %}</span>
+                        </div>
+                        {% continue %}
+                    {% endif %}
+
+                    {% comment %} Término: estende enquanto os blocos seguintes continuam a mesma atividade {% endcomment %}
+                    {% assign fim = block.end %}{% assign prox = bi | plus: 1 %}
+                    {% for nb in dia.blocks offset: prox %}
+                        {% assign ids_nb = nb.activities | map: "id" %}
+                        {% if nb.start == fim and ids_nb contains atv.id %}{% assign fim = nb.end %}{% else %}{% break %}{% endif %}
+                    {% endfor %}
+
+                    {% include program_activity_info.html activity=atv %}
+                    {% comment %} Sala: a da atividade ou, na falta, a da coluna da grade com o mesmo estilo {% endcomment %}
+                    {% assign sala = nil %}
+                    {% if atv.room %}{% assign sala = atv.room | split: " (" | first %}{% else %}{% assign coluna = dia.rooms | where: "style", atv.style | first %}{% assign sala = coluna.name %}{% endif %}
+                    <article class="agenda_item {{ atv.style }}">
+                        <p class="agenda_titulo">{{ atv.title }}</p>
+                        {% if subtitulo %}<p class="agenda_subtitulo">{{ subtitulo }}</p>{% endif %}
+                        <p class="agenda_meta">
+                            <span><i class="bi bi-clock"></i> {{ block.start }} – {{ fim }}</span>
+                            {% if sala %}<span><i class="bi bi-geo-alt"></i> {{ sala }}</span>{% endif %}
+                        </p>
+                        {% if link %}
+                            <a class="agenda_detalhes stretched-link" href="{{ link }}"{% if link_externo %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                                {% if link_externo %}Site <i class="bi bi-box-arrow-up-right"></i>{% else %}Detalhes <i class="bi bi-chevron-right"></i>{% endif %}
+                            </a>
+                        {% endif %}
+                    </article>
+                {% endfor %}
+            </section>
+        {% endif %}
+    {% endfor %}
+</div>

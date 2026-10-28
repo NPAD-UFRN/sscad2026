@@ -518,3 +518,122 @@ div .program_activity:has(> .keynote_link) {
     box-shadow: 0 0 0 2px #c0392b;
   }
 }
+
+// Programação em telas pequenas: abas dos dias fixas e agenda em lista (_includes/program_agenda.html)
+@media (max-width: 991.98px) {
+  .program_days_bar {
+    position: sticky;
+    top: var(--altura-menu, 0);
+    z-index: 10;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #ffffff;
+
+    .nav-link {
+      padding: .4rem .25rem;
+      font-size: .9rem;
+      line-height: 1.25;
+    }
+  }
+}
+
+// Cor da barra lateral de cada item da agenda, pela sala (mesmas salas da grade, tom mais forte)
+$agenda-cores: (
+  aud_ct: #3b82f6,
+  aud_ctec: #0ea5e9,
+  aud_laut: #22c55e,
+  aud_npiti: #f59e0b,
+  lab_dca: #8b5cf6,
+  lab_dimap: #d946ef,
+  maratona: #f97316,
+  wmad: #1f3b6e,
+);
+
+.agenda {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 .25rem;
+}
+
+.agenda_bloco {
+  margin: 1.25rem 0 .5rem;
+}
+
+.agenda_hora {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #c0392b;
+  margin-bottom: .5rem;
+}
+
+.agenda_item {
+  position: relative;
+  padding: .75rem 1rem;
+  margin-bottom: .5rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-left: 4px solid #c0392b;
+  border-radius: .5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .05);
+
+  @each $sala, $cor in $agenda-cores {
+    &.#{$sala} {
+      border-left-color: $cor;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.agenda_titulo {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  padding-right: 4.5rem; // espaço para "Detalhes"
+}
+
+.agenda_subtitulo {
+  font-size: .9rem;
+  color: #555555;
+  margin-top: .15rem;
+}
+
+.agenda_meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .15rem .9rem;
+  margin-top: .35rem;
+  font-size: .85rem;
+  color: #6c757d;
+}
+
+.agenda_detalhes {
+  position: absolute;
+  top: .75rem;
+  right: .9rem;
+  font-size: .8rem;
+  font-weight: 600;
+  color: #c0392b;
+  text-decoration: none;
+}
+
+.agenda_geral {
+  display: flex;
+  gap: .75rem;
+  padding: .55rem .25rem;
+  border-bottom: 1px dashed #d9d9d9;
+  color: #6c757d;
+  font-size: .95rem;
+
+  small {
+    font-size: .85rem;
+  }
+}
+
+.agenda_geral_hora {
+  flex: 0 0 3rem;
+  font-weight: 700;
+  color: #333333;
+}
