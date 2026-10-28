@@ -414,6 +414,7 @@
       url: '#pe-exclusiva'
       title: "Palestra empresarial exclusiva: AWS"
       room: Auditório do CT (216)
+      keynote_title: "HPC na Nuvem: Burst de Clusters On-Premises para a AWS: A nuvem como capacidade elástica de burst para HPC on-premises"
     - id: gap
       type: gap
       style: gap
