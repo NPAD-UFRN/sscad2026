@@ -4,6 +4,7 @@ title: "Programação Preliminar"
 permalink: /program/
 ---
 
+{% assign pagina_minicursos = site.pages | where: "permalink", "/program/tutorials/" | first %}
 <section id="program">
     <br><br>
     <h1 class="text-center">Programação Preliminar</h1>
@@ -79,19 +80,33 @@ permalink: /program/
                                             </p>
                                         </div>
                                         {% for activity in block.activities %}
+                                            {% comment %} Minicursos: título vindo da página de minicursos no primeiro bloco; nos demais, só "(cont.)" quando houver {% endcomment %}
+                                            {% assign subtitulo = activity.subtitle %}{% assign mc = nil %}
+                                            {% if activity.type == "tutorial" %}
+                                                {% assign mc = pagina_minicursos.minicursos | where: "id", activity.id | first %}
+                                                {% if mc and activity.hide_details == nil %}{% assign subtitulo = mc.titulo | append: " " | append: activity.subtitle | strip %}{% endif %}
+                                            {% endif %}
                                             <div class="col text-center program_activity {{activity.style}}">
                                                 {% if activity.url and activity.url contains '://' %}
                                                     <a href="{{activity.url}}" target="_blank" rel="noopener noreferrer" class="activity_title">
                                                         <p class="activity_title">
                                                             {{ activity.title }}
-                                                            {% if activity.subtitle %}<br><small class="text-muted">{{ activity.subtitle }}</small>{% endif %}
+                                                            {% if subtitulo %}<br><small class="text-muted">{{ subtitulo }}</small>{% endif %}
                                                         </p>
                                                     </a>
                                                 {% elsif activity.type == "keynote" and activity.authors or activity.type == "keynote" and activity.keynote_title %}
                                                     <a href="{{ '/program/keynotes/' | relative_url }}{{ activity.url }}" class="activity_title keynote_link stretched-link">
                                                         <p class="activity_title">
                                                             {{ activity.title }}
-                                                            {% if activity.subtitle %}<br><small class="text-muted">{{ activity.subtitle }}</small>{% endif %}
+                                                            {% if subtitulo %}<br><small class="text-muted">{{ subtitulo }}</small>{% endif %}
+                                                        </p>
+                                                        <span class="keynote_link_hint"><i class="bi bi-info-circle-fill"></i> Detalhes</span>
+                                                    </a>
+                                                {% elsif activity.type == "tutorial" and mc %}
+                                                    <a href="{{ '/program/tutorials/' | relative_url }}#{{ activity.id }}" class="activity_title keynote_link stretched-link">
+                                                        <p class="activity_title">
+                                                            {{ activity.title }}
+                                                            {% if subtitulo %}<br><small class="text-muted">{{ subtitulo }}</small>{% endif %}
                                                         </p>
                                                         <span class="keynote_link_hint"><i class="bi bi-info-circle-fill"></i> Detalhes</span>
                                                     </a>
@@ -99,14 +114,14 @@ permalink: /program/
                                                     <a href="{% if activity.type == "workshop" %}{{ activity.page | default: '/cfp_wic/' | relative_url }}{% else %}{{ '/program/sessions/' | relative_url }}{% endif %}{{ activity.url }}" class="activity_title keynote_link stretched-link">
                                                         <p class="activity_title">
                                                             {{ activity.title }}
-                                                            {% if activity.subtitle %}<br><small class="text-muted">{{ activity.subtitle }}</small>{% endif %}
+                                                            {% if subtitulo %}<br><small class="text-muted">{{ subtitulo }}</small>{% endif %}
                                                         </p>
                                                         <span class="keynote_link_hint"><i class="bi bi-info-circle-fill"></i> Detalhes</span>
                                                     </a>
                                                 {% else %}
                                                     <p class="activity_title">
                                                         {{ activity.title }}
-                                                        {% if activity.subtitle %}<br><small class="text-muted">{{ activity.subtitle }}</small>{% endif %}
+                                                        {% if subtitulo %}<br><small class="text-muted">{{ subtitulo }}</small>{% endif %}
                                                     </p>
                                                 {% endif %}
                                             </div>
