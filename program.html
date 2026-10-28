@@ -70,8 +70,9 @@ permalink: /program/
                             </div>
 
                             <!-- Blocos de Horário do Dia -->
-                            {% for block in day.blocks %} 
-                                <hr> 
+                            {% for block in day.blocks %}
+                                {% assign bi = forloop.index0 %}
+                                <hr>
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-2 text-center block_time">
@@ -81,6 +82,15 @@ permalink: /program/
                                         </div>
                                         {% for activity in block.activities %}
                                             {% include program_activity_info.html activity=activity %}
+                                            {% comment %} Marca "(cont.)" quando a atividade já apareceu em um bloco anterior do mesmo dia {% endcomment %}
+                                            {% assign continua = false %}
+                                            {% if activity.type != "gap" and activity.type != "blank" and activity.title != "" %}
+                                                {% for b in day.blocks limit: bi %}
+                                                    {% assign ids_b = b.activities | map: "id" %}
+                                                    {% if ids_b contains activity.id %}{% assign continua = true %}{% break %}{% endif %}
+                                                {% endfor %}
+                                            {% endif %}
+                                            {% if continua %}{% unless subtitulo contains "cont." %}{% assign subtitulo = subtitulo | append: " (cont.)" | strip %}{% endunless %}{% endif %}
                                             <div class="col text-center program_activity {{activity.style}}">
                                                 {% if link %}
                                                     <a href="{{ link }}" {% if link_externo %}target="_blank" rel="noopener noreferrer" class="activity_title"{% else %}class="activity_title keynote_link stretched-link"{% endif %}>
