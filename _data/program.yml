@@ -764,7 +764,7 @@
       type: blank
       style: blank
       title: Pausa do café
-      room: Foyer Aut. CT / Lab DIMAp
+      room: Foyer Aut. CT
       hide_details: 'yes'
     - id: gap
       type: gap
@@ -1042,7 +1042,7 @@
       type: blank
       style: blank
       title: Pausa do café
-      room: Foyer Aut. CT / Lab DIMAp
+      room: Foyer Aut. CT
       hide_details: 'yes'
     - id: gap
       type: gap
