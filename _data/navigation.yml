@@ -22,7 +22,7 @@
 - title: "Programa"
   url: "#"
   submenu:
-    - title: "Programação Preliminar"
+    - title: "Programação"
       url: "/program/"
     - title: "Sessões Técnicas"
       url: "/program/sessions/"
