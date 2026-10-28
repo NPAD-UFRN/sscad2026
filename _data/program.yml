@@ -285,14 +285,18 @@
       style: aud_laut
       url: '#wic1'
       title: WIC 1
-      subtitle: "Computação em GPU"
+      subtitle: "Arquitetura de Computadores e RISC-V"
       room: Auditório do LAUT
-      description: "Computação em GPU"
+      description: "Arquitetura de Computadores e RISC-V"
       papers:
-      - title: "Implementação Eficiente de Propagação Diagonal em Algoritmos de Frente de Onda Irregular em GPUs"
-        authors: "Caio Cunha, Gabriel Nunes, Willian Barreiros Júnior, George L. M. Teodoro"
-      - title: "FLAWD: Trazendo Listas Funcionais para a GPU"
-        authors: "Diogo Krüger Souto, João Antonio Soares, Gerson Geraldo H. Cavalheiro, Andre Rauber Du Bois"
+      - title: "A Quantitative Cache Evaluation of Select PolyBench Kernels"
+        authors: "Lucca Pellegrini, Amanda Guimaraes, Ariel Inácio Jordão Coelho, Paulo Júnior, Pedro Vitor Martins Caiafa Andrade, Matheus Alcântara Souza"
+      - title: "Introducing Narvi: A Modular RISC-V Simulator Ecosystem"
+        authors: "Antônio Sousa, Mateus Henrique Medeiros Diniz, Davi Puddo, Henrique Cota de Freitas"
+      - title: "Análise Experimental da Hierarquia de Memória Utilizando o Simulador gem5 sob a ISA RISC-V"
+        authors: "Filipi Pereira de Mesquita Faria, Arthur Henrique Tristão Pinto, Sofia Grossi Vieira Santos, Julio Cesar Thurow Buzzi, Luis Henrique Ferreira Costa, Matheus Alcântara Souza"
+      - title: "Extensão do Conjunto de Instruções em Arquitetura RISC-V para Otimização do Algoritmo Criptográfico GIFT-128"
+        authors: "Arthur Henrique Tristão Pinto, Sofia Grossi Vieira Santos, Filipi Pereira de Mesquita Faria, Julio Buzzi, Luis Henrique Ferreira Costa, Matheus Alcântara Souza"
     - id: ctd
       type: workshop
       style: aud_npiti
@@ -367,18 +371,14 @@
       style: aud_laut
       url: '#wic2'
       title: WIC 2
-      subtitle: "Arquitetura de Computadores e RISC-V"
+      subtitle: "Computação em GPU"
       room: Auditório do LAUT
-      description: "Arquitetura de Computadores e RISC-V"
+      description: "Computação em GPU"
       papers:
-      - title: "A Quantitative Cache Evaluation of Select PolyBench Kernels"
-        authors: "Lucca Pellegrini, Amanda Guimaraes, Ariel Inácio Jordão Coelho, Paulo Júnior, Pedro Vitor Martins Caiafa Andrade, Matheus Alcântara Souza"
-      - title: "Introducing Narvi: A Modular RISC-V Simulator Ecosystem"
-        authors: "Antônio Sousa, Mateus Henrique Medeiros Diniz, Davi Puddo, Henrique Cota de Freitas"
-      - title: "Análise Experimental da Hierarquia de Memória Utilizando o Simulador gem5 sob a ISA RISC-V"
-        authors: "Filipi Pereira de Mesquita Faria, Arthur Henrique Tristão Pinto, Sofia Grossi Vieira Santos, Julio Cesar Thurow Buzzi, Luis Henrique Ferreira Costa, Matheus Alcântara Souza"
-      - title: "Extensão do Conjunto de Instruções em Arquitetura RISC-V para Otimização do Algoritmo Criptográfico GIFT-128"
-        authors: "Arthur Henrique Tristão Pinto, Sofia Grossi Vieira Santos, Filipi Pereira de Mesquita Faria, Julio Buzzi, Luis Henrique Ferreira Costa, Matheus Alcântara Souza"
+      - title: "Implementação Eficiente de Propagação Diagonal em Algoritmos de Frente de Onda Irregular em GPUs"
+        authors: "Caio Cunha, Gabriel Nunes, Willian Barreiros Júnior, George L. M. Teodoro"
+      - title: "FLAWD: Trazendo Listas Funcionais para a GPU"
+        authors: "Diogo Krüger Souto, João Antonio Soares, Gerson Geraldo H. Cavalheiro, Andre Rauber Du Bois"
     - id: ctd
       type: workshop
       style: aud_npiti
