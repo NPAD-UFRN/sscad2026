@@ -236,7 +236,7 @@
       style: blank
       title: Almoço
   - start: "14:10"
-    end: "14:50"
+    end: "15:30"
     activities:
     - id: st3
       type: session
@@ -345,68 +345,6 @@
       url: http://lspd.mackenzie.br/marathon/26/
       title: Maratona
       room: Lab 203 nPITI
-  - start: "14:50"
-    end: "15:30"
-    activities:
-    - id: st3
-      type: session
-      style: aud_ct
-      url: '#st3'
-      title: Sessão técnica 3
-      subtitle: (cont.)
-      room: Auditório do CT (216)
-      page: /program/sessions/
-      hide_details: 'yes'
-    - id: st4
-      type: session
-      style: aud_ctec
-      url: '#st4'
-      title: Sessão técnica 4
-      subtitle: (cont.)
-      room: Auditório do CTEC (85)
-      page: /program/sessions/
-      hide_details: 'yes'
-    - id: wic2
-      type: workshop
-      style: aud_laut
-      url: '#wic2'
-      title: WIC 2
-      subtitle: "Computação em GPU"
-      room: Auditório do LAUT
-      description: "Computação em GPU"
-      papers:
-      - title: "Implementação Eficiente de Propagação Diagonal em Algoritmos de Frente de Onda Irregular em GPUs"
-        authors: "Caio Cunha, Gabriel Nunes, Willian Barreiros Júnior, George L. M. Teodoro"
-      - title: "FLAWD: Trazendo Listas Funcionais para a GPU"
-        authors: "Diogo Krüger Souto, João Antonio Soares, Gerson Geraldo H. Cavalheiro, Andre Rauber Du Bois"
-    - id: ctd
-      type: workshop
-      style: aud_npiti
-      url: '#ctd'
-      title: CTD
-      room: Auditório do nPITI
-      page: /cfp_ctd/
-      hide_details: 'yes'
-    - id: mc2
-      type: tutorial
-      style: lab_dca
-      url: '#mc2'
-      title: Minicurso 2
-      room: LabGrad DCA
-      hide_details: 'yes'
-    - id: mc3
-      type: tutorial
-      style: lab_dimap
-      url: '#mc3'
-      title: Minicurso 3
-      room: Lab DIMAp
-      hide_details: 'yes'
-    - id: maratona
-      type: marathon
-      style: maratona
-      url: http://lspd.mackenzie.br/marathon/26/
-      title: Maratona
-      hide_details: 'yes'
   - start: "15:30"
     end: "16:10"
     activities:
@@ -426,9 +364,14 @@
       style: aud_laut
       url: '#wic2'
       title: WIC 2
+      subtitle: "Computação em GPU"
       room: Auditório do LAUT
-      page: /cfp_wic/
-      hide_details: yes
+      description: "Computação em GPU"
+      papers:
+      - title: "Implementação Eficiente de Propagação Diagonal em Algoritmos de Frente de Onda Irregular em GPUs"
+        authors: "Caio Cunha, Gabriel Nunes, Willian Barreiros Júnior, George L. M. Teodoro"
+      - title: "FLAWD: Trazendo Listas Funcionais para a GPU"
+        authors: "Diogo Krüger Souto, João Antonio Soares, Gerson Geraldo H. Cavalheiro, Andre Rauber Du Bois"
     - id: ctd
       type: workshop
       style: aud_npiti
