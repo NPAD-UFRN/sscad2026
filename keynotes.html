@@ -25,7 +25,7 @@ permalink: /program/keynotes/
                             {% assign afiliacao = activity.authors | split: " (" | last | remove: ")" %}
                             {% if afiliacao == nome %}{% assign afiliacao = nil %}{% endif %}
                             {% assign partes = nome | split: " " %}
-                            {% assign rotulo = activity.title | default: "Palestra" %}
+                            {% assign rotulo = activity.label | default: activity.title | default: "Palestra" %}
 
                             <article class="keynote_card" id="{{ activity.id }}">
                                 <!-- A palestra -->

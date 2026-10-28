@@ -424,9 +424,17 @@
       type: keynote
       style: aud_ct
       url: '#pe-exclusiva'
-      title: "Palestra empresarial exclusiva: AWS"
+      title: "HPC na Nuvem: Burst de Clusters On-Premises para a AWS"
+      subtitle: "Palestra empresarial · Marcelo Baptista (AWS)"
+      label: "Palestra empresarial exclusiva: AWS"
+      authors: Marcelo Baptista (AWS)
       room: Auditório do CT (216)
-      keynote_title: "HPC na Nuvem: Burst de Clusters On-Premises para a AWS: A nuvem como capacidade elástica de burst para HPC on-premises"
+      keynote_title: "HPC na Nuvem: Burst de Clusters On-Premises para a AWS"
+      abstract: |-
+        Sessão técnica sobre como usar a AWS como capacidade elástica de "burst" para clusters HPC on-premises, mantendo a carga de regime local e enviando o excedente — inclusive jobs que exigem GPUs ou hardware especial — para a nuvem sob demanda.
+        A palestra apresenta arquiteturas de referência de integração do Slurm com a AWS, as questões de rede (EFA vs. InfiniBand) e de dados, além de custo e governança, fechando com casos públicos como o do RIKEN Fugaku.
+      short_bio: |-
+        Marcelo Baptista possui mais de 30 anos de experiência em tecnologia e quase 15 anos dedicados a High Performance Computing. Atualmente é Sr. Solutions Architect na Amazon Web Services (AWS), onde atua globalmente em soluções de HPC e Computação Quântica, sendo o líder de ambos os temas para a América Latina. Ao longo de sua carreira, tem ajudado organizações a adotar computação de larga escala na nuvem e a explorar as fronteiras da computação quântica aplicada a problemas complexos de engenharia e ciência.
     - id: gap
       type: gap
       style: gap
