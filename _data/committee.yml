@@ -2,36 +2,43 @@ committees:
   - name: "Comitês"
     subcommittees:
       - name: "Coordenação Geral"
+        icon: bi-star-fill
         people:
           - name: Cristina Boeres
             institution: UFF
           - name: Samuel Xavier de Souza
             institution: UFRN
       - name: "Coordenação Local"
+        icon: bi-geo-alt-fill
         people:
           - name: Ítalo Assis
             institution: UFERSA
           - name: Kayo Gonçalves e Silva
             institution: UFRN
       - name: Coordenação do Programa Técnico
+        icon: bi-journal-text
         people:
           - name: Aletéia Araújo
             institution: UnB
           - name: Daniel Cordeiro
             institution: USP
       - name: "Coordenação do Workshop de Iniciação Científica (WIC)"
+        icon: bi-mortarboard-fill
         people:
           - name: Hervé Yviquel
             institution: UNICAMP
       - name: "Coordenação do Concurso de Teses e Dissertações (CTD)"
+        icon: bi-award-fill
         people:
           - name: Evaldo Costa
             institution: Cesar
       - name: "Coordenação do Workshop sobre Educação em Arquitetura de Computadores (WEAC)"
+        icon: bi-cpu-fill
         people:
           - name: "Arthur Lorenzon"
             institution: "UFRGS"
       - name: "Coordenação Workshops"
+        icon: bi-collection-fill
         people:
           - name: "Hervé Yviquel"
             institution: "UNICAMP"
@@ -40,18 +47,21 @@ committees:
           - name: "Arthur Lorenzon"
             institution: "UFRGS"
       - name: "Coordenação dos Minicursos"
+        icon: bi-easel
         people:
           - name: "Márcio Kreutz"
             institution: "UFRN"
           - name: Cesar Zeferino
             institution: UNIVALI
       - name: "Coordenação da MARATONA"
+        icon: bi-trophy-fill
         people:
           - name: "Calebe de Paula Bianchini"
             institution: "Mackenzie"
           - name: Ítalo Assis
             institution: UFERSA
       - name: Organização Local
+        icon: bi-people-fill
         people:
           - name: Maria Camila Freitas
             institution: NPAD/UFRN
@@ -62,6 +72,7 @@ committees:
           - name: Luana Araújo
             institution: NPAD/UFRN
       - name: Equipe técnica
+        icon: bi-tools
         people:
           - name: Haroldo Watson Teodósio da Silva
             institution: NPAD/UFRN
@@ -69,3 +80,19 @@ committees:
             institution: NPAD/UFRN
           - name: André Liberato
             institution: NPAD/UFRN
+      - name: Voluntários
+        icon: bi-heart-fill
+        wide: true
+        people:
+          - name: Elisa Gabriela Machado de Lucena
+          - name: Felipe Hidequel Santos da Silva
+          - name: Bruno Victor Paiva da Silva
+          - name: Kaiky Hanry Alencar Fernandes
+          - name: Reilta Christine Dantas Maia
+          - name: Bárbara Lima Cordeiro Da Silva
+          - name: Pedro Rici
+          - name: Igor Sérgio de França Correia
+          - name: Rodrigo Menezes Souza
+          - name: Liriel Antonia de Lima Felix
+          - name: Joyce Francis Soares dos Santos
+          - name: Viviane Medeiros
