@@ -42,7 +42,7 @@ permalink: /program/panel/
                                     <p class="activity_chair"><b>Chair:</b> {{activity.chair}}</p>
                                 {% endif %}
                                 {% if activity.type != "gap" and activity.type != "blank" %}
-                                    <p class="activity_room"><b>Sala:</b> {{activity.room}}</p>
+                                    <p class="activity_room"><b>Sala:</b> {% include local.html nome=activity.room %}</p>
                                     {% if activity.start3 %}
                                         <p><b>Horários: </b> {{block.start}} - {{block.end}}, {{activity.start2}} - {{activity.end2}} e {{activity.start3}} - {{activity.end3}}</p>
                                     {% elsif activity.start2 %}

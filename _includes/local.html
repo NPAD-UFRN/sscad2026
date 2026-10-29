@@ -1,0 +1,4 @@
+{% comment %} Nome do local com link para o Google Maps (nova guia) se estiver em _data/locais.yml. Parâmetro: nome (exibido como recebido; a busca ignora o sufixo " (capacidade)") {% endcomment %}
+{%- assign local_chave = include.nome | split: " (" | first -%}
+{%- assign local_item = site.data.locais | where: "nome", local_chave | first -%}
+{%- if local_item -%}<a class="local-link" href="{{ local_item.maps }}" target="_blank" rel="noopener noreferrer" title="Abrir no Google Maps">{{ include.nome }}</a>{%- else -%}{{ include.nome }}{%- endif -%}

@@ -3,5 +3,5 @@
     <span class="keynote_label">{{ include.label }}</span>
     <span><i class="bi bi-clock"></i> {{ include.start }}{% if include.end %} – {{ include.end }}{% endif %}</span>
     {% if include.extra %}<span><i class="bi bi-arrow-repeat"></i> {{ include.extra }}</span>{% endif %}
-    {% if include.room %}<span><i class="bi bi-geo-alt"></i> {{ include.room | split: " (" | first }}</span>{% endif %}
+    {% if include.room %}<span><i class="bi bi-geo-alt"></i> {% assign card_sala = include.room | split: " (" | first %}{% include local.html nome=card_sala %}</span>{% endif %}
 </div>

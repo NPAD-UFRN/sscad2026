@@ -1,0 +1,18 @@
+# Links do Google Maps para os locais das atividades (campo room de _data/program.yml, sem o sufixo de capacidade).
+# CT, CTEC e nPITI usam os mesmos links da página Localização; os demais apontam para as coordenadas do prédio no OpenStreetMap.
+- nome: Auditório do CT
+  maps: https://maps.app.goo.gl/KGAE1uNtqC56Ssyh7
+- nome: Foyer Aut. CT
+  maps: https://maps.app.goo.gl/KGAE1uNtqC56Ssyh7
+- nome: Auditório do CTEC
+  maps: https://maps.app.goo.gl/R7qRLhDTAxiJPdBPA
+- nome: Auditório do nPITI
+  maps: https://maps.app.goo.gl/gfsmL44vgw53yBH56
+- nome: Lab 203 nPITI
+  maps: https://maps.app.goo.gl/gfsmL44vgw53yBH56
+- nome: Auditório do LAUT
+  maps: https://www.google.com/maps/search/?api=1&query=-5.8432357,-35.1972683
+- nome: LabGrad DCA
+  maps: https://www.google.com/maps/search/?api=1&query=-5.8429122,-35.1974583
+- nome: Lab DIMAp
+  maps: https://www.google.com/maps/search/?api=1&query=-5.8415404,-35.1982913

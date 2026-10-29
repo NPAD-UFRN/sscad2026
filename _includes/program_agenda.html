@@ -28,7 +28,7 @@
                 {% if atv.id == "gap" or ids_anterior contains atv.id %}{% continue %}{% endif %}
                 <div class="agenda_geral">
                     <span class="agenda_geral_hora">{{ block.start }}</span>
-                    <span>{{ atv.title }}{% if atv.room %} <small>· {{ atv.room | split: " (" | first }}</small>{% endif %}</span>
+                    <span>{{ atv.title }}{% if atv.room %} <small>· {% assign sala = atv.room | split: " (" | first %}{% include local.html nome=sala %}</small>{% endif %}</span>
                 </div>
             {% endfor %}
         {% else %}
@@ -38,7 +38,7 @@
                     {% if atv.id == "gap" or ids_anterior contains atv.id %}{% continue %}{% endif %}
                     {% if atv.type == "blank" %}
                         <div class="agenda_geral">
-                            <span>{{ atv.title }}{% if atv.room %} <small>· {{ atv.room | split: " (" | first }}</small>{% endif %}</span>
+                            <span>{{ atv.title }}{% if atv.room %} <small>· {% assign sala = atv.room | split: " (" | first %}{% include local.html nome=sala %}</small>{% endif %}</span>
                         </div>
                         {% continue %}
                     {% endif %}
@@ -59,7 +59,7 @@
                         {% if subtitulo %}<p class="agenda_subtitulo">{{ subtitulo }}</p>{% endif %}
                         <p class="agenda_meta">
                             <span><i class="bi bi-clock"></i> {{ block.start }} – {{ fim }}</span>
-                            {% if sala %}<span><i class="bi bi-geo-alt"></i> {{ sala }}</span>{% endif %}
+                            {% if sala %}<span><i class="bi bi-geo-alt"></i> {% include local.html nome=sala %}</span>{% endif %}
                         </p>
                         {% if link %}
                             <a class="agenda_detalhes stretched-link" href="{{ link }}"{% if link_externo %} target="_blank" rel="noopener noreferrer"{% endif %}>

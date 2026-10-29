@@ -336,3 +336,16 @@ $page-border: $gray-300;
   height: auto;
   margin: 0 auto 1.5rem;
 }
+
+// Link do local para o Google Maps; fica acima do stretched-link dos cards da agenda
+.local-link {
+  position: relative;
+  z-index: 2;
+  color: inherit;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+
+  &:hover {
+    color: $primary;
+  }
+}
