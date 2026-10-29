@@ -18,7 +18,7 @@
     name: LabGrad DCA
     style: lab_dca
   - id: lab_dimap
-    name: Lab DIMAp
+    name: LCC2 DIMAp
     style: lab_dimap
   - id: lab_203_npiti
     name: Lab 203 nPITI
@@ -412,7 +412,7 @@
       style: lab_dimap
       url: '#mc3'
       title: Minicurso 3
-      room: Lab DIMAp
+      room: LCC2 do DIMAp
     - id: maratona
       type: marathon
       style: maratona
@@ -474,7 +474,7 @@
       style: lab_dimap
       url: '#mc3'
       title: Minicurso 3
-      room: Lab DIMAp
+      room: LCC2 do DIMAp
       hide_details: 'yes'
     - id: maratona
       type: marathon
