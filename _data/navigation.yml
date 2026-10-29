@@ -32,6 +32,8 @@
       url: "/program/panel/"
     - title: "Minicursos"
       url: "/program/tutorials/"
+    - title: "Quebra-gelo"
+      url: "/program/quebra-gelo/"
     - title: "Maratona"
       url: "http://lspd.mackenzie.br/marathon/26/"
 - title: "Inscrições"

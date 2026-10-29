@@ -1,0 +1,79 @@
+---
+layout: default
+title: "Quebra-gelo"
+permalink: /program/quebra-gelo/
+---
+
+{% comment %} Dia e horário lidos de _data/program.yml (atividade quebra-gelo) {% endcomment %}
+{% for day in site.data.program %}
+  {% for block in day.blocks %}
+    {% assign ids = block.activities | map: "id" %}
+    {% if ids contains "quebra-gelo" %}{% assign dia = day %}{% assign bloco = block %}{% endif %}
+  {% endfor %}
+{% endfor %}
+{% assign rota = "https://www.google.com/maps/dir/?api=1&destination=-5.827232,-35.211014" %}
+{% assign raffe_maps = "https://www.google.com/maps/search/?api=1&query=Cervejaria+Raffe+Arena+das+Dunas+Natal" %}
+
+<section class="content-page content-page-end">
+  <!-- Abertura -->
+  <div class="page-hero">
+    <span class="page-pill"><i class="bi bi-cup-straw"></i> Programação · SSCAD 2026</span>
+    <h1 class="page-title">Quebra-gelo</h1>
+    <p class="page-subtitle">Confraternização de abertura do SSCAD 2026</p>
+    <p class="page-lead">
+      Depois do primeiro dia de atividades, os participantes se encontram na Cervejaria Raffe, cervejaria artesanal
+      potiguar com espaço no estacionamento interno da Arena das Dunas.
+    </p>
+    <ul class="page-chips">
+      <li><i class="bi bi-calendar-event"></i> {{ dia.title }}, {{ dia.date | slice: 0, 5 }}</li>
+      <li><i class="bi bi-clock"></i> {{ bloco.start }} – {{ bloco.end }}</li>
+      <li><i class="bi bi-geo-alt-fill"></i> <a class="local-link" href="{{ rota }}" target="_blank" rel="noopener noreferrer" title="Abrir no Google Maps">Raffe · Arena das Dunas</a></li>
+    </ul>
+  </div>
+
+  <div class="card-grid">
+    <!-- Local -->
+    <div class="content-card">
+      <h3><i class="bi bi-geo-alt-fill"></i> Local</h3>
+      <p><b>Cervejaria Raffe</b> (Covil Arena), no estacionamento interno da Arena das Dunas.</p>
+      <ul class="workshop-chairs">
+        <li><b>Entrada:</b> E1 Sul, a entrada principal</li>
+        <li><b>Acesso:</b> pela Av. Lima e Silva, no sentido da Av. Senador Salgado Filho</li>
+        <li><b>Endereço da Arena:</b> Av. Prudente de Morais, 5121, Lagoa Nova, Natal/RN</li>
+      </ul>
+      <div class="button-row">
+        <a class="btn btn-accent" href="{{ rota }}" target="_blank" rel="noopener noreferrer"><i class="bi bi-sign-turn-right-fill"></i> Rota até a Entrada E1 Sul</a>
+        <a class="btn btn-outline-secondary" href="{{ raffe_maps }}" target="_blank" rel="noopener noreferrer"><i class="bi bi-geo-alt"></i> Raffe no Maps</a>
+      </div>
+    </div>
+
+    <!-- Raffe -->
+    <div class="content-card">
+      <h3><i class="bi bi-cup-straw"></i> Cervejaria Raffe</h3>
+      <p>
+        Cervejaria artesanal 100% potiguar, fundada em Natal em 2017. O Covil Arena, espaço da Raffe na Arena das Dunas,
+        fica junto à fábrica, no estacionamento interno do estádio.
+      </p>
+      <div class="button-row">
+        <a class="btn btn-outline-secondary" href="https://www.instagram.com/cervejariaraffe" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i> @cervejariaraffe</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Como chegar -->
+  <div class="section-head mt-5" id="como-chegar">
+    <h2>Como chegar à Entrada E1 Sul</h2>
+    <p>O acesso ao estacionamento interno é pela alça lateral da Arena, no sentido da Av. Senador Salgado Filho.</p>
+  </div>
+
+  <div class="content-card access-card">
+    <a class="access-map" href="{{ '/assets/img/quebra_gelo_acesso.svg' | relative_url }}" target="_blank" rel="noopener noreferrer" title="Abrir o mapa em tamanho maior">
+      <img src="{{ '/assets/img/quebra_gelo_acesso.svg' | relative_url }}" alt="Mapa de acesso: pela Av. Lima e Silva, ou saindo do Túnel Romualdo Galvão, siga pela alça lateral da Arena das Dunas no sentido da Av. Senador Salgado Filho; a Entrada E1 Sul fica à direita.">
+    </a>
+    <ol class="timeline">
+      <li><span class="timeline-date">1. Av. Lima e Silva</span> Siga pela Av. Lima e Silva (ou saia do Túnel Romualdo Galvão) no sentido da Av. Senador Salgado Filho.</li>
+      <li><span class="timeline-date">2. Alça lateral da Arena</span> Antes do viaduto da Salgado Filho, pegue a alça à direita, que desce pela lateral da Arena das Dunas.</li>
+      <li><span class="timeline-date">3. Entrada E1 Sul</span> A Entrada E1 Sul, entrada principal do estacionamento interno, fica à direita, antes de chegar à Salgado Filho. A Raffe fica nesse estacionamento.</li>
+    </ol>
+  </div>
+</section>

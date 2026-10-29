@@ -566,10 +566,10 @@
     - id: quebra-gelo
       type: blank
       style: blank
-      url: '#quebra-gelo'
+      page: /program/quebra-gelo/
       title: Quebra gelo
-      room: Rest/Bar
-      description: Confraternização inicial do evento no Restaurante / Bar
+      room: Cervejaria Raffe
+      description: Confraternização inicial do evento na Cervejaria Raffe (Arena das Dunas)
     - id: gap
       type: gap
       style: gap

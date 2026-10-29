@@ -1,5 +1,5 @@
 # Links do Google Maps para os locais das atividades (campo room de _data/program.yml, sem o sufixo de capacidade).
-# CT, CTEC e nPITI usam os mesmos links da página Localização; os demais apontam para as coordenadas do prédio no OpenStreetMap.
+# CT, CTEC e nPITI usam os mesmos links da página Localização; os demais apontam para as coordenadas do prédio (ou portão) no OpenStreetMap.
 - nome: Auditório do CT
   maps: https://maps.app.goo.gl/KGAE1uNtqC56Ssyh7
 - nome: Foyer Aut. CT
@@ -16,5 +16,7 @@
   maps: https://www.google.com/maps/search/?api=1&query=-5.8429122,-35.1974583
 - nome: Lab DIMAp
   maps: https://www.google.com/maps/search/?api=1&query=-5.8415404,-35.1982913
+- nome: Cervejaria Raffe
+  maps: https://www.google.com/maps/search/?api=1&query=-5.827232,-35.211014
 - nome: LCC2 do DIMAp
   maps: https://www.google.com/maps/search/?api=1&query=-5.8415404,-35.1982913
