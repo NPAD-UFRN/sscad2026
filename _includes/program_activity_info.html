@@ -1,5 +1,5 @@
 {% comment %}
-  Define, para uma atividade da programação, `subtitulo`, `link` (página de detalhes) e `link_externo` (true para sites de fora).
+  Define, para uma atividade da programação, `subtitulo`, `link` (página de detalhes; atividades gerais com `page` apontam para ela) e `link_externo` (true para sites de fora).
   Parâmetro: activity. Requer `pagina_minicursos` (página /program/tutorials/) para o título dos minicursos.
   Minicursos: título vindo da página de minicursos no primeiro bloco; nos demais, só "(cont.)" quando houver.
   Palestras: tema (keynote_title) antes do palestrante, quando o tema já não for o título.
@@ -19,6 +19,8 @@
     {% assign link = '/program/keynotes/' | relative_url | append: a.url %}
 {% elsif a.type == "tutorial" and mc %}
     {% assign link = '/program/tutorials/' | relative_url | append: '#' | append: a.id %}
+{% elsif a.type == "blank" and a.page %}
+    {% assign link = a.page | relative_url %}
 {% elsif a.papers or a.page %}
     {% if a.type == "workshop" %}
         {% assign link = a.page | default: '/cfp_wic/' | relative_url | append: a.url %}
