@@ -570,32 +570,6 @@
       title: Quebra gelo
       room: Cervejaria Raffe
       description: Confraternização inicial do evento na Cervejaria Raffe (Arena das Dunas)
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
-    - id: maratona
-      type: marathon
-      style: maratona
-      url: http://lspd.mackenzie.br/marathon/26/
-      title: Maratona
-      hide_details: 'yes'
 - id: second-day
   title: Quarta-Feira
   date: 04/11/2026
