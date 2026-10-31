@@ -241,11 +241,11 @@
       description: "Computação sustentável I: energia e carbono em HPC"
       papers:
       - time: "11:10–11:30"
+        title: "Avaliação do Tempo de Retorno de Carbono na Migração de Contêineres entre Data Centers Distribuídos"
+        authors: "Matheus Vinicius Resende Nascimento, Daniel Cordeiro"
+      - time: "11:30–11:50"
         title: "Assessing Operational Carbon Footprint for Task-based Applications using Simulation"
         authors: "Otho José Sirtoli Marcondes, Rayan Raddatz, Lucas Mello Schnorr"
-      - time: "11:30–11:50"
-        title: "Thread-Count Tuning for Carbon-Efficient Multicore HPC Applications"
-        authors: "Arthur Silveira, Matheus Costa, Carla Osthoff, Philippe Olivier Alexandre Navaux, Arthur Francisco Lorenzon"
       - time: "11:50–12:10"
         title: "Gerenciamento de Recursos para Execucão Energeticamente Eficiente de Workloads em Data Centers com CPUs Híbridas"
         authors: "Marcelo Koji Moori, Felipe Nunes Laguna, Hiago Mayk Gomes de Araujo Rocha, Antonio Carlos Schneider Beck Filho"
@@ -812,8 +812,8 @@
         title: "Eficiência Energética de Arquiteturas In-Order e Out-of-Order para Aprendizado Federado de Borda na Detecção de Intrusão em CAN de Veículos Autônomos"
         authors: "Luís Fillipe Pereira, Matheus Alcântara Souza, Henrique Cota de Freitas"
       - time: "11:00–11:20"
-        title: "Avaliação do Tempo de Retorno de Carbono na Migração de Contêineres entre Data Centers Distribuídos"
-        authors: "Matheus Vinicius Resende Nascimento, Daniel Cordeiro"
+        title: "Thread-Count Tuning for Carbon-Efficient Multicore HPC Applications"
+        authors: "Arthur Silveira, Matheus Costa, Carla Osthoff, Philippe Olivier Alexandre Navaux, Arthur Francisco Lorenzon"
     - id: st8
       type: session
       style: aud_ctec
