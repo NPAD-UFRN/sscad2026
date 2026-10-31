@@ -1281,6 +1281,43 @@
       room: Auditório do nPITI
       page: /cfp_wpads/
       description: Workshop de Processamento de Alto Desempenho Sustentável
+      papers:
+      - time: "08:00–08:05"
+        title: "Abertura"
+      - title: "Sessão 1: Eficiência Energética em Hardware e Inferência de IA"
+      - time: "08:05–08:20"
+        title: "Avaliação de Síntese Física e Energética de Instruções Aproximadas no Processador RISC-V NEORV32"
+        authors: "Jailton Nunes Filho (UFMS), Eduardo Paes (UFMS), Hytalo Maito Bassi (UFMS), Pedro e Silva Candia (UFMS), Daniela Catelan (UFMS), Diogo Saito (UFMS), Ricardo Santos (UFMS)"
+      - time: "08:20–08:35"
+        title: "Relating Energy Consumption and TLB Misses in GEMM"
+        authors: "Girlana Santos (Unicamp), Lucas Wanner (UNICAMP), Isaías Felzmann (UNICAMP)"
+      - time: "08:35–08:50"
+        title: "CanvasKV4: Online 4-Bit KV Cache Quantization for DiffusionGemma"
+        authors: "Felipe Bochini Brisola (UNISO)"
+      - time: "08:50–08:55"
+        title: "Transição"
+      - time: "08:55–09:50"
+        title: "Palestra convidada: título a definir"
+        authors: "Daniel Cordeiro (USP)"
+      - title: "Sessão 2: Paralelismo, Escalonamento e Nuvem"
+      - time: "14:00–14:15"
+        title: "Desempenho e Eficiência Energética da Paralelização do Decoder do Random-key Optimizer para o Problema das p-Medianas com α Vizinhos"
+        authors: "Pedro Abreu (UNIFESP), Arthur Luz (UNIFESP)"
+      - time: "14:15–14:30"
+        title: "Uma Avaliação Comparativa de Heurísticas de Escalonamento para Workflows Científicos em Plataformas Heterogêneas"
+        authors: "Fellipe Queiroz (UFPA), Marcos Amaris (UFPA), Erick Silva, Daniel Cordeiro (USP), Jean-Luc Gaudiot (University of California)"
+      - time: "14:30–14:45"
+        title: "Avaliação de Serviços de Mensageria em Nuvem: Desempenho, Custo e Indicadores Ambientais Exploratórios"
+        authors: "Lucas Bicalho Oliveira (UNIFESP), Alvaro Luiz Fazenda (UNIFESP)"
+      - title: "Sessão Técnica 3: Computação Consciente de Carbono"
+      - time: "14:45–15:00"
+        title: "Energia, Carbono e Soberania na Inferência de IA em Tribunais: Medição em GPU e Análise Multicritério"
+        authors: "Igor Guimarães Pedreira"
+      - time: "15:00–15:15"
+        title: "Proposta de Roteamento de Processamento de Pagamentos financeiros Baseado em Intensidade de Carbono em Data Centers Distribuídos em Escala Global"
+        authors: "Edgar Cintho (IPT), Alessandro Santiago (IPT)"
+      - time: "15:15–15:20"
+        title: "Encerramento"
     - id: gap
       type: gap
       style: gap
