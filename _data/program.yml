@@ -587,7 +587,7 @@
     name: Aud. nPITI
     style: aud_npiti
   - id: lab_dimap
-    name: Lab DIMAp
+    name: LCC2 DIMAp
     style: lab_dimap
   - id: maratona
     name: Lab 203 nPITI
@@ -716,7 +716,7 @@
       style: lab_dimap
       url: '#mc4'
       title: Minicurso 4
-      room: Lab DIMAp
+      room: LCC2 do DIMAp
     - id: maratona
       type: marathon
       style: maratona
@@ -754,7 +754,7 @@
       style: lab_dimap
       url: '#mc4'
       title: Minicurso 4
-      room: Lab DIMAp
+      room: LCC2 do DIMAp
       hide_details: 'yes'
     - id: maratona
       type: marathon
@@ -850,7 +850,7 @@
       url: '#mc4'
       title: Minicurso 4
       subtitle: (cont.)
-      room: Lab DIMAp
+      room: LCC2 do DIMAp
       hide_details: 'yes'
     - id: maratona
       type: marathon
@@ -971,7 +971,7 @@
       style: lab_dimap
       url: '#mc5'
       title: Minicurso 5
-      room: Lab DIMAp
+      room: LCC2 do DIMAp
     - id: maratona
       type: marathon
       style: maratona
@@ -1010,7 +1010,7 @@
       style: lab_dimap
       url: '#mc5'
       title: Minicurso 5
-      room: Lab DIMAp
+      room: LCC2 do DIMAp
       hide_details: 'yes'
     - id: maratona
       type: marathon
@@ -1122,7 +1122,7 @@
       url: '#mc5'
       title: Minicurso 5
       subtitle: (cont.)
-      room: Lab DIMAp
+      room: LCC2 do DIMAp
       hide_details: 'yes'
     - id: maratona
       type: marathon
