@@ -1,0 +1,46 @@
+---
+layout: default
+title: "Jantar de confraternização"
+permalink: /program/jantar/
+---
+
+{% comment %} Dia e horário lidos de _data/program.yml (atividade jantar) {% endcomment %}
+{% for day in site.data.program %}
+  {% for block in day.blocks %}
+    {% assign ids = block.activities | map: "id" %}
+    {% if ids contains "jantar" %}{% assign dia = day %}{% assign bloco = block %}{% endif %}
+  {% endfor %}
+{% endfor %}
+{% assign maps = "https://www.google.com/maps/search/?api=1&query=T%C3%A1bua+de+Carne+Cozinha+de+Fogo+Midway+Mall+Natal" %}
+
+<section class="content-page content-page-end">
+  <!-- Abertura -->
+  <div class="page-hero">
+    <span class="page-pill"><i class="bi bi-cup-hot"></i> Programação · SSCAD 2026</span>
+    <h1 class="page-title">Jantar de confraternização</h1>
+    <p class="page-subtitle">Jantar oficial de confraternização dos participantes do SSCAD 2026</p>
+    <p class="page-lead">
+      O jantar acontece no restaurante Tábua de Carne | Cozinha de Fogo, no Piso L3 do Midway Mall, em Natal.
+    </p>
+    <ul class="page-chips">
+      <li><i class="bi bi-calendar-event"></i> {{ dia.title }}, {{ dia.date | slice: 0, 5 }}</li>
+      <li><i class="bi bi-clock"></i> {{ bloco.start }} – {{ bloco.end }}</li>
+      <li><i class="bi bi-geo-alt-fill"></i> <a class="local-link" href="{{ maps }}" target="_blank" rel="noopener noreferrer" title="Abrir no Google Maps">Tábua de Carne · Midway Mall</a></li>
+    </ul>
+  </div>
+
+  <div class="card-grid">
+    <!-- Local -->
+    <div class="content-card">
+      <h3><i class="bi bi-geo-alt-fill"></i> Local</h3>
+      <p><b>Tábua de Carne | Cozinha de Fogo</b></p>
+      <ul class="workshop-chairs">
+        <li><b>Endereço:</b> Av. Nevaldo Rocha, 3775, lojas 373–377, Piso L3, Midway Mall, Tirol, Natal/RN</li>
+        <li><b>CEP:</b> 59015-900</li>
+      </ul>
+      <div class="button-row">
+        <a class="btn btn-accent" href="{{ maps }}" target="_blank" rel="noopener noreferrer"><i class="bi bi-sign-turn-right-fill"></i> Abrir no Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1168,9 +1168,9 @@
     - id: jantar
       type: blank
       style: blank
-      url: '#jantar'
+      page: /program/jantar/
       title: Jantar de confraternização
-      room: Rest/Bar
+      room: "Tábua de Carne · Midway Mall"
       description: Jantar oficial de confraternização dos participantes do SSCAD 2026
 - id: third-day
   has_panel: 'yes'
