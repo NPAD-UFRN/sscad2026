@@ -1330,7 +1330,7 @@
       style: aud_ct
       url: '#pe2'
       title: Palestras empresariais 2
-      subtitle: (1) - (2) HPE
+      keynote_title: "Computação Sustentável: O Grande Desafio e o papel da Computação de Alto Desempenho"
       room: Auditório do CT (216)
     - id: gap
       type: gap
