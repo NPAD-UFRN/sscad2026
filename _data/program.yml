@@ -1065,8 +1065,14 @@
       url: '#plenaria-aberta'
       title: Palestra plenária 4
       subtitle: Rafael Sene
-      authors: Rafael Sene
+      authors: Rafael Sene (RISC-V International)
       room: Auditório do CT (216)
+      image: keynote_rafael_sene.jpg
+      keynote_title: "RISC-V em 2026: o padrão aberto chega ao alto desempenho"
+      abstract: |-
+        O RISC-V deixou de ser um projeto acadêmico e hoje está em celulares, carros, wearables, servidores e aceleradores de IA. Em 2026, três movimentos convergem para levar o padrão aberto ao alto desempenho: a consolidação da indústria em torno de IP de CPU RISC-V, a presença do RISC-V dentro do ecossistema de aceleradores de IA e a chegada de uma base de software comum, com o perfil RVA23 adotado pelas principais distribuições Linux e a pilha de especificações para servidores concluída. Nesta palestra, apresento esse panorama e o que vem pela frente nas especificações mais relevantes para HPC e IA, como as extensões de matriz (IME, VME e AME) e as novas instruções vetoriais para IA, com suporte a BF16 e aos formatos de 8 bits OFP8 e instruções de produto escalar; e o trabalho recém-iniciado de Long Instruction, que define codificações com mais de 32 bits para abrir espaço a novas extensões e reduzir o tamanho do código. Também mostro como funciona o processo aberto de padronização da RISC-V International e como universidades e pesquisadores da América Latina podem participar.
+      short_bio: |-
+        Rafael Sene é Technical Program Manager da RISC-V International, na Linux Foundation, onde atua desde 2022. Coordena o trabalho dos grupos técnicos que desenvolvem o padrão RISC-V e acompanha o ciclo de vida das especificações, da proposta à ratificação. Tem mais de 15 anos de experiência em engenharia de software e liderança técnica, com uma passagem longa pela IBM, e se dedica a ampliar o ecossistema RISC-V na América Latina, aproximando indústria, academia e comunidade.
     - id: gap
       type: gap
       style: gap
