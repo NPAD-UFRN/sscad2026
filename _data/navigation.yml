@@ -28,7 +28,7 @@
       url: "/program/sessions/"
     - title: "Palestras"
       url: "/program/keynotes/"
-    - title: "Painel"
+    - title: "Painéis"
       url: "/program/panel/"
     - title: "Minicursos"
       url: "/program/tutorials/"

@@ -62,7 +62,13 @@
                                         {% elsif paper.label %}<span class="session_paper_time">{{ paper.label }}</span>{% endif %}
                                         <div class="session_paper_info">
                                             <p class="session_paper_title">{{ paper.title }}</p>
-                                            <p class="session_paper_authors">{{ paper.authors }}</p>
+                                            {% if paper.panel_id %}
+                                                {% assign nomes = paper.panelists | map: "name" | join: ", " %}
+                                                <p class="session_paper_authors">{% if nomes != "" %}{{ nomes }} · {% endif %}Mediação: {{ paper.moderator }}</p>
+                                                <a class="session_paper_link" href="{{ '/program/panel/' | relative_url }}#{{ paper.panel_id }}"><i class="bi bi-info-circle-fill"></i> Detalhes do painel</a>
+                                            {% else %}
+                                                <p class="session_paper_authors">{{ paper.authors }}</p>
+                                            {% endif %}
                                         </div>
                                     </li>
                                 {% endfor %}

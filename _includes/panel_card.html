@@ -1,0 +1,38 @@
+{% comment %}
+  Card de um painel: tema, mediação e painelistas (iniciais no lugar da foto).
+  Parâmetros: id, label, title, start, end (opcional), room, abstract (opcional), moderator, panelists (lista com name, "Nome (Afiliação)"), workshop e workshop_page (opcionais, para painéis de workshops).
+{% endcomment %}
+<article class="keynote_card" id="{{ include.id }}">
+    <div class="keynote_talk">
+        {% include card_meta.html label=include.label start=include.start end=include.end room=include.room %}
+        <h3 class="keynote_title">{{ include.title }}</h3>
+        {% if include.abstract %}
+            {% include expandable_text.html text=include.abstract %}
+        {% endif %}
+        {% if include.workshop %}
+            <p class="session_chair">Parte da programação do <a href="{{ include.workshop_page | relative_url }}">{{ include.workshop }}</a></p>
+        {% endif %}
+    </div>
+
+    {% assign pessoas = "" | split: "" %}
+    {% if include.moderator %}{% assign pessoas = pessoas | push: include.moderator %}{% endif %}
+    {% for p in include.panelists %}{% assign pessoas = pessoas | push: p.name %}{% endfor %}
+    {% if pessoas.size > 0 %}
+    <ul class="panel_people">
+        {% for pessoa in pessoas %}
+            {% assign nome = pessoa | split: " (" | first %}
+            {% assign afiliacao = pessoa | split: " (" | last | remove: ")" %}
+            {% if afiliacao == nome %}{% assign afiliacao = nil %}{% endif %}
+            {% assign partes = nome | split: " " %}
+            <li class="panel_person">
+                <div class="keynote_photo keynote_initials panel_initials" aria-hidden="true">{{ partes.first | slice: 0 }}{% if partes.size > 1 %}{{ partes.last | slice: 0 }}{% endif %}</div>
+                <div class="keynote_speaker_info">
+                    <span class="keynote_speaker_label">{% if include.moderator and forloop.first %}Mediação{% else %}Painelista{% endif %}</span>
+                    <p class="keynote_speaker_name">{{ nome }}</p>
+                    {% if afiliacao %}<p class="keynote_speaker_affiliation">{{ afiliacao }}</p>{% endif %}
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</article>

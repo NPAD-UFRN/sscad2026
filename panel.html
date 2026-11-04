@@ -1,93 +1,67 @@
 ---
 layout: default
-title: "Painel"
-permalink: /program/panel/ 
+title: "Painéis"
+permalink: /program/panel/
 ---
+
+{% comment %}
+  Painéis lidos de _data/program.yml: atividades do tipo "panel" e itens da agenda dos workshops com panel_id.
+{% endcomment %}
+{% assign dias_programa = "" %}
+{% for day in site.data.program %}
+    {% for block in day.blocks %}
+        {% if block.hide_details %}{% continue %}{% endif %}
+        {% for activity in block.activities %}
+            {% if activity.hide_details %}{% continue %}{% endif %}
+            {% assign itens_painel = activity.papers | where_exp: "p", "p.panel_id" %}
+            {% if activity.type == "panel" or itens_painel.size > 0 %}
+                {% assign dias_programa = dias_programa | append: day.id | append: " " %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+{% assign dias_programa = dias_programa | split: " " | uniq %}
 
 <section id="program">
     <br><br>
     <h1 class="text-center">{{ page.title }}</h1>
-    <br><br>
-    <section id="program_overview">
-        <div class="container-fluid"> 
+    <br>
+    <div class="container keynotes">
+        {% include day_tabs.html %}
+
+        <div class="tab-content">
             {% for day in site.data.program %}
-                {% if day.has_panel != "yes" %}
-                    {% continue %}
-                {% endif %}
-                <h2 class="text-center">{{day.date}}</h2>
-                    <div class="container">
-                        {% for block in day.blocks %}
-                            {% if block.hide_details %}
-                                {% continue %}
+                {% unless dias_programa contains day.id %}{% continue %}{% endunless %}
+                <div class="tab-pane fade{% if day.id == dias_programa.first %} show active{% endif %}" id="dia-{{ day.id }}" role="tabpanel"
+                    aria-labelledby="tab-{{ day.id }}">
+                    {% for block in day.blocks %}
+                        {% if block.hide_details %}{% continue %}{% endif %}
+                        {% for activity in block.activities %}
+                            {% if activity.hide_details %}{% continue %}{% endif %}
+                            {% if activity.type == "panel" %}
+                                {% include panel_card.html id=activity.id label=activity.title title=activity.description
+                                    start=block.start end=block.end room=activity.room abstract=activity.abstract
+                                    moderator=activity.moderator panelists=activity.panelists %}
+                            {% else %}
+                                {% for item in activity.papers %}
+                                    {% unless item.panel_id %}{% continue %}{% endunless %}
+                                    {% assign rotulo = item.title | split: ": " | first %}
+                                    {% assign tema = item.title | remove_first: rotulo | remove_first: ": " %}
+                                    {% assign rotulo = activity.title | append: " · " | append: rotulo %}
+                                    {% assign horario = item.time | replace: "–", " – " %}
+                                    {% include panel_card.html id=item.panel_id label=rotulo title=tema
+                                        start=horario room=activity.room abstract=item.abstract
+                                        moderator=item.moderator panelists=item.panelists
+                                        workshop=activity.description workshop_page=activity.page %}
+                                {% endfor %}
                             {% endif %}
-                            {% for activity in block.activities %}
-                                {% if activity.hide_details or activity.type != "panel" %}
-                                    {% continue %}
-                                {% endif %}
-                                {% if activity.type == "tutorial" %}
-                                    <h3 id="{{activity.id}}">{{activity.title}}: {{activity.description}}</h3>
-                                    <p class="activity_authors"><b>Autores</b>: {{activity.authors}}</p>
-                                {% elsif activity.type == "keynote" %}
-                                    <h3 id="{{activity.id}}">{{activity.title}}</h3>
-                                    {% if activity.image %}
-                                        <img src="{{ site.final_url }}/assets/img/{{activity.image}}" class="activity_image">
-                                    {% endif %}
-                                    {% if activity.authors %}
-                                        <p class="activity_authors"><b>Palestrante</b>: {{activity.authors}}</p>
-                                    {% endif %}
-                                {% else %}
-                                    <h3 id="{{activity.id}}">{{activity.title}}{% if activity.description %}: {{activity.description}}{% endif %} </h3>
-                                {% endif %}
-                                {% if activity.chair %}
-                                    <p class="activity_chair"><b>Chair:</b> {{activity.chair}}</p>
-                                {% endif %}
-                                {% if activity.type != "gap" and activity.type != "blank" %}
-                                    <p class="activity_room"><b>Sala:</b> {% include local.html nome=activity.room %}</p>
-                                    {% if activity.start3 %}
-                                        <p><b>Horários: </b> {{block.start}} - {{block.end}}, {{activity.start2}} - {{activity.end2}} e {{activity.start3}} - {{activity.end3}}</p>
-                                    {% elsif activity.start2 %}
-                                        <p><b>Horário: </b> {{block.start}} - {{block.end}} e {{activity.start2}} - {{activity.end2}}</p>
-                                    {% else %}
-                                        <p><b>Horário: </b> {{block.start}} - {{block.end}}</p>
-                                    {% endif %}
-                                {% endif %}
-                                {% if activity.type == "session" %}                 <!-- session, details -->
-                                    {% for paper in activity.papers %}
-                                        <p class="paper_title"><b>{{paper.title}}</b></p>
-                                        <p>{{paper.authors}}</p>
-                                    {% endfor %} <!-- paper in activity.papers -->
-                                {% elsif activity.type == "panel" %}                <!-- panel, details -->
-                                    {% if activity.moderator %}
-                                        <p><b>Mediador</b>: {{activity.moderator}}</p>
-                                    {% endif %}
-                                    {% if activity.abstract %}
-                                        <p><b>Resumo</b>: {{activity.abstract}}</p>
-                                    {% endif %}
-                                    {% for panelist in activity.panelists %}
-                                        {% if panelist.image %}
-                                            <img src="{{ site.final_url }}/assets/img/{{panelist.image}}" class="panelist_image">
-                                        {% endif %}
-                                        <p><b>Participante</b>: {{panelist.name}}</p>
-                                        {% if panelist.short_bio %}
-                                            <p><b>Biografia Resumida</b>: {{panelist.short_bio}}</p>
-                                        {% endif %}
-                                    {% endfor %} <!-- panelist in activity.panelists -->
-                                {% else %}                                   <!-- tutorial, keynote,  -->
-                                    {% if activity.short_bio %}
-                                        <p><b>Biografia Resumida</b>: {{activity.short_bio}}</p>
-                                    {% endif %}
-                                    {% if activity.abstract %}
-                                        <p><b>Resumo</b>: {{activity.abstract}}</p>
-                                    {% endif %}
-                                {% endif %} 
-                                {% if activity.type != "gap" %}
-                                    <hr>    
-                                {% endif %}
-                            {% endfor %} <!-- activity in block.activities -->
-                        {% endfor %}  <!-- block in day.block -->
-                </div> <!-- container -->
-            {% endfor %} <!-- day in site.data.program -->
-        </div> <!-- container-fluid -->
-    </section> <!-- program overview -->
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
     <br><br>
-</section> <!-- program -->
+</section>
+
+{% include program_cards_script.html %}

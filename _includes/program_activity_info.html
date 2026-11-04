@@ -3,6 +3,7 @@
   Parâmetro: activity. Requer `pagina_minicursos` (página /program/tutorials/) para o título dos minicursos.
   Minicursos: título vindo da página de minicursos no primeiro bloco; nos demais, só "(cont.)" quando houver.
   Palestras: tema (keynote_title) antes do palestrante, quando o tema já não for o título.
+  Painéis: tema (description) como subtítulo; o link leva à página /program/panel/.
 {% endcomment %}
 {% assign a = include.activity %}
 {% assign subtitulo = a.subtitle %}{% assign mc = nil %}{% assign link = nil %}{% assign link_externo = false %}
@@ -12,6 +13,8 @@
 {% elsif a.type == "keynote" and a.keynote_title and a.keynote_title != a.title %}
     {% assign subtitulo = a.keynote_title %}
     {% if a.subtitle %}{% assign subtitulo = subtitulo | append: " · " | append: a.subtitle %}{% endif %}
+{% elsif a.type == "panel" and a.description %}
+    {% assign subtitulo = a.description %}
 {% endif %}
 {% if a.url and a.url contains '://' %}
     {% assign link = a.url %}{% assign link_externo = true %}
@@ -19,6 +22,8 @@
     {% assign link = '/program/keynotes/' | relative_url | append: a.url %}
 {% elsif a.type == "tutorial" and mc %}
     {% assign link = '/program/tutorials/' | relative_url | append: '#' | append: a.id %}
+{% elsif a.type == "panel" %}
+    {% assign link = '/program/panel/' | relative_url | append: '#' | append: a.id %}
 {% elsif a.type == "blank" and a.page %}
     {% assign link = a.page | relative_url %}
 {% elsif a.papers or a.page %}

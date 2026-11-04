@@ -689,7 +689,8 @@
         title: "Abertura Oficial do Workshop"
       - time: "08:20–09:00"
         title: "Painel 1: Panorama da participação feminina em HPC"
-        authors: "Moderadora: Aletéia Patrícia Favacho de Araújo"
+        panel_id: wmad-painel1
+        moderator: Aletéia Patrícia Favacho de Araújo
       - time: "09:00–09:50"
         title: "Palestra 1: Pesquisa em Supercomputação e Bioinformática em Quatro Décadas: A Busca Incansável por Desempenho"
         authors: "Alba Cristina Magalhães Alves de Melo (UnB)"
@@ -708,7 +709,13 @@
         authors: "Aline Galdino de Oliveira (UFRJ)"
       - time: "15:00–15:40"
         title: "Painel 2: Mulheres que Lideram em HPC: debate com pesquisadoras e profissionais da academia, indústria e centros de supercomputação"
-        authors: "Alba Melo (UnB), Liana Duenha (UFMT), Monica Costa (HPE), Lúcia Drummond (UFF) — Moderação: Carla Osthoff"
+        panel_id: wmad-painel2
+        moderator: Carla Osthoff
+        panelists:
+        - name: Alba Melo (UnB)
+        - name: Liana Duenha (UFMT)
+        - name: Monica Costa (HPE)
+        - name: Lúcia Drummond (UFF)
       - time: "15:40–15:50"
         title: "Encerramento"
     - id: mc4
