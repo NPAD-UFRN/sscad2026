@@ -57,7 +57,12 @@ permalink: /program/panel/
                                         <p>{{paper.authors}}</p>
                                     {% endfor %} <!-- paper in activity.papers -->
                                 {% elsif activity.type == "panel" %}                <!-- panel, details -->
-                                    <p><b>Resumo</b>: {{activity.abstract}}</p>
+                                    {% if activity.moderator %}
+                                        <p><b>Mediador</b>: {{activity.moderator}}</p>
+                                    {% endif %}
+                                    {% if activity.abstract %}
+                                        <p><b>Resumo</b>: {{activity.abstract}}</p>
+                                    {% endif %}
                                     {% for panelist in activity.panelists %}
                                         {% if panelist.image %}
                                             <img src="{{ site.final_url }}/assets/img/{{panelist.image}}" class="panelist_image">

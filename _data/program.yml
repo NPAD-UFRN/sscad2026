@@ -1430,7 +1430,13 @@
       style: aud_ct
       url: '#painel'
       title: Painel temático
+      description: Os impactos regional, nacional e internacional da instalação do supercomputador do PBIA no RN
       room: Auditório do CT (216)
+      moderator: Samuel Xavier (UFRN)
+      panelists:
+      - name: Angela Paiva (PAX-RN)
+      - name: Edson Borin (UNICAMP)
+      - name: Guilherme Corrêa (MCTI)
     - id: gap
       type: gap
       style: gap
