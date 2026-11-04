@@ -1310,7 +1310,7 @@
       - time: "08:50–08:55"
         title: "Transição"
       - time: "08:55–09:50"
-        title: "Palestra convidada: título a definir"
+        title: "Computação Sustentável: O Grande Desafio e o papel da Computação de Alto Desempenho"
         authors: "Daniel Cordeiro (USP)"
       - title: "Sessão 2: Paralelismo, Escalonamento e Nuvem"
       - time: "14:00–14:15"
