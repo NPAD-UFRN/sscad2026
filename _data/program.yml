@@ -1202,9 +1202,6 @@
   - id: aud_npiti
     name: Aud. nPITI
     style: aud_npiti
-  - id: lab_dca
-    name: LabGrad DCA
-    style: lab_dca
   blocks:
   - start: "07:00"
     end: "08:00"
@@ -1215,10 +1212,6 @@
       style: blank
       title: Boas-vindas e cadastramento
       room: Auditório do CT
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
     - id: gap
       type: gap
       style: gap
@@ -1331,10 +1324,6 @@
         authors: "Edgar Cintho (IPT), Alessandro Santiago (IPT)"
       - time: "15:15–15:20"
         title: "Encerramento"
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
   - start: "09:00"
     end: "09:50"
     activities:
@@ -1342,8 +1331,7 @@
       type: keynote
       style: aud_ct
       url: '#pe2'
-      title: Palestras empresariais 2
-      keynote_title: "Computação Sustentável: O Grande Desafio e o papel da Computação de Alto Desempenho"
+      title: Palestras empresariais Sodalita e HPE
       room: Auditório do CT (216)
     - id: gap
       type: gap
@@ -1370,10 +1358,6 @@
       room: Auditório do nPITI
       page: /cfp_wpads/
       hide_details: 'yes'
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
   - start: "09:50"
     end: "10:20"
     hide_details: 'yes'
@@ -1383,10 +1367,6 @@
       style: blank
       title: Pausa do café
       room: Foyer Aut. CT
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
     - id: gap
       type: gap
       style: gap
@@ -1431,10 +1411,6 @@
       type: gap
       style: gap
       title: ''
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
   - start: "11:20"
     end: "12:20"
     activities:
@@ -1450,10 +1426,6 @@
       - name: Angela Paiva (PAX-RN)
       - name: Edson Borin (UNICAMP)
       - name: Guilherme Corrêa (MCTI)
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
     - id: gap
       type: gap
       style: gap
@@ -1544,14 +1516,6 @@
       room: Auditório do nPITI
       page: /cfp_wpads/
       hide_details: 'yes'
-    - id: mc-praticas
-      type: tutorial
-      style: lab_dca
-      url: '#mc-praticas'
-      title: Minicursos
-      subtitle: "Atividades práticas de minicursos"
-      room: LabGrad DCA
-      description: Atividades práticas de minicursos
   - start: "15:20"
     end: "16:20"
     hide_details: 'yes'
@@ -1562,10 +1526,6 @@
       url: '#encerramento'
       title: Cerimônia de Premiação e Encerramento
       room: Auditório do CT (216)
-    - id: gap
-      type: gap
-      style: gap
-      title: ''
     - id: gap
       type: gap
       style: gap
